@@ -1,0 +1,5 @@
+{
+  "folder": "fleet-notes",
+  "template": "obsidian-config/template/fleet-note-template",
+  "format": "YYYYMMDDHHmmss"
+}

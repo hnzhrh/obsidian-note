@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"fce9fce33d7b29e2","type":"text","text":"# 项目结构生成\n\nJSON 配置目录结构实现不同包架构方案\n要能根据目标 Maven 坐标生成对应的文件夹","x":-440,"y":-180,"width":260,"height":200},
+		{"id":"5d5696ea4ef0c263","type":"text","text":"# 模型\n\nType: dir, file\nName: 文件夹/文件名称\nFileType: java-source, pom-xml, config-yaml\nDirType:  project-root, module-root\nTemplate-file:\nChildren:[]\n\n```\n#FILE#POM_XML\n#DIRECTORY#NORMAL\n```\n","x":-440,"y":140,"width":820,"height":540},
+		{"id":"6a1f66b4eb8e0fdb","type":"text","text":"# 依赖生成\n\n1. 预定义的组件版本依赖（比如 Spring cloud alibaba 组件依赖）\n2. Parent pom dependencie manager 引入","x":-100,"y":-180,"width":480,"height":200},
+		{"id":"e251402b87d8dc5b","type":"text","text":"# 配置生成\n\n1. `application.yaml` ","x":460,"y":-180,"width":250,"height":200},
+		{"id":"15ac18f8c1a8b3ea","type":"text","text":"* project\n\t* Module 1\n\t\t* src\n\t\t\t* main\n\t\t\t\t* java\n\t\t\t\t* app package\n\t\t\t\t\t* package 1\n\t\t\t\t\t\t* `package-info.java`\n\t\t\t\t\t* package 2\n\t\t\t\t\t\t* `package-info.java`\n\t\t\t* test\n\t\t* `pom.xml`\n\t* Module 2\n\t* parent  `pom.xml`","x":-440,"y":-640,"width":880,"height":440,"color":"2"}
+	],
+	"edges":[]
+}

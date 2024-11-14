@@ -1,0 +1,10 @@
+{
+  "full-list-lane-width": false,
+  "new-note-template": "obsidian-config/template/kanban-note-template.md",
+  "new-note-folder": "kanban-note",
+  "tag-sort": [],
+  "date-display-format": "YYYY-MM-DD",
+  "date-trigger": "@",
+  "date-format": "YYYY-MM-DD",
+  "move-dates": false
+}

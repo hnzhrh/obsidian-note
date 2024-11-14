@@ -1,0 +1,8 @@
+{
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "attachments",
+  "autoPairMarkdown": false,
+  "showLineNumber": false,
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true
+}

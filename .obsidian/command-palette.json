@@ -1,0 +1,11 @@
+{
+  "pinned": [
+    "file-explorer:new-file",
+    "insert-template",
+    "file-explorer:open",
+    "obsidian-tasks-plugin:edit-task",
+    "global-search:open",
+    "workspace:split-vertical",
+    "workspace:split-horizontal"
+  ]
+}

@@ -1,0 +1,23 @@
+---
+title: NPM 配置
+tags:
+  - fleet-note
+  - front-end/npm
+date: 2024-11-12
+time: 16:15
+aliases:
+---
+# 安装 Node JS 配置
+
+## 配置 npm 镜像仓库
+
+[npmmirror 镜像站](https://npmmirror.com/)
+
+# 配置 npm 缓存和 global 路径
+
+```shell
+npm config set prefix "D:\DevelopmentToolKits\node-js-global"
+npm config set cache "D:\DevelopmentToolKits\node-js-cache"
+```
+
+# References
