@@ -1,14 +1,13 @@
 ---
 Title:
-  {{title}}
+  "{ title }": 
 tags:
   - product/user-story
 Date:
-  {{date}}
+  "{ date }": 
 Time:
-  {{time}}
-aliases: 
-epic:
+  "{ time }": 
+aliases:
 ---
 # User story title
 

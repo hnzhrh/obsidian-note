@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c4c0dc68b2be3b87",
+        "id": "ff77cb73f25101cc",
         "type": "tabs",
         "children": [
           {
-            "id": "a6d4dc36b63acd04",
+            "id": "2b8dd61efa19f47c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "permanent-notes/rta/RTA-epic-advertise-strategy.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "RTA-epic-advertise-strategy"
+              "title": "New tab"
             }
           }
         ]
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "permanent-notes/rta/RTA-epic-advertise-strategy.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of RTA-epic-advertise-strategy"
+              "title": "Outline"
             }
           },
           {
@@ -188,17 +182,20 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "a6d4dc36b63acd04",
+  "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/rta/RTA-idea.md",
+    "fleet-notes/rta/user-story/创建RTA广告策略.md",
+    "fleet-notes/rta/user-story/创建RTA实验.md",
+    "fleet-notes/rta/user-story/创建RTA实验策略.md",
     "permanent-notes/rta/RTA-epic-advertise-strategy.md",
+    "permanent-notes/rta/RTA-epic-experiment.md",
+    "permanent-notes/rta/RTA-idea.md",
+    "obsidian-config/template/user-story-epic-template.md",
     "fleet-notes/5W2H方法论.md",
     "projects/encryption/encryption-solution.md",
     "fleet-notes/PlantUML类图关系.md",
-    "fleet-notes/rta/user-story/创建RTA广告策略.md",
     "fleet-notes/Spring切面编程.md",
     "obsidian-config/template/GWT-template.md",
-    "obsidian-config/template/user-story-epic-template.md",
     "obsidian-config/template/uml-activity.md",
     "fleet-notes/rta/RTA 用户流程图.md",
     "mindmaps/RTA.xmind",
@@ -216,9 +213,6 @@
     "fleet-notes/rta/RTA Resources.md",
     "fleet-notes/rta/RTA-brain-storming.md",
     "fleet-notes/rta/RTA-DDD-Design.md",
-    "fleet-notes/rta/RTA面临的挑战.md",
-    "fleet-notes/rta/RTA应用场景.md",
-    "fleet-notes/rta/RTA优势.md",
     "LICENSE",
     "fleet-notes/rta/user-story",
     "fleet-notes/rta",
