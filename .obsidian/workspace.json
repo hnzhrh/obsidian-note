@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "01993073434f5a63",
+        "id": "c4c0dc68b2be3b87",
         "type": "tabs",
         "children": [
           {
-            "id": "71f28bc75c2c9f13",
+            "id": "a6d4dc36b63acd04",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "permanent-notes/rta/RTA-epic-advertise-strategy.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "RTA-epic-advertise-strategy"
             }
           }
         ]
@@ -48,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Relation",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 319.5
   },
   "right": {
     "id": "f562555922c13a75",
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "fleet-notes/5W2H方法论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 5W2H方法论"
             }
           },
           {
@@ -107,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "fleet-notes/5W2H方法论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 5W2H方法论"
             }
           },
           {
@@ -132,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "permanent-notes/rta/RTA-epic-advertise-strategy.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of RTA-epic-advertise-strategy"
             }
           },
           {
@@ -180,16 +188,30 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "a6d4dc36b63acd04",
   "lastOpenFiles": [
-    "mindmaps/RTA.xmind",
+    "permanent-notes/rta/RTA-idea.md",
+    "permanent-notes/rta/RTA-epic-advertise-strategy.md",
+    "fleet-notes/5W2H方法论.md",
+    "projects/encryption/encryption-solution.md",
+    "fleet-notes/PlantUML类图关系.md",
     "fleet-notes/rta/user-story/创建RTA广告策略.md",
+    "fleet-notes/Spring切面编程.md",
+    "obsidian-config/template/GWT-template.md",
+    "obsidian-config/template/user-story-epic-template.md",
+    "obsidian-config/template/uml-activity.md",
+    "fleet-notes/rta/RTA 用户流程图.md",
+    "mindmaps/RTA.xmind",
+    "permanent-notes/rta",
+    "obsidian-config/template/idea-template.md",
+    "obsidian-config/template/permanent-note-template.md",
+    "obsidian-config/template/fleet-note-template.md",
+    "obsidian-config/template/literature-note-template.md",
     "Excalidraw/Drawing 2024-11-14 12.39.31.excalidraw.md",
     "Excalidraw/RTA-event-storming.excelidraw.md",
     "mindmaps",
     "Excalidraw/Drawing 2024-11-13 18.53.17.excalidraw.md",
     "Excalidraw/Drawing 2024-11-14 12.34.38.excalidraw.md",
-    "fleet-notes/rta/RTA 用户流程图.md",
     "fleet-notes/rta/Resources.md",
     "fleet-notes/rta/RTA Resources.md",
     "fleet-notes/rta/RTA-brain-storming.md",
@@ -197,19 +219,7 @@
     "fleet-notes/rta/RTA面临的挑战.md",
     "fleet-notes/rta/RTA应用场景.md",
     "fleet-notes/rta/RTA优势.md",
-    "fleet-notes/rta/user-story/创建RTA实验策略.md",
-    "fleet-notes/domain-driven-design/DDD.md",
-    "fleet-notes/domain-driven-design/值对象.md",
     "LICENSE",
-    "obsidian-config/template/idea-template.md",
-    "obsidian-config/template/fleet-note-template.md",
-    "obsidian-config/template/daily-note-template.md",
-    "obsidian-config/template/literature-note-template.md",
-    "obsidian-config/template/kanban-note-template.md",
-    "fleet-notes/IDEA落地到代码的个人工作流程.md",
-    "dictionary/Ubiquitous-en-US.md",
-    "dictionary/Test-en-US.md",
-    "dictionary/Shipping-en-US.md",
     "fleet-notes/rta/user-story",
     "fleet-notes/rta",
     "projects/RTA/user-story.canvas",
@@ -217,7 +227,6 @@
     "dicionary",
     "dictionary",
     "projects/encryption",
-    "projects/RTA",
     "obsidian-config/template/event-storming.canvas",
     "projects/archetype-generator/未命名.canvas",
     "未命名.canvas"
