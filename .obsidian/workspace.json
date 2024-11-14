@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "efe1e5639ca7a9bc",
+        "id": "01993073434f5a63",
         "type": "tabs",
         "children": [
           {
-            "id": "9d9ec4933f9b8b44",
+            "id": "71f28bc75c2c9f13",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -76,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 230.5
   },
   "right": {
     "id": "f562555922c13a75",
@@ -92,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Words.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Words"
+              "title": "Backlinks"
             }
           },
           {
@@ -111,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Words.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Words"
+              "title": "Outgoing links"
             }
           },
           {
@@ -185,14 +180,27 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "9d9ec4933f9b8b44",
+  "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
+    "mindmaps/RTA.xmind",
+    "fleet-notes/rta/user-story/创建RTA广告策略.md",
+    "Excalidraw/Drawing 2024-11-14 12.39.31.excalidraw.md",
+    "Excalidraw/RTA-event-storming.excelidraw.md",
+    "mindmaps",
+    "Excalidraw/Drawing 2024-11-13 18.53.17.excalidraw.md",
+    "Excalidraw/Drawing 2024-11-14 12.34.38.excalidraw.md",
+    "fleet-notes/rta/RTA 用户流程图.md",
+    "fleet-notes/rta/Resources.md",
+    "fleet-notes/rta/RTA Resources.md",
+    "fleet-notes/rta/RTA-brain-storming.md",
+    "fleet-notes/rta/RTA-DDD-Design.md",
+    "fleet-notes/rta/RTA面临的挑战.md",
+    "fleet-notes/rta/RTA应用场景.md",
+    "fleet-notes/rta/RTA优势.md",
+    "fleet-notes/rta/user-story/创建RTA实验策略.md",
     "fleet-notes/domain-driven-design/DDD.md",
     "fleet-notes/domain-driven-design/值对象.md",
-    "fleet-notes/rta/RTA-DDD-Design.md",
     "LICENSE",
-    "fleet-notes/rta/RTA-brain-storming.md",
-    "fleet-notes/rta/RTA 用户流程图.md",
     "obsidian-config/template/idea-template.md",
     "obsidian-config/template/fleet-note-template.md",
     "obsidian-config/template/daily-note-template.md",
@@ -202,18 +210,6 @@
     "dictionary/Ubiquitous-en-US.md",
     "dictionary/Test-en-US.md",
     "dictionary/Shipping-en-US.md",
-    "fleet-notes/domain-driven-design/事件风暴.md",
-    "fleet-notes/domain-driven-design/DDD战略设计.md",
-    "fleet-notes/domain-driven-design/DDD战术设计.md",
-    "Excalidraw/RTA-event-storming.excelidraw.md",
-    "Excalidraw/Drawing 2024-11-13 18.53.17.excalidraw.md",
-    "obsidian-config/template/uml-activity.md",
-    "obsidian-config/template/user-story-epic-template.md",
-    "obsidian-config/template/permanent-note-template.md",
-    "obsidian-config/template/uml-mindmap.md",
-    "fleet-notes/rta/user-story/创建RTA广告策略.md",
-    "fleet-notes/rta/user-story/创建RTA实验.md",
-    "fleet-notes/rta/user-story/创建RTA实验策略.md",
     "fleet-notes/rta/user-story",
     "fleet-notes/rta",
     "projects/RTA/user-story.canvas",
@@ -223,9 +219,7 @@
     "projects/encryption",
     "projects/RTA",
     "obsidian-config/template/event-storming.canvas",
-    "Excalidraw",
     "projects/archetype-generator/未命名.canvas",
-    "fleet-notes/domain-driven-design",
     "未命名.canvas"
   ]
 }
