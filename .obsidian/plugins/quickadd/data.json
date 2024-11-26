@@ -71,7 +71,7 @@
   "devMode": false,
   "templateFolderPath": "obsidian-config/template",
   "announceUpdates": true,
-  "version": "1.11.4",
+  "version": "1.11.5",
   "disableOnlineFeatures": true,
   "enableRibbonIcon": true,
   "ai": {

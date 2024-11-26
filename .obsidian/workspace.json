@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/rta/RTA-DDD-Design.md",
+                "file": "fleet-notes/redis/Redis-Info命令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RTA-DDD-Design"
+              "title": "Redis-Info命令"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#distribution",
+                "query": "tag:middleware/redis",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fleet-notes/rta/RTA-DDD-Design.md"
+                "file": "fleet-notes/redis/Redis-Info命令.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of RTA-DDD-Design"
+              "title": "Outline of Redis-Info命令"
             }
           },
           {
@@ -190,10 +190,16 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "Excalidraw/RTA-event-storming.excelidraw.md",
-    "fleet-notes/rta/RTA-DDD-Design.md",
-    "fleet-notes/rta/Redis记录.md",
+    "fleet-notes/redis/Redis数据Eviction.md",
+    "fleet-notes/redis/Redis-Info命令.md",
     "fleet-notes/redis/Redis-listpack编码.md",
+    "fleet-notes/redis/Redis数据类型.md",
+    "fleet-notes/redis/Redis-String.md",
+    "permanent-notes/redis/Redis.md",
+    "fleet-notes/rta/Redis记录.md",
+    "permanent-notes/redis",
+    "fleet-notes/rta/RTA-DDD-Design.md",
+    "Excalidraw/RTA-event-storming.excelidraw.md",
     "fleet-notes/redis/Redis运维命令.md",
     "fleet-notes/redis/Lettuce连接池.md",
     "fleet-notes/redis/Redis-hash编码方式.md",
@@ -212,12 +218,7 @@
     "fleet-notes/rta/RTA-context-map.md",
     "obsidian-config/template/uml-ddd-context.md",
     "fleet-notes/PlantUML.md",
-    "fleet-notes/原型图.md",
-    "fleet-notes/domain-driven-design/DDD.md",
-    "fleet-notes/domain-driven-design/事件风暴.md",
-    "permanent-notes/rta/RTA-idea.md",
     "mindmaps/RTA.xmind",
-    "fleet-notes/rta/RTA-brain-storming.md",
     "permanent-notes/rta",
     "mindmaps",
     "LICENSE",
@@ -226,7 +227,6 @@
     "projects/RTA/user-story.canvas",
     "english-capture",
     "dicionary",
-    "dictionary",
     "obsidian-config/template/event-storming.canvas",
     "projects/archetype-generator/未命名.canvas",
     "未命名.canvas"
