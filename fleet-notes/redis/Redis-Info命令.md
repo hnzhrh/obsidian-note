@@ -7,6 +7,59 @@ date: 2024-11-26
 time: 09:39
 aliases:
 ---
+# 内存
+
+
+Redis 的内存使用情况可以通过多个指标来监控，这些指标可以帮助你了解 Redis 实例的内存消耗状况。以下是一些常用的内存相关指标：
+
+1. **used_memory**：
+   - 表示 Redis 分配器分配的内存总量，即 Redis 内部存储的所有数据占用的内存量。
+   
+2. **used_memory_human**：
+   - 以人类可读的格式（例如 KB、MB）显示 `used_memory`。
+
+3. **used_memory_rss**：
+   - 从操作系统的角度显示 Redis 进程占用的物理内存总量，单位为字节。这通常比 `used_memory` 要大，因为它还包括了内存碎片等其他因素。
+
+4. **used_memory_rss_human**：
+   - `used_memory_rss` 的用户易读格式的显示。
+
+5. **used_memory_peak**：
+   - Redis 在运行过程中使用的最大内存量，单位为字节。
+
+6. **used_memory_peak_human**：
+   - 以人类可读的格式显示 `used_memory_peak`。
+
+7. **mem_fragmentation_ratio**：
+   - <mark style="background: #FFB8EBA6;">内存碎片率，计算公式是 `used_memory_rss / used_memory`。如果这个比率大于 1，说明存在内存碎片；如果接近 1，说明内存使用效率较高；如果小于 1，可能表示操作系统正在将 Redis 的部分内存交换到磁盘上。</mark>
+
+8. **maxmemory**：
+   - Redis 能够使用的最大内存上限，设置为 0 表示没有限制。
+
+9. **maxmemory_policy**：
+   - 当达到 `maxmemory` 时，Redis 采用的内存回收策略，如 `noeviction`、`allkeys-lru`、`volatile-lru` 等。
+
+10. **used_memory_lua**：
+    - Lua 引擎所消耗的内存大小。
+
+11. **used_memory_overhead**：
+    - 用于保存键值对额外开销的内存总和，包括键名、键值本身以及相关的元数据。
+
+12. **total_system_memory**：
+    - 如果 Redis 可以获取到系统总内存信息，这个字段会显示系统的总内存大小。
+
+13. **used_memory_startup**：
+    - Redis 启动时所使用的内存大小，有助于了解 Redis 本身的内存开销。
+
+14. **repl_backlog_size**：
+    - 复制积压缓冲区的大小，用于部分同步功能。
+
+15. **client_output_buffer_limits**：
+    - 客户端输出缓冲区的限制，对于普通客户端、复制客户端和订阅/发布客户端有不同的设置。
+
+通过监控上述指标，你可以更好地理解 Redis 的内存使用情况，并根据需要调整配置或优化数据结构，以保证 Redis 的稳定性和性能。为了获取这些信息，可以使用 `INFO memory` 命令，它会返回关于 Redis 内存使用情况的详细报告。
+
+# 官方文档
 Here is the meaning of all fields in the **server** section:
 
 - `redis_version`: Version of the Redis server
