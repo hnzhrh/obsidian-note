@@ -33,6 +33,11 @@ master -> slave: Offset command send.
 ```
 
 
+Send RDB 这一步，可能有两种方式（repl-diskless-sync yes）：
+1. 先生成 RDB 文件，再发送
+2. 直接网络发送 RDB，如果在等待时间之外（repl-diskless-sync-delay 5），有其他 Replica 同步请求则会进入队列进行等待当前副本全量同步结束，否则可以并发发送
+
+
 > # Set the replication backlog size. The backlog is a buffer that accumulates
 > # replica data when replicas are disconnected for some time, so that when a
 > # replica wants to reconnect again, often a full resync is not needed, but a

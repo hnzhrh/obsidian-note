@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b6beccf8bdd6c2f8",
+            "id": "e169a0c37c25c0c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/redis/Redis-IO模型.md",
+                "file": "fleet-notes/redis/Redis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis-IO模型"
+              "title": "Redis"
             }
           },
           {
-            "id": "ad5b747d2ed3c9eb",
+            "id": "dd49e3bfb472a448",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/redis/Redis-主从复制.md",
+                "file": "fleet-notes/redis/Redis-cluster.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis-主从复制"
+              "title": "Redis-cluster"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fleet-notes/redis/Redis-主从复制.md"
+                "file": "fleet-notes/redis/Redis-cluster.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis-主从复制"
+              "title": "Outline of Redis-cluster"
             }
           },
           {
@@ -206,9 +206,14 @@
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
     "fleet-notes/redis/Redis.md",
-    "fleet-notes/redis/Redis-主从复制.md",
-    "fleet-notes/redis/Redis-String.md",
+    "fleet-notes/redis/Redis-cluster.md",
+    "fleet-notes/redis/Lettuce连接池.md",
     "fleet-notes/redis/Redis-IO模型.md",
+    "fleet-notes/redis/Redis部署.md",
+    "fleet-notes/redis/Redis-哨兵.md",
+    "fleet-notes/sed替换文件内容.md",
+    "fleet-notes/redis/Redis-String.md",
+    "fleet-notes/redis/Redis-主从复制.md",
     "fleet-notes/redis/Redis-aof.md",
     "fleet-notes/redis/Redis-Info命令.md",
     "fleet-notes/redis/Redis-rdb.md",
@@ -225,14 +230,9 @@
     "fleet-notes/rta/RTA-DDD-Design.md",
     "Excalidraw/RTA-event-storming.excelidraw.md",
     "fleet-notes/redis/Redis运维命令.md",
-    "fleet-notes/redis/Lettuce连接池.md",
     "fleet-notes/redis",
     "permanent-notes/rta/RTA-epic-advertise-strategy.md",
     "permanent-notes/rta/RTA-epic-experiment.md",
-    "fleet-notes/COLA状态机.md",
-    "permanent-notes/rta/RTA-用户流程图.md",
-    "fleet-notes/PlantUML领域建模.md",
-    "fleet-notes/PlantUML类图关系.md",
     "mindmaps/RTA.xmind",
     "permanent-notes/rta",
     "mindmaps",

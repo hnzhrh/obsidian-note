@@ -26,9 +26,13 @@ aliases:
 
 # 高可靠（High Reliability）
 ## 主从复制
-
+[Redis-主从复制](Redis-主从复制.md)
+## 哨兵机制
+[Redis-哨兵](Redis-哨兵.md)
 
 # 高可扩展性（High Scalability）
+## 分片
+
 # References
 * [图解Redis介绍 | 小林coding](https://xiaolincoding.com/redis/)
 * [Redis 核心技术与实战](https://time.geekbang.org/column/intro/100056701?tab=catalog)
