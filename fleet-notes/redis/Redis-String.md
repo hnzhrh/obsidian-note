@@ -131,4 +131,90 @@ robj *createStringObject(const char *ptr, size_t len) {
 ```
 
 
+
+
+# 关于 Redis 有没有使用 sds 5 的问题探究
+相关源码：
+
+```c
+struct dictEntry {
+    void *key;
+    union {
+        void *val;
+        uint64_t u64;
+        int64_t s64;
+        double d;
+    } v;
+    struct dictEntry *next;     /* Next entry in the same hash bucket. */
+};
+
+struct redisObject {
+    unsigned type:4;
+    unsigned encoding:4;
+    unsigned lru:LRU_BITS; /* LRU time (relative to global lru_clock) or
+                            * LFU data (least significant 8 bits frequency
+                            * and most significant 16 bits access time). */
+    int refcount;
+    void *ptr;
+};
+
+struct __attribute__ ((__packed__)) sdshdr5 {
+    unsigned char flags; /* 3 lsb of type, and 5 msb of string length */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr8 {
+    uint8_t len; /* used */
+    uint8_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr16 {
+    uint16_t len; /* used */
+    uint16_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr32 {
+    uint32_t len; /* used */
+    uint32_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr64 {
+    uint64_t len; /* used */
+    uint64_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+```
+
+Key: 16 B（Meta） + 1 B（flags） + 6 B（“aaaaaa”）+ 1 B（\0）= 24 B
+Value: 16 B + 1 B (len) + 1 B (alloc) + 6 B (aaaaaa) + 1 B (flags) + 1 B (\0) = 16 B + 10 B  
+
+以下现象：
+```c
+127.0.0.1:6379> set cccccc 8676561
+OK
+127.0.0.1:6379> memory usage cccccc
+(integer) 48
+127.0.0.1:6379> set ccccccc 8676561
+OK
+127.0.0.1:6379> memory usage ccccccc
+(integer) 56
+
+127.0.0.1:6379> set dddddd auilsa
+OK
+127.0.0.1:6379> object encoding dddddd
+"embstr"
+127.0.0.1:6379> memory usage dddddd
+(integer) 64
+127.0.0.1:6379> set ddddddd auilsa
+OK
+127.0.0.1:6379> object encoding ddddddd
+"embstr"
+127.0.0.1:6379> memory usage ddddddd
+(integer) 72
+```
+
 # References
+* [How is the memory usage for the key-value calculated? · redis/redis · Discussion #13677 · GitHub](https://github.com/redis/redis/discussions/13677)

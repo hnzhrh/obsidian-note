@@ -96,4 +96,67 @@ struct redisObject {
 ```
 
 
+
+```c
+/* Using dictSetResizeEnabled() we make possible to disable
+ * resizing and rehashing of the hash table as needed. This is very important
+ * for Redis, as we use copy-on-write and don't want to move too much memory
+ * around when there is a child performing saving operations.
+ *
+ * Note that even when dict_can_resize is set to DICT_RESIZE_AVOID, not all
+ * resizes are prevented:
+ *  - A hash table is still allowed to expand if the ratio between the number
+ *    of elements and the buckets >= dict_force_resize_ratio.
+ *  - A hash table is still allowed to shrink if the ratio between the number
+ *    of elements and the buckets <= 1 / (HASHTABLE_MIN_FILL * dict_force_resize_ratio). */
+static dictResizeEnable dict_can_resize = DICT_RESIZE_ENABLE;
+static unsigned int dict_force_resize_ratio = 4;
+
+/* -------------------------- types ----------------------------------------- */
+struct dictEntry {
+    void *key;
+    union {
+        void *val;
+        uint64_t u64;
+        int64_t s64;
+        double d;
+    } v;
+    struct dictEntry *next;     /* Next entry in the same hash bucket. */
+};
+```
+
+
+Sds
+```c
+/* Note: sdshdr5 is never used, we just access the flags byte directly.
+ * However is here to document the layout of type 5 SDS strings. */
+struct __attribute__ ((__packed__)) sdshdr5 {
+    unsigned char flags; /* 3 lsb of type, and 5 msb of string length */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr8 {
+    uint8_t len; /* used */
+    uint8_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr16 {
+    uint16_t len; /* used */
+    uint16_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr32 {
+    uint32_t len; /* used */
+    uint32_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+struct __attribute__ ((__packed__)) sdshdr64 {
+    uint64_t len; /* used */
+    uint64_t alloc; /* excluding the header and null terminator */
+    unsigned char flags; /* 3 lsb of type, 5 unused bits */
+    char buf[];
+};
+```
 # References
