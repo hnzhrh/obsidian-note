@@ -4,5 +4,19 @@
   "autoPairMarkdown": false,
   "showLineNumber": false,
   "newFileLocation": "current",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheckDictionary": [
+    "Redis",
+    "EMBSTR",
+    "LISTPACK",
+    "QUICKLIST",
+    "ZIPLIST",
+    "LINKEDLIST",
+    "LISTPACK",
+    "Zset",
+    "LISTPACK",
+    "SKIPLIST",
+    "LISTPACK",
+    "INTSET"
+  ]
 }

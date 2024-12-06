@@ -6731,7 +6731,14 @@ class imageAutoUploadPlugin extends obsidian.Plugin {
                 let sendFiles = [];
                 let files = evt.dataTransfer.files;
                 Array.from(files).forEach((item, index) => {
-                    sendFiles.push(item.path);
+                    if (item.path) {
+                        sendFiles.push(item.path);
+                    }
+                    else {
+                        const { webUtils } = require("electron");
+                        const path = webUtils.getPathForFile(item);
+                        sendFiles.push(path);
+                    }
                 });
                 evt.preventDefault();
                 const data = await this.uploader.uploadFiles(sendFiles);
