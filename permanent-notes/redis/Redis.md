@@ -21,6 +21,7 @@ aliases:
 * [[Redis内存满了怎么办？]]
 * [[Redis配置和部署]]
 * [Redis持久化机制](Redis持久化机制)
+* [[Redis 如何保证系统高可靠？]]
 * [Redis单机升级集群方案](Redis单机升级集群方案)
 
 # 问题排查

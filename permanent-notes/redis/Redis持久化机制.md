@@ -9,6 +9,8 @@ aliases:
 ---
 Redis 在缓存场景中，由于 Redis 是内存数据库，如果重启会导致数据丢失，因此 Redis 需要提供必要的持久化工具，Redis 提供了 RDB 和 AOF 两种持久化方式。
 
+Redis 优先使用 AOF 恢复数据。如果同时开启了 AOF 和 RDB，同时设置了 AOFBase 文件使用 RDB，则实际上同一时间是存在了两个 RDB 文件的。
+
 # AOF（Append Only File） 日志
 
 不同于 MySQL 数据库的 WAL 日志（Write Ahead Log），AOF 正好相反，先写入数据，再写入日志，AOF 写入的数据是可读的命令，这样做有两个好处：
@@ -66,6 +68,7 @@ file appendonly.aof.2.incr.aof seq 2 type i
  *    4 c) mark the rewritten INCR AOFs as history type
  *    4 d) persist AOF manifest file
  *    4 e) Delete the history files use bio
+
 # RDB （Redis DataBase）
 
 Redis 也支持使用 RDB 做持久化，使用 RDB 的一个好处是二进制恢复数据快。RDB 也采用 COW 机制，因此也有阻塞的风险。且当数据写入占比过大时，会占用更多的内存，可能触发系统 swap，如果没有开启 swap，会直接触发 OOM，面临被系统 Kill 掉的风险。
