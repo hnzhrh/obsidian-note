@@ -4,41 +4,65 @@
     "type": "split",
     "children": [
       {
-        "id": "e516065503c6e201",
+        "id": "c298d98356177491",
         "type": "tabs",
         "children": [
           {
-            "id": "cffeb5fc5ff7198f",
+            "id": "70027394c52d150f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/redis/Redis 如何保证系统高可靠？.md",
+                "file": "permanent-notes/tools/Open-source-tools.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis 如何保证系统高可靠？"
+              "title": "Open-source-tools"
             }
           },
           {
-            "id": "d0b726be2470ce5c",
+            "id": "ec3d1ef94139c4aa",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/redis-listpack.excelidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "redis-listpack.excelidraw"
+            }
+          },
+          {
+            "id": "5ed4a0cb756ad3b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/redis/Redis 如何保证系统高可靠？.md",
+                "file": "permanent-notes/tools/Open-source-tools.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis 如何保证系统高可靠？"
+              "title": "Open-source-tools"
+            }
+          },
+          {
+            "id": "cfaca9d5e4bc1ef6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/redis-ziplist.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "redis-ziplist.excalidraw"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/redis/Redis持久化机制.md",
+                "file": "fleet-notes/redis/Redis-String.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis持久化机制"
+              "title": "Backlinks for Redis-String"
             }
           },
           {
@@ -129,12 +153,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/redis/Redis持久化机制.md",
+                "file": "fleet-notes/redis/Redis-String.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Redis持久化机制"
+              "title": "Outgoing links from Redis-String"
             }
           },
           {
@@ -156,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/redis/Redis 如何保证系统高可靠？.md"
+                "file": "permanent-notes/tools/Open-source-tools.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis 如何保证系统高可靠？"
+              "title": "Outline of Open-source-tools"
             }
           },
           {
@@ -207,42 +231,42 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/redis/Redis配置和部署.md",
-    "permanent-notes/redis/Redis 如何保证系统高可靠？.md",
-    "permanent-notes/java/Java.md",
-    "permanent-notes/java/Spring Boot 能同时处理多少请求？.md",
-    "permanent-notes/java/test.md",
-    "permanent-notes/redis/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md",
-    "permanent-notes/redis/Redis.md",
-    "fleet-notes/redis/Redis-rdb.md",
-    "permanent-notes/java",
-    "fleet-notes/redis/Redis-String.md",
-    "fleet-notes/redis/Redis部署.md",
+    "Excalidraw/redis-ziplist-entry.excalidraw.md",
+    "permanent-notes/tools/Open-source-tools.md",
+    "permanent-notes/System-design-terminology.md",
+    "permanent-notes/tools",
     "fleet-notes/redis/Redis数据类型.md",
-    "fleet-notes/redis/Redis运维命令.md",
-    "permanent-notes/redis/Redis持久化机制.md",
-    "fleet-notes/redis/Redis-cluster.md",
-    "fleet-notes/redis/Redis-aof.md",
-    "permanent-notes/redis/Redis内存满了怎么办？.md",
-    "permanent-notes/redis/Redis单机升级集群方案.md",
-    "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
-    "permanent-notes/redis/swap导致的性能下降.md",
     "fleet-notes/redis/Redis.md",
+    "fleet-notes/redis/Redis-String.md",
+    "fleet-notes/redis/Redis-List.md",
+    "Excalidraw/redis-listpack.excelidraw.md",
+    "Excalidraw/redis-ziplist.excalidraw.md",
+    "Excalidraw/redis-ziplist.excalidraw 1.md",
+    "Excalidraw/redis-raw.excalidraw.md",
+    "Excalidraw/redis-embstr.excelidraw.md",
+    "fleet-notes/redis/Redis共享对象.md",
+    "fleet-notes/redis/Redis对象.md",
+    "fleet-notes/redis/Redis部署.md",
     "fleet-notes/redis/Redis-hash编码方式.md",
-    "fleet-notes/redis/Redis-Info命令.md",
-    "fleet-notes/redis/Redis数据Eviction.md",
-    "permanent-notes/redis/Redis有哪些数据类型可以使用？.md",
-    "permanent-notes/rta/RTA-epic-advertise-strategy.md",
-    "obsidian-config/template/permanent-note-template.md",
+    "permanent-notes/redis-bak/Redis.md",
+    "permanent-notes/redis/Redis.md",
+    "fleet-notes/redis/Redis-dict.md",
+    "permanent-notes/redis-bak/Redis有哪些数据类型可以使用？.md",
+    "fleet-notes/redis/Redis-IO模型.md",
+    "permanent-notes/redis-bak/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md",
+    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
+    "fleet-notes/redis/Redis运维命令.md",
+    "permanent-notes/redis-bak/Redis配置和部署.md",
+    "Excalidraw/RTA-event-storming.excelidraw.md",
+    "mindmaps/Question.xmind",
+    "permanent-notes/redis",
+    "fleet-notes/java",
     "mindmaps/MySQL.xmind",
     "fleet-notes/mysql",
-    "permanent-notes/redis",
+    "permanent-notes/redis-bak",
     "fleet-notes/redis",
     "mindmaps/RTA.xmind",
     "permanent-notes/rta",
-    "mindmaps",
-    "LICENSE",
-    "fleet-notes/rta/user-story",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",
     "projects/archetype-generator/未命名.canvas",
