@@ -182,8 +182,8 @@
             "state": {
               "type": "dictionary-view",
               "state": {},
-              "icon": "quote-glyph",
-              "title": "Dictionary"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -205,7 +205,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "quickadd:QuickAdd": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -214,9 +213,10 @@
       "command-palette:Open command palette": false,
       "zk-prefixer:Create new unique note": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false,
+      "card-board:CardBoard": false,
+      "quickadd:QuickAdd": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "card-board:CardBoard": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ee9a6b9b366143c2",
