@@ -60,7 +60,7 @@ QuickList 的实现方式：
 
 # `ZIPLIST` 编码
 
-`ZIPLIST` 设计成一种内存高效的数据结构，可以在两端 `O(1)` 操作，但其他的操作需要对 `ZIPLIST` 重新分配内存，所以整体复杂度取决于 `ZIPLIST` 的大小。
+`ZIPLIST` 设计成一种内存高效的数据结构，可以在两端 `O(1)` 操作，但其他的操作需要对 `ZIPLIST` 重新分配内存，所以整体复杂度取决于 `ZIPLIST` 的大小。 ^9786bc
 
 内存结构如下：
 ![image.png](https://images.hnzhrh.com/note/20241214153120.png)

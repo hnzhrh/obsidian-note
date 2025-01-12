@@ -23,7 +23,7 @@ Redis 提供了丰富的数据类型帮助用户解决需要缓存、队列和�
 Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键值对的形式存储的，其中 key 以 String 对象存储，Value 以 [Redis对象](Redis对象) 存储，Redis 有 7 种数据对象：
 * [String object](Redis-String.md)
 * [List object](Redis-List.md)
-* Set object
+* [Redis-Set](Redis-Set.md)
 * Sorted set object
 * Hash object
 * Module object
