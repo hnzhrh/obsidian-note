@@ -4,52 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c298d98356177491",
+        "id": "e9703c0c2d937da7",
         "type": "tabs",
         "children": [
           {
-            "id": "5ed4a0cb756ad3b8",
+            "id": "8ac57e7882db1df7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/redis/Redis-Set.md",
+                "file": "fleet-notes/algorithm/滑动窗口.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis-Set"
-            }
-          },
-          {
-            "id": "98f08e7130ae44f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/redis/Redis-List.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis-List"
-            }
-          },
-          {
-            "id": "fb52e595e3dfbad5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/redis/Redis数据类型.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis数据类型"
+              "title": "滑动窗口"
             }
           }
         ]
@@ -157,7 +127,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               },
               "icon": "lucide-tags",
@@ -170,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fleet-notes/redis/Redis-Set.md"
+                "file": "fleet-notes/algorithm/滑动窗口.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis-Set"
+              "title": "Outline of 滑动窗口"
             }
           },
           {
@@ -213,50 +183,50 @@
       "command-palette:Open command palette": false,
       "zk-prefixer:Create new unique note": false,
       "obsidian-kanban:Create new board": false,
-      "card-board:CardBoard": false,
       "quickadd:QuickAdd": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "card-board:CardBoard": false
     }
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "fleet-notes/redis/Redis-List.md",
-    "fleet-notes/redis/Redis-Set.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
-    "fleet-notes/redis/Redis-String.md",
-    "fleet-notes/redis/Redis数据类型.md",
-    "permanent-notes/tools/Open-source-tools.md",
-    "Excalidraw/redis-ziplist.excalidraw.md",
-    "Excalidraw/redis-listpack.excelidraw.md",
-    "fleet-notes/redis/Redis-rdb.md",
-    "fleet-notes/redis/Redis对象.md",
-    "fleet-notes/redis/Redis共享对象.md",
-    "fleet-notes/redis/Redis-IO模型.md",
-    "fleet-notes/redis/Redis.md",
-    "Excalidraw/redis-ziplist-entry.excalidraw.md",
+    "fleet-notes/algorithm/归并排序.md",
+    "fleet-notes/algorithm/滑动窗口.md",
+    "fleet-notes/algorithm/算法的本质.md",
+    "fleet-notes/algorithm/链表遍历.md",
+    "fleet-notes/algorithm/数组遍历.md",
+    "fleet-notes/algorithm/二叉树遍历.md",
+    "fleet-notes/algorithm/二叉树实现方式.md",
+    "fleet-notes/algorithm/N 叉树遍历.md",
+    "permanent-notes/tools/Dash 快捷键.md",
+    "permanent-notes/tools/Visual Studio Code 快捷键.md",
+    "fleet-notes/algorithm/Perfect-binary-tree.md",
+    "fleet-notes/algorithm/Full-binary-tree.md",
+    "fleet-notes/algorithm/Complete-binary-tree.md",
+    "fleet-notes/algorithm/Binary-search-tree.md",
+    "fleet-notes/algorithm/Balance-binary-tree.md",
+    "fleet-notes/algorithm/二叉树.md",
+    "fleet-notes/algorithm/二叉树类型.md",
     "permanent-notes/System-design-terminology.md",
+    "fleet-notes/redis/Redis-List.md",
+    "fleet-notes/redis/Redis数据类型.md",
+    "daily-log/2025-01-14.md",
+    "fleet-notes/algorithm/Full binary tree.md",
+    "permanent-notes/math/等比数列.md",
+    "fleet-notes/algorithm/二叉树的性质.md",
+    "fleet-notes/PlantUML领域建模.md",
+    "permanent-notes/math",
+    "permanent-notes/Untitled.md",
+    "fleet-notes/math",
+    "permanent-notes/docker",
+    "fleet-notes/algorithm",
+    "fleet-notes/git",
     "permanent-notes/tools",
-    "Excalidraw/redis-ziplist.excalidraw 1.md",
-    "Excalidraw/redis-raw.excalidraw.md",
-    "Excalidraw/redis-embstr.excelidraw.md",
-    "fleet-notes/redis/Redis部署.md",
-    "fleet-notes/redis/Redis-hash编码方式.md",
-    "permanent-notes/redis-bak/Redis.md",
-    "permanent-notes/redis/Redis.md",
-    "fleet-notes/redis/Redis-dict.md",
-    "permanent-notes/redis-bak/Redis有哪些数据类型可以使用？.md",
-    "permanent-notes/redis-bak/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md",
-    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
     "mindmaps/Question.xmind",
     "permanent-notes/redis",
     "fleet-notes/java",
     "mindmaps/MySQL.xmind",
-    "fleet-notes/mysql",
-    "permanent-notes/redis-bak",
-    "fleet-notes/redis",
-    "mindmaps/RTA.xmind",
-    "permanent-notes/rta",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",
     "projects/archetype-generator/未命名.canvas",

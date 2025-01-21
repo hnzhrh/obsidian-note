@@ -20,4 +20,10 @@ npm config set prefix "D:\DevelopmentToolKits\node-js-global"
 npm config set cache "D:\DevelopmentToolKits\node-js-cache"
 ```
 
+# PicGO 插件手动安装
+
+[插件测试与发布 \| PicGo-Core](https://picgo.github.io/PicGo-Core-Doc/zh/dev-guide/deploy.html#%E6%99%AE%E9%80%9A%E6%8F%92%E4%BB%B6)
+
+
+
 # References
