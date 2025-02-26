@@ -1,8 +1,8 @@
 ---
-title: Redis
+title: Redis index
 tags:
-  - fleet-note
   - middleware/redis
+  - fleet-note/index
 date: 2024-11-26
 time: 16:53
 aliases:
@@ -13,7 +13,8 @@ aliases:
 
 
 # 系统维度
-* [Redis有哪些数据对象？各自都是怎么实现的？](Redis数据类型.md)
+
+
 
 
 # 问题排查
@@ -25,45 +26,6 @@ aliases:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# 高性能（High Performance）
-
-## 内存层
-
-### 数据结构
-#### Dict
-[[Redis-dict]]
-
-## 处理层
-[Redis-CPU绑核](Redis-CPU绑核.md)
-
-## IO 模型
-## 存储层
-### AOF
-[Redis-aof](Redis-aof.md)
-### RDB 
-[Redis-rdb](Redis-rdb.md)
-
-# 高可靠（High Reliability）
-## 主从复制
-[Redis-主从复制](Redis-主从复制.md)
-## 哨兵机制
-[Redis-哨兵](Redis-哨兵.md)
-
-# 高可扩展性（High Scalability）
-## 分片
-
 # References
 * [图解Redis介绍 | 小林coding](https://xiaolincoding.com/redis/)
 * [Redis 核心技术与实战](https://time.geekbang.org/column/intro/100056701?tab=catalog)
@@ -71,3 +33,5 @@ aliases:
 * [16张图带你吃透Redis架构演进大家好，我是 Kaito。 这篇文章我想和你聊一聊 Redis 的架构演化之路。 .. - 掘金](https://juejin.cn/post/6925284711296155655) (大佬文章，需要好好读一读)
 * [Segmented, Paged and Virtual Memory - YouTube](https://youtu.be/p9yZNLeOj4s?si=CVjlC-nsjzwapib6)
 * [Redis为什么变慢了？常见延迟问题定位与分析Redis作为内存数据库，拥有非常高的性能，单个实例的QPS能够达到10W - 掘金](https://juejin.cn/post/6893396349648273422)
+* [云数据库Tair（兼容Redis®）\_高性能内存数据库\_多线程并发处理\_数据库-阿里云](https://www.aliyun.com/product/tair?spm=a2c4g.11174283.0.0.69ab3629gWxzMZ)
+* [云数据库 Tair（兼容 Redis®）(Tair)-阿里云帮助中心](https://help.aliyun.com/zh/redis/?spm=5176.29637306.J_AHgvE-XDhTWrtotIBlDQQ.9.1ba955b1Lp5oKb)

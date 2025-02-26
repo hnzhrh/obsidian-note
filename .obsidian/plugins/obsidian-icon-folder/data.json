@@ -6,6 +6,8 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasExclamation",
+      "FabChrome",
       "🦁",
       "LiNotebook"
     ],
@@ -31,5 +33,7 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "fleet-notes": "LiNotebook"
+  "fleet-notes": "FasExclamation",
+  "literature-notes": "FabChrome",
+  "permanent-notes": "LiNotebook"
 }

@@ -4,22 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "51305ba502b46db5",
+        "id": "1493fc139b1dddc5",
         "type": "tabs",
         "children": [
           {
-            "id": "c9ba35956821858d",
+            "id": "92171ef5457d876b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/algorithm/动态规划.md",
+                "file": "fleet-notes/rta/Redis记录.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "动态规划"
+              "title": "Redis记录"
+            }
+          },
+          {
+            "id": "cadec37039f0169b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-shcedule 资料.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ebay-pipeline-shcedule 资料"
+            }
+          },
+          {
+            "id": "a20dd2f52b4ae2e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-scheduler 设计.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "ebay-pipeline-scheduler 设计"
             }
           }
         ]
@@ -41,7 +71,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -53,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "resume",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,10 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fleet-notes/algorithm/滑动窗口.md"
+                "file": "fleet-notes/rta/Redis记录.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 滑动窗口"
+              "title": "Outline of Redis记录"
             }
           },
           {
@@ -186,48 +220,49 @@
       "quickadd:QuickAdd": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-git:Open Git source control": false,
-      "card-board:CardBoard": false,
-      "media-extended:Open media": false
+      "media-extended:Open media": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "c9ba35956821858d",
+  "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "fleet-notes/algorithm/滑动窗口.md",
-    "fleet-notes/algorithm/动态规划.md",
-    "fleet-notes/algorithm/二分查找.md",
-    "fleet-notes/algorithm/归并排序.md",
-    "fleet-notes/algorithm/算法的本质.md",
-    "fleet-notes/algorithm/链表遍历.md",
-    "fleet-notes/algorithm/数组遍历.md",
-    "fleet-notes/algorithm/二叉树遍历.md",
-    "fleet-notes/algorithm/二叉树实现方式.md",
-    "fleet-notes/algorithm/N 叉树遍历.md",
-    "permanent-notes/tools/Dash 快捷键.md",
-    "permanent-notes/tools/Visual Studio Code 快捷键.md",
-    "fleet-notes/algorithm/Perfect-binary-tree.md",
-    "fleet-notes/algorithm/Full-binary-tree.md",
-    "fleet-notes/algorithm/Complete-binary-tree.md",
-    "fleet-notes/algorithm/Binary-search-tree.md",
-    "fleet-notes/algorithm/Balance-binary-tree.md",
-    "fleet-notes/algorithm/二叉树.md",
-    "fleet-notes/algorithm/二叉树类型.md",
-    "permanent-notes/System-design-terminology.md",
+    "literature-notes/扫码登录的原理  Authing 文档.md",
+    "literature-notes/轻量级分布式任务调度平台(二、XXL-JOB环境搭建集成springboot).md",
+    "literature-notes/轻量级分布式任务调度平台(一、 XXL-JOB介绍、原理、工作流程).md",
+    "literature-notes/解决数据库逻辑删除与唯一索引冲突的几种思路.md",
+    "literature-notes/Java 定时任务详解.md",
+    "fleet-notes/如何设计一个定时调度系统？.md",
+    "obsidian-config/template/uml-sequence.md",
+    "fleet-notes/Web3.0 了解.md",
+    "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-shcedule 资料.md",
+    "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-scheduler 设计.md",
+    "obsidian-config/template/uml-mindmap.md",
+    "permanent-notes/solution/solution index.md",
+    "permanent-notes/solution",
+    "permanent-notes/redis-bak/Redis持久化机制.md",
+    "permanent-notes/redis-bak/Redis单机升级集群方案.md",
+    "permanent-notes/redis/Redis.md",
+    "obsidian-config/template/permanent-note-template.md",
+    "obsidian-config/template/literature-note-template.md",
     "fleet-notes/redis/Redis-List.md",
-    "fleet-notes/redis/Redis数据类型.md",
-    "daily-log/2025-01-14.md",
-    "fleet-notes/algorithm/Full binary tree.md",
-    "permanent-notes/math/等比数列.md",
-    "fleet-notes/algorithm/二叉树的性质.md",
-    "permanent-notes/math",
-    "fleet-notes/math",
-    "permanent-notes/docker",
-    "fleet-notes/algorithm",
-    "fleet-notes/git",
-    "permanent-notes/tools",
+    "literature-notes/逻辑删除引起的唯一键索引问题.md",
+    "obsidian-config/template/fleet-note-template.md",
+    "literature-notes/mysql",
+    "literature-notes/知乎专栏.md",
+    "fleet-notes/git/Git操作.md",
+    "Excalidraw/RTA-event-storming.excelidraw.md",
+    "permanent-notes/rta/RTA-epic-advertise-strategy.md",
+    "permanent-notes/rta/RTA-用户流程图.md",
+    "permanent-notes/rta/RTA-idea.md",
+    "literature-notes/redis",
+    "literature-notes",
+    "fleet-notes/llm",
+    "permanent-notes/mysql",
+    "mindmaps/RTA.xmind",
     "mindmaps/Question.xmind",
-    "permanent-notes/redis",
-    "fleet-notes/java",
+    "mindmaps/Redis.xmind",
     "mindmaps/MySQL.xmind",
+    "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",
     "projects/archetype-generator/未命名.canvas",
