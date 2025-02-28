@@ -4,52 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1493fc139b1dddc5",
+        "id": "6d79441d7f7e023b",
         "type": "tabs",
         "children": [
           {
-            "id": "92171ef5457d876b",
+            "id": "5ed6beaa345bab4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet-notes/rta/Redis记录.md",
+                "file": "permanent-notes/system-design/HTTP 连接池.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Redis记录"
-            }
-          },
-          {
-            "id": "cadec37039f0169b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-shcedule 资料.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ebay-pipeline-shcedule 资料"
-            }
-          },
-          {
-            "id": "a20dd2f52b4ae2e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-scheduler 设计.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ebay-pipeline-scheduler 设计"
+              "title": "HTTP 连接池"
             }
           }
         ]
@@ -84,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "resume",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fleet-notes/redis/Redis-String.md",
+                "file": "permanent-notes/system-design/HTTP 连接池.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis-String"
+              "title": "Backlinks for HTTP 连接池"
             }
           },
           {
@@ -144,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fleet-notes/redis/Redis-String.md",
+                "file": "permanent-notes/system-design/HTTP 连接池.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Redis-String"
+              "title": "Outgoing links from HTTP 连接池"
             }
           },
           {
@@ -171,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fleet-notes/rta/Redis记录.md",
+                "file": "permanent-notes/system-design/HTTP 连接池.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis记录"
+              "title": "Outline of HTTP 连接池"
             }
           },
           {
@@ -186,8 +156,8 @@
             "state": {
               "type": "dictionary-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "quote-glyph",
+              "title": "Dictionary"
             }
           },
           {
@@ -205,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 496.5
+    "width": 327.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,50 +188,50 @@
       "zk-prefixer:Create new unique note": false,
       "obsidian-kanban:Create new board": false,
       "quickadd:QuickAdd": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-git:Open Git source control": false,
       "media-extended:Open media": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "card-board:CardBoard": false
     }
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "literature-notes/扫码登录的原理  Authing 文档.md",
-    "literature-notes/轻量级分布式任务调度平台(二、XXL-JOB环境搭建集成springboot).md",
+    "literature-notes/Tomcat HTTP 配置.md",
+    "permanent-notes/system-design/HTTP 连接池.md",
+    "literature-notes/Spring Boot Tomcat 配置.md",
+    "permanent-notes/system-design/System Design Index.md",
+    "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md",
+    "permanent-notes/rta/RTA 架构设计.md",
+    "literature-notes/Tomcat NIO vs WebFlux.md",
+    "obsidian-config/template/literature-note-template.md",
+    "obsidian-config/template/permanent-note-template.md",
+    "obsidian-config/template/kanban-note-template.md",
+    "permanent-notes/system-design/Untitled.md",
+    "permanent-notes/rta/RTA Nginx 配置.md",
+    "literature-notes/Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区.md",
+    "permanent-notes/rta/RTA.md",
+    "permanent-notes/rta/RTA Epic Experiment.md",
+    "permanent-notes/rta/RTA Idea.md",
+    "permanent-notes/rta/RTA 用户流程图.md",
+    "literature-notes/阿里云的vCPU和CPU有什么区别？-阿里云开发者社区.md",
     "literature-notes/轻量级分布式任务调度平台(一、 XXL-JOB介绍、原理、工作流程).md",
     "literature-notes/解决数据库逻辑删除与唯一索引冲突的几种思路.md",
-    "literature-notes/Java 定时任务详解.md",
-    "fleet-notes/如何设计一个定时调度系统？.md",
-    "obsidian-config/template/uml-sequence.md",
-    "fleet-notes/Web3.0 了解.md",
-    "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-shcedule 资料.md",
-    "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-scheduler 设计.md",
-    "obsidian-config/template/uml-mindmap.md",
+    "literature-notes/手把手教你写好技术文章【8K字长文】.md",
+    "literature-notes/字节三面：如何设计一个高并发系统.md",
+    "literature-notes/【高并发、高性能、高可用】系统设计经验.md",
+    "permanent-notes/System-design-terminology.md",
+    "literature-notes/“软件系统三高问题”高并发、高性能、高可用系统设计经验.md",
+    "permanent-notes/system-design",
     "permanent-notes/solution/solution index.md",
+    "fleet-notes/ai",
+    "fleet-notes/resume-diving",
     "permanent-notes/solution",
-    "permanent-notes/redis-bak/Redis持久化机制.md",
-    "permanent-notes/redis-bak/Redis单机升级集群方案.md",
-    "permanent-notes/redis/Redis.md",
-    "obsidian-config/template/permanent-note-template.md",
-    "obsidian-config/template/literature-note-template.md",
-    "fleet-notes/redis/Redis-List.md",
-    "literature-notes/逻辑删除引起的唯一键索引问题.md",
-    "obsidian-config/template/fleet-note-template.md",
     "literature-notes/mysql",
-    "literature-notes/知乎专栏.md",
-    "fleet-notes/git/Git操作.md",
-    "Excalidraw/RTA-event-storming.excelidraw.md",
-    "permanent-notes/rta/RTA-epic-advertise-strategy.md",
-    "permanent-notes/rta/RTA-用户流程图.md",
-    "permanent-notes/rta/RTA-idea.md",
     "literature-notes/redis",
     "literature-notes",
     "fleet-notes/llm",
     "permanent-notes/mysql",
     "mindmaps/RTA.xmind",
-    "mindmaps/Question.xmind",
-    "mindmaps/Redis.xmind",
-    "mindmaps/MySQL.xmind",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

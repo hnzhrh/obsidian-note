@@ -1,11 +1,11 @@
 ---
 title:
-  "{ title }": 
+  {{title}}
 tags:
   - literature-note
 date:
-  "{ date }": 
+  {{date}}
 time:
-  "{ time }": 
+  {{time}}
 aliases:
 ---
