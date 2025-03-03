@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/redis/Redis.md",
+                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Redis"
+              "title": "RTA Redis 数据存储容量优化"
             }
           },
           {
@@ -28,25 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature-notes/云音乐RTA投放与承接系统建设实践.md",
+                "file": "fleet-notes/redis/Redis数据类型.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "云音乐RTA投放与承接系统建设实践"
-            }
-          },
-          {
-            "id": "4f549e8a48df3624",
-            "type": "leaf",
-            "state": {
-              "type": "xmind-viewer",
-              "state": {
-                "file": "mindmaps/系统设计.xmind"
-              },
-              "icon": "brain",
-              "title": "XMind view: 系统设计"
+              "title": "Redis数据类型"
             }
           },
           {
@@ -64,8 +52,7 @@
               "title": "Redis记录"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mindmaps/系统设计.xmind",
+                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +135,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 系统设计"
+              "title": "Backlinks for RTA Redis 数据存储容量优化"
             }
           },
           {
@@ -157,12 +144,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mindmaps/系统设计.xmind",
+                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 系统设计"
+              "title": "Outgoing links from RTA Redis 数据存储容量优化"
             }
           },
           {
@@ -184,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mindmaps/系统设计.xmind",
+                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 系统设计"
+              "title": "Outline of RTA Redis 数据存储容量优化"
             }
           },
           {
@@ -237,8 +224,21 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "590f536789e8a136",
   "lastOpenFiles": [
+    "permanent-notes/rta/RTA.md",
+    "permanent-notes/redis/Redis.md",
+    "permanent-notes/redis/Redis listpack 编码.md",
+    "fleet-notes/redis/Redis数据类型.md",
+    "fleet-notes/redis/Redis共享对象.md",
+    "fleet-notes/redis/Redis-listpack编码.md",
+    "literature-notes/云音乐RTA投放与承接系统建设实践.md",
+    "fleet-notes/rta/Redis记录.md",
+    "fleet-notes/redis/Redis-Set.md",
+    "fleet-notes/redis/Redis-String.md",
+    "fleet-notes/redis/Redis-hash编码方式.md",
+    "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+    "mindmaps/系统设计.xmind",
     "Excalidraw/redis-embstr.excelidraw.md",
     "Excalidraw/redis-ziplist.excalidraw.md",
     "Excalidraw/RTA-event-storming.excelidraw.md",
@@ -246,13 +246,6 @@
     "literature-notes/Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区.md",
     "literature-notes/017.Redis Cluster请求路由原理-待完善-腾讯云开发者社区-腾讯云.md",
     "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
-    "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
-    "permanent-notes/rta/RTA.md",
-    "fleet-notes/rta/Redis记录.md",
-    "fleet-notes/redis/Redis-hash编码方式.md",
-    "permanent-notes/redis/Redis.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
-    "literature-notes/云音乐RTA投放与承接系统建设实践.md",
     "permanent-notes/redis/Redis配置和部署.md",
     "permanent-notes/redis/Redis 内存存储优化方案.md",
     "permanent-notes/redis-bak/Redis.md",
@@ -260,12 +253,6 @@
     "permanent-notes/rta/RTA DDD Design.md",
     "permanent-notes/rta/RTA 架构设计.md",
     "literature-notes/Spring Boot HTTP 性能优化配置方案.md",
-    "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md",
-    "permanent-notes/rta/RTA Idea.md",
-    "permanent-notes/rta/RTA 用户流程图.md",
-    "permanent-notes/rta/Untitled.md",
-    "permanent-notes/redis-bak/swap导致的性能下降.md",
-    "mindmaps/系统设计.xmind",
     "fleet-notes/spring-boot",
     "permanent-notes/spring-boot",
     "permanent-notes/system-design",

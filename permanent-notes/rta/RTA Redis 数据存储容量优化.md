@@ -28,3 +28,4 @@ aliases:
 * [云音乐RTA投放与承接系统建设实践](云音乐RTA投放与承接系统建设实践.md)
 * [使用info命令查看Redis 实例状态](使用info命令查看Redis%20实例状态.md)
 * [06 \| 从ziplist到quicklist，再到listpack的启发-Redis源码剖析与实战-极客时间](https://time.geekbang.org/column/article/405387)
+* [Redis listpack 编码](Redis%20listpack%20编码.md
