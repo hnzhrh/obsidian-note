@@ -1,12 +1,9 @@
 ---
-title:
-  Spring Boot Tomcat 配置
+title: Spring Boot HTTP 性能优化配置方案
 tags:
   - literature-note
-date:
-  2025-02-28
-time:
-  19:11
+date: 2025-02-28
+time: 19:11
 aliases:
 ---
 以下是针对 Spring Boot 3. X 的 HTTP 性能优化配置方案，适配新版本特性并满足 **RT=1 s、QPS=4000** 的要求：
