@@ -1,24 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "System Design Index",
-      "path": "permanent-notes/system-design/System Design Index.md"
+      "basename": "Redis Object Encoding ZIPLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding QUICKLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding LISTPACK",
+      "path": "permanent-notes/redis/Redis Object Encoding LISTPACK.md"
+    },
+    {
+      "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
+      "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
+    },
+    {
+      "basename": "Redis-listpack编码",
+      "path": "fleet-notes/redis/Redis-listpack编码.md"
     },
     {
       "basename": "Redis",
       "path": "permanent-notes/redis/Redis.md"
     },
     {
-      "basename": "手把手教你写好技术文章【8K字长文】",
-      "path": "literature-notes/手把手教你写好技术文章【8K字长文】.md"
+      "basename": "2025-03-04T134757+0800-Java NIO浅析",
+      "path": "literature-notes/2025-03-04T134757+0800-Java NIO浅析.md"
     },
     {
-      "basename": "HTTP 连接池",
-      "path": "permanent-notes/system-design/HTTP 连接池.md"
+      "basename": "2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客",
+      "path": "literature-notes/2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客.md"
     },
     {
-      "basename": "负载均衡",
-      "path": "permanent-notes/system-design/负载均衡.md"
+      "basename": "Redis 数据对象之 List",
+      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
+    },
+    {
+      "basename": "Redis 数据对象之 String",
+      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
+    },
+    {
+      "basename": "System Design Index",
+      "path": "permanent-notes/system-design/System Design Index.md"
     },
     {
       "basename": "Nginx",
@@ -27,6 +51,18 @@
     {
       "basename": "Nginx 性能优化配置",
       "path": "permanent-notes/nginx/Nginx 性能优化配置.md"
+    },
+    {
+      "basename": "负载均衡",
+      "path": "permanent-notes/system-design/负载均衡.md"
+    },
+    {
+      "basename": "手把手教你写好技术文章【8K字长文】",
+      "path": "literature-notes/手把手教你写好技术文章【8K字长文】.md"
+    },
+    {
+      "basename": "HTTP 连接池",
+      "path": "permanent-notes/system-design/HTTP 连接池.md"
     },
     {
       "basename": "RTA Nginx 配置",

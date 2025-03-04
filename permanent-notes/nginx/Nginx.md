@@ -21,3 +21,11 @@ aliases:
 # 4 Reference
 * [nginx](https://nginx.org/)
 * [Nginx学习笔记 \| Nginx学习笔记](https://skyao.io/learning-nginx/docs.html)
+* [Nginx使用教程(二)：Nginx配置性能优化之worker配置 - 大数据从业者FelixZh - 博客园](https://www.cnblogs.com/felixzh/p/6283816.html)
+* 教程
+	* [GitHub - dunwu/nginx-tutorial: 这是一个 Nginx 极简教程，目的在于帮助新手快速入门 Nginx。](https://github.com/dunwu/nginx-tutorial)
+	* [GitHub - taobao/nginx-book: Nginx开发从入门到精通](https://github.com/taobao/nginx-book)
+	* [GitHub - trimstray/nginx-admins-handbook: How to improve NGINX performance, security, and other important things.](https://github.com/trimstray/nginx-admins-handbook)
+* 工具
+	* [Fetching Title#qca9](https://github.com/0xJacky/nginx-ui)
+	* [GitHub - schenkd/nginx-ui: Nginx UI allows you to access and modify the nginx configurations files without cli.](https://github.com/schenkd/nginx-ui)

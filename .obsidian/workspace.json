@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/system-design/System Design Index.md",
+                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "System Design Index"
+              "title": "Redis Object Encoding ZIPLIST"
             }
           }
         ]
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/system-design/System Design Index.md",
+                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for System Design Index"
+              "title": "Backlinks for Redis Object Encoding ZIPLIST"
             }
           },
           {
@@ -124,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/system-design/System Design Index.md",
+                "file": "permanent-notes/nginx/Nginx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from System Design Index"
+              "title": "Outgoing links from Nginx"
             }
           },
           {
@@ -151,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/system-design/System Design Index.md",
+                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of System Design Index"
+              "title": "Outline of Redis Object Encoding ZIPLIST"
             }
           },
           {
@@ -206,13 +206,23 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
+    "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
+    "permanent-notes/redis/Redis Object Encoding LISTPACK.md",
+    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "fleet-notes/redis/Redis-listpack编码.md",
     "permanent-notes/redis/Redis.md",
-    "literature-notes/手把手教你写好技术文章【8K字长文】.md",
-    "permanent-notes/system-design/HTTP 连接池.md",
+    "literature-notes/2025-03-04T134757+0800-Java NIO浅析.md",
+    "literature-notes/2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客.md",
+    "permanent-notes/redis/Redis 数据对象之 List.md",
+    "permanent-notes/redis/Redis 数据对象之 String.md",
     "permanent-notes/system-design/System Design Index.md",
-    "permanent-notes/system-design/负载均衡.md",
     "permanent-notes/nginx/Nginx.md",
     "permanent-notes/nginx/Nginx 性能优化配置.md",
+    "fleet-notes/rta/Redis记录.md",
+    "permanent-notes/system-design/负载均衡.md",
+    "literature-notes/手把手教你写好技术文章【8K字长文】.md",
+    "permanent-notes/system-design/HTTP 连接池.md",
     "permanent-notes/rta/RTA Nginx 配置.md",
     "permanent-notes/linux/ulimit 命令.md",
     "literature-notes/【高并发、高性能、高可用】系统设计经验.md",
@@ -224,16 +234,6 @@
     "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
     "permanent-notes/rta/RTA 架构设计.md",
     "permanent-notes/rta/RTA.md",
-    "permanent-notes/rta/RTA DDD Design.md",
-    "literature-notes/云音乐RTA投放与承接系统建设实践.md",
-    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
-    "fleet-notes/redis/Redis-dict.md",
-    "fleet-notes/redis/Redis-hash编码方式.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
-    "permanent-notes/redis/Redis持久化机制.md",
-    "permanent-notes/redis/Redis 数据对象之 String.md",
-    "permanent-notes/redis/Redis 数据对象之 List.md",
-    "permanent-notes/redis/Redis 对象.md",
     "mindmaps/Redis 数据对象和编码.xmind",
     "mindmaps/系统设计.xmind",
     "fleet-notes/spring-boot",

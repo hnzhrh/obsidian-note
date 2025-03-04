@@ -55,7 +55,7 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
   
 ## 3.5 Redis Object Encoding LINKEDLIST  
   
-## 3.6 Redis Object Encoding ZIPLIST  
+## 3.6 [[Redis Object Encoding ZIPLIST]]  
   
 ## 3.7 Redis Object Encoding INTSET  
   
@@ -63,18 +63,16 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
   
 ## 3.9 Redis Object Encoding EMBSTR  
   
-## 3.10 Redis Object Encoding QUICKLIST  
+## 3.10 [[Redis Object Encoding QUICKLIST]]  
   
 ## 3.11 Redis Object Encoding STREAM  
   
-## 3.12 Redis Object Encoding LISTPACK  
+## 3.12 [[Redis Object Encoding LISTPACK]]  
   
 ## 3.13 Redis Object Encoding LISTPACK_EX
 
 # 4 Redis 数据对象和其编码实现的关系
-
 ![Redis 数据对象和编码.png](https://images.hnzhrh.com/note/Redis%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%BC%96%E7%A0%81.png)
-
 # 5 References
 
 

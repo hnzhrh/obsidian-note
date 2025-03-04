@@ -15,14 +15,14 @@ aliases:
 
  > 某些核心功能是怎么运作的？怎么实现的？源码分析
 
-### [[Redis 有哪些数据类型？各自的实现是怎样的？]]
-## 2.1 Redis 需不需要绑定 CPU 核心？
+## 2.1 [[Redis 有哪些数据类型？各自的实现是怎样的？]]
+## 2.2 Redis 需不需要绑定 CPU 核心？
  
-## 2.2 [Redis持久化机制](Redis持久化机制.md)
+## 2.3 [Redis持久化机制](Redis持久化机制.md)
  
-## 2.3 Redis Cluster
+## 2.4 Redis Cluster
  
-### 2.3.1 Redis Cluster 客户端查找 Key 的路由过程
+### 2.4.1 Redis Cluster 客户端查找 Key 的路由过程
  
 # 3 问题排查
 
@@ -37,3 +37,6 @@ aliases:
 
 
 # 5 Reference
+* [Redis - The Real-time Data Platform](https://redis.io/)
+* [Redis configuration file example.](https://raw.githubusercontent.com/redis/redis/7.2/redis.conf)
+* [Redis 最佳设计 Top 9 \| 张金铭的博客](https://www.zjmeow.com/archives/redis-best-design)
