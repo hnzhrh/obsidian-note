@@ -8,9 +8,11 @@ date: 2025-02-28
 time: 17:55
 aliases:
 ---
+RTA Nginx 配置使用 [Nginx 性能优化配置](Nginx%20性能优化配置.md)。
 
+# 配置前后端长连接
+
+通过配置前后端长连接避免大量的 `5XX` 错误和过多 `TIME_WAIT` 状态的连接。
 
 # Reference
-* [ChatGPT - Nginx 高性能配置](https://chatgpt.com/share/67c18b67-d7f4-8009-a636-bcb46d509343)
 * [nginx反向代理时保持长连接-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/1832932)
-* [Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区](Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区.md)

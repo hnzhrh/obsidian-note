@@ -31,10 +31,11 @@ Redis 数据预热接口，主要目的是为了避免 ASK 和 MOV 请求。
 
 ## 6.3 数据压缩
 
-# 7 其他优化
+# 7 其他优化的未来展望
 * 使用原生高并发的语言，比如 Golang
 * 不使用 Tomcat，使用 Undertow，实际测试下来 Undertow 表现略微好一些
-* 
+* 使用 WebFlux + Lettuce 响应式编程
+* 直接结合 Nginx 旁路缓存调用 Lua 脚本
 
 # 8 Reference
 * [System Design Index](System%20Design%20Index.md)

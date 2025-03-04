@@ -4,52 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6d79441d7f7e023b",
+        "id": "c5f673f7e6d6e463",
         "type": "tabs",
         "children": [
           {
-            "id": "590f536789e8a136",
+            "id": "4ef41a8e959d7af3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+                "file": "permanent-notes/system-design/System Design Index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "RTA Redis 数据存储容量优化"
-            }
-          },
-          {
-            "id": "4db718b89091574d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/redis/Redis数据类型.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis数据类型"
-            }
-          },
-          {
-            "id": "0db4b6498ebc9484",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet-notes/rta/Redis记录.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis记录"
+              "title": "System Design Index"
             }
           }
         ]
@@ -84,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hash-max",
+                "query": "net.ipv4.tcp_tw_recycle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,6 +73,16 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "9b820a14c66d1e8e",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -125,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+                "file": "permanent-notes/system-design/System Design Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for RTA Redis 数据存储容量优化"
+              "title": "Backlinks for System Design Index"
             }
           },
           {
@@ -144,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+                "file": "permanent-notes/system-design/System Design Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from RTA Redis 数据存储容量优化"
+              "title": "Outgoing links from System Design Index"
             }
           },
           {
@@ -171,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+                "file": "permanent-notes/system-design/System Design Index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RTA Redis 数据存储容量优化"
+              "title": "Outline of System Design Index"
             }
           },
           {
@@ -224,44 +204,44 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "590f536789e8a136",
+  "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/rta/RTA.md",
     "permanent-notes/redis/Redis.md",
-    "permanent-notes/redis/Redis listpack 编码.md",
-    "fleet-notes/redis/Redis数据类型.md",
-    "fleet-notes/redis/Redis共享对象.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
-    "literature-notes/云音乐RTA投放与承接系统建设实践.md",
-    "fleet-notes/rta/Redis记录.md",
-    "fleet-notes/redis/Redis-Set.md",
-    "fleet-notes/redis/Redis-String.md",
-    "fleet-notes/redis/Redis-hash编码方式.md",
-    "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
-    "mindmaps/系统设计.xmind",
-    "Excalidraw/redis-embstr.excelidraw.md",
-    "Excalidraw/redis-ziplist.excalidraw.md",
-    "Excalidraw/RTA-event-storming.excelidraw.md",
+    "literature-notes/手把手教你写好技术文章【8K字长文】.md",
+    "permanent-notes/system-design/HTTP 连接池.md",
+    "permanent-notes/system-design/System Design Index.md",
+    "permanent-notes/system-design/负载均衡.md",
+    "permanent-notes/nginx/Nginx.md",
+    "permanent-notes/nginx/Nginx 性能优化配置.md",
     "permanent-notes/rta/RTA Nginx 配置.md",
-    "literature-notes/Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区.md",
-    "literature-notes/017.Redis Cluster请求路由原理-待完善-腾讯云开发者社区-腾讯云.md",
-    "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
-    "permanent-notes/redis/Redis配置和部署.md",
-    "permanent-notes/redis/Redis 内存存储优化方案.md",
-    "permanent-notes/redis-bak/Redis.md",
-    "permanent-notes/redis/Redis持久化机制.md",
-    "permanent-notes/rta/RTA DDD Design.md",
+    "permanent-notes/linux/ulimit 命令.md",
+    "literature-notes/【高并发、高性能、高可用】系统设计经验.md",
+    "permanent-notes/linux",
+    "permanent-notes/nginx",
+    "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md",
+    "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
+    "permanent-notes/redis-bak/Redis内存满了怎么办？.md",
+    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
     "permanent-notes/rta/RTA 架构设计.md",
-    "literature-notes/Spring Boot HTTP 性能优化配置方案.md",
+    "permanent-notes/rta/RTA.md",
+    "permanent-notes/rta/RTA DDD Design.md",
+    "literature-notes/云音乐RTA投放与承接系统建设实践.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "fleet-notes/redis/Redis-dict.md",
+    "fleet-notes/redis/Redis-hash编码方式.md",
+    "fleet-notes/redis/Redis-listpack编码.md",
+    "permanent-notes/redis/Redis持久化机制.md",
+    "permanent-notes/redis/Redis 数据对象之 String.md",
+    "permanent-notes/redis/Redis 数据对象之 List.md",
+    "permanent-notes/redis/Redis 对象.md",
+    "mindmaps/Redis 数据对象和编码.xmind",
+    "mindmaps/系统设计.xmind",
     "fleet-notes/spring-boot",
     "permanent-notes/spring-boot",
     "permanent-notes/system-design",
     "fleet-notes/ai",
     "fleet-notes/resume-diving",
     "permanent-notes/solution",
-    "literature-notes/mysql",
-    "literature-notes/redis",
-    "literature-notes",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

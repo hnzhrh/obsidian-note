@@ -1,46 +1,42 @@
 ---
-title: Redis-String
+title: Redis 数据对象之 String
 tags:
-  - fleet-note
+  - permanent-note
   - middleware/redis/data-object
-date: 2024-11-25
-time: 13:41
+date: 2025-03-04
+time: 08:48
 aliases:
+  - Redis String Object
 ---
+# 1 为什么不使用 char 数组？
+
 为什么 Redis 不直接使用 `char*` 呢？
 
 `char*` 的不足：
-- 操作效率低：获取长度需遍历，`O(N)`复杂度
+- 操作效率低：获取长度需遍历，`O(N)` 复杂度
 - 二进制不安全：无法存储包含 `\0` 的数据
 
 SDS 的优势：
-- 操作效率高：获取长度无需遍历，`O(1)`复杂度
+- 操作效率高：获取长度无需遍历，`O(1)` 复杂度
 - 二进制安全：因单独记录长度字段，所以可存储包含 `\0` 的数据
 - 兼容 C 字符串函数，可直接使用字符串 API
 
 Redis String 类型有三种编码方式：
-```plantuml
-@startmindmap
-!theme cerulean
-
-* String
-	* INT
-	* EMBSTR
-	* RAW
-	
-@endmindmap
-```
-# `INT` 编码
+* INT 
+* EMBSTR
+* RAW
+# 2 `INT` 编码
 
 Redis 如果发现存入的值是整数，则会使用 `INT` 编码，可能会使用到 [Redis共享对象](Redis共享对象)。使用整数时，直接将 redisObject 的 ptr 指针赋值为整数值即可。
 
 源码可参考方法 `createStringObjectFromLongLongWithOptions`
-# `EMBSTR` 编码
+# 3 `EMBSTR` 编码
 
 当字符串长度小于等于 44（`OBJ_ENCODING_EMBSTR_SIZE_LIMIT`） 时，会创建 `EMBSTR` 的 String 类型，redisObject 对象和 sds 对象一起分配，这种编码方式内存更加紧凑。
 
 ![image.png](https://images.hnzhrh.com/note/20241210222742.png)
 `EMBSTR` 为只读字符串，当发生了修改，会变更为 `RAW` 编码。这里需要注意 `SET` 一个已有的值属于新建，而不属于修改。
+
 ```shell
 127.0.0.1:6379> set name erpang
 OK
@@ -57,7 +53,7 @@ OK
 127.0.0.1:6379> 
 ```
 
-# `RAW` 编码
+# 4 `RAW` 编码
 
 当 `EMBSTR` 编码的字符串被修改、大于 44 字节的字符串且不是整数（在最大范围之内），则会使用 `RAW` 编码。
 
@@ -66,7 +62,7 @@ OK
 ![image.png](https://images.hnzhrh.com/note/20241212141849.png)
 
 
-# `SDS` 数据结构
+# 5 `SDS` 数据结构
 
 Redis 没有使用 C 的字符串作为 Redis 字符串的实现，而是使用了 `SDS` 的数据结构，Simple Dynamic Sring。
 
@@ -99,7 +95,7 @@ struct __attribute__ ((__packed__)) sdshdr8 {
 * 内存空间预分配可以减少内存分配次数，但同时也带来了内存碎片的问题
 * 兼容 Linux C 字符串函数
 
-## 预留空间分配逻辑
+## 5.1 预留空间分配逻辑
 
 当需要扩容时，Redis 在给 SDS 分配内存时会采用预留空间机制，具体来说当字符串大小小于 `SDS_MAX_PREALLOC` （`#define SDS_MAX_PREALLOC (1024*1024)` 1 M）时分配两倍，大于 `SDS_MAX_PREALLOC` 分配 `SDS_MAX_PREALLOC` 大小。
 
@@ -136,11 +132,10 @@ void trimStringObjectIfNeeded(robj *o, int trim_small_values) {
 
 ![image.png](https://images.hnzhrh.com/note/20241212170515.png)
 
-# References
+# 6 References
 * [How is the memory usage for the key-value calculated? · redis/redis · Discussion #13677 · GitHub](https://github.com/redis/redis/discussions/13677)
 * [Analyzing Redis Source Code: Simple Dynamic Strings (SDS) – An Efficient and Flexible String Implementation \| Johnson Lin](https://www.linjiangxiong.com/2024/09/10/analyzing-redis-source-code-sds/index.html)
 * [🚀深入理解redis的简单动态字符串（SDS）🚀Redis是一款流行的高性能键值存储数据库，而简单动态字符串SDS是 - 掘金](https://juejin.cn/post/7304183129896173568)
 * [Redis Strings \| Docs](https://redis.io/docs/latest/develop/data-types/strings/)
 * [Redis源码-String：Redis String命令、Redis String存储原理、Redis String三种编码类型、Redis字符串SDS源码解析、Redis String应用场景\_redis的string存储原理-CSDN博客](https://blog.csdn.net/qq_41929714/article/details/126060599)
 * [04 \| 内存友好的数据结构该如何细化设计？-Redis源码剖析与实战-极客时间](https://time.geekbang.org/column/article/402223)
-* 
