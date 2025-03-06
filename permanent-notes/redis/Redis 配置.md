@@ -1,5 +1,5 @@
 ---
-title: Redis配置和部署
+title: Redis配置
 tags:
   - permanent-note
   - middleware/redis/ops
@@ -8,7 +8,7 @@ time: 18:26
 aliases:
 ---
 
-# 内存管理
+# 1 内存管理
 
 ```config
 # Set a memory usage limit to the specified amount of bytes.
@@ -123,7 +123,7 @@ aliases:
 # active-expire-effort 1
 ```
 
-# 内存碎片管理
+# 2 内存碎片管理
 
 ```config
 ########################### ACTIVE DEFRAGMENTATION #######################
@@ -226,7 +226,7 @@ jemalloc-bg-thread yes
 # ignore-warnings ARM64-COW-BUG
 ```
 
-# 内存 Snapshot
+# 3 内存 Snapshot
 
 ```c
 ################################ SNAPSHOTTING ################################
@@ -325,7 +325,7 @@ dir ./
 
 ```
 
-# AOF
+# 4 AOF
 
 ```c
 ############################## APPEND ONLY MODE ###############################
@@ -490,7 +490,7 @@ aof-use-rdb-preamble yes
 aof-timestamp-enabled no
 ```
 
-# 主从复制
+# 5 主从复制
 
 ```c
 ################################# REPLICATION #################################
@@ -810,8 +810,6 @@ replica-priority 100
 
 ```
 
-
-# 配置文件
-# Reference
+# 6 Reference
 * [Redis configuration \| Docs](https://redis.io/docs/latest/operate/oss_and_stack/management/config/)
 * [Redis configuration file example \| Docs](https://redis.io/docs/latest/operate/oss_and_stack/management/config-file/)

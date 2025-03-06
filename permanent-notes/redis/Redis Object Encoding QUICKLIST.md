@@ -2,7 +2,7 @@
 title: Redis Object Encoding QUICKLIST
 tags:
   - permanent-note
-  - middleware/redis/data-object
+  - middleware/redis/data-object-encoding
 date: 2025-03-04
 time: 14:03
 aliases:
@@ -10,7 +10,22 @@ aliases:
 
 # QUICKLIST 结构
 
-QUICKLIST 实际上就是一个双向链表，链表中的每一个节点都是一个 ZIPLIST，如此当发生连锁更新时，只会影响到一个 ZIPLIST 节点。
+Redis 3.2 版本引入QUICKLIST，实际上就是一个双向链表，链表中的每一个节点都是一个 ZIPLIST，如此当发生连锁更新时，只会影响到一个 ZIPLIST 节点。
+
+Redis 5.0 版本引入 LISTPACK，直到 7.0 版本，QUICKLIST 的节点都替换成了 LISTPACK。
+
+# QUICKLIST 优势
+
+1. **内存高效**
+    - 每个 `QUICKLIST` 节点是一个 `ziplist` 或者 `listpack`，存储多个元素，减少指针的内存开销（例如存储 1000 个小元素时，内存占用显著降低）。
+    - 通过配置 `list-max-ziplist-size` 或者`list-max-listpack-size`，可以控制每个节点的大小，优化内存与性能的平衡。    
+2. **高性能操作**
+    - **两端操作高效**：`LPUSH` / `RPOP` 等操作直接作用于头尾的 `ziplist` 或者 `listpack` 节点，时间复杂度接近 O(1)。  
+    - **中间操作优化**：通过限制单个节点的大小，减少插入/删除元素时的数据移动量，避免全量拷贝。
+3. **减少内存碎片**
+    - `QUICKLIST` 的节点是较大的连续内存块（`ziplist` 或者 `listpack`），相比 `linkedlist` 频繁分配小内存节点，更利于内存管理。
+4. **灵活性与可配置性**
+    - 支持压缩中间节点（通过 `list-compress-depth` 配置），进一步节省内存，适合读多写少的场景。
 
 # 相关源码
 

@@ -7,7 +7,7 @@ date: 2025-03-04
 time: 08:41
 aliases:
 ---
-# Redis 对象的结构
+# 1 Redis 对象的结构
 
 Redis 对象结构如下：
 
@@ -31,9 +31,9 @@ struct redisObject {
 * 4 bytes refcount
 * 8 bytes 指针
 
-# 字段解释
+# 2 字段解释
 
-## Type 字段
+## 2.1 Type 字段
 
 Type 为对象类型，encoding 为 Redis 为了存储空间、性能做了权衡的优化。
 
@@ -67,7 +67,7 @@ Type 为对象类型，encoding 为 Redis 为了存储空间、性能做了权�
 #define OBJ_TYPE_MAX 7  /* Maximum number of object types */
 ```
 
-## Encoding 字段
+## 2.2 Encoding 字段
 
 Redis 为了性能考虑，一种数据对象可以使用多种编码方式进行实现，该字段指定了对象的实现方式。
 
@@ -90,7 +90,7 @@ Redis 为了性能考虑，一种数据对象可以使用多种编码方式进�
 #define OBJ_ENCODING_LISTPACK_EX 12 /* Encoded as listpack, extended with metadata */
 ```
 
-## Refcount 字段
+## 2.3 Refcount 字段
 
 其中的 `refcount` 字段用于引用计数（Reference Counting），它是一个重要的内存管理和对象生命周期控制机制。
 
@@ -115,8 +115,8 @@ Refcount 有几个特殊值：
 	- **作用**：定义了特殊 `refcount` 值的起始点。
 	- **说明**：这是一个辅助宏，用来标识从哪个值开始，`refcount` 应该被视为具有特殊含义，而不是普通的引用计数值。这有助于 Redis 在检查 `refcount` 时快速判断对象是否属于上述特殊情况之一。
 
-## Ptr 指针
+## 2.4 Ptr 指针
 
 指向具体数据的地址。
 
-# Reference
+# 3 Reference

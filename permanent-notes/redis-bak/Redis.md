@@ -19,8 +19,8 @@ aliases:
 
 * [[Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？]]
 * [[Redis内存满了怎么办？]]
-* [[Redis配置和部署]]
-* [Redis持久化机制](Redis持久化机制.md)
+* [[Redis 配置]]
+* [Redis 持久化机制](Redis%20持久化机制.md)
 * [[Redis 如何保证系统高可靠？]]
 * [Redis单机升级集群方案](Redis单机升级集群方案.md)
 

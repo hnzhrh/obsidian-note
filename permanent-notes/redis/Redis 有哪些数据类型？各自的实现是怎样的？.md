@@ -45,9 +45,9 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
 
 某些 Redis 数据对象（比如 String、Hash 等）根据数据长度和数据量而采用不同的数据结构，称为数据对象编码方式，Redis 数据对象编码有以下几种：
 
-## 3.1 Redis Object Encoding RAW  
+## 3.1 [[Redis Object Encoding RAW]]  
   
-## 3.2 Redis Object Encoding INT  
+## 3.2 [[Redis Object Encoding INT]]  
   
 ## 3.3 Redis Object Encoding HT  
   
@@ -61,7 +61,7 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
   
 ## 3.8 Redis Object Encoding SKIPLIST  
   
-## 3.9 Redis Object Encoding EMBSTR  
+## 3.9 [[Redis Object Encoding EMBSTR ]] 
   
 ## 3.10 [[Redis Object Encoding QUICKLIST]]  
   

@@ -8,21 +8,52 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4ef41a8e959d7af3",
+            "id": "53dc8ad7a86aa836",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+                "file": "permanent-notes/redis/Redis 配置.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Redis Object Encoding ZIPLIST"
+              "title": "Redis 配置"
+            }
+          },
+          {
+            "id": "04389e672754176a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Redis 内存碎片问题"
+            }
+          },
+          {
+            "id": "49224a49be476d8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "操作系统透明大页（THP）对 Redis 有什么影响？"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "net.ipv4.tcp_tw_recycle",
+                "query": "tag:middleware/redis/data-object",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +146,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis Object Encoding ZIPLIST"
+              "title": "Backlinks for Redis 内存碎片问题"
             }
           },
           {
@@ -124,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/nginx/Nginx.md",
+                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Nginx"
+              "title": "Outgoing links from Redis 内存碎片问题"
             }
           },
           {
@@ -151,13 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis Object Encoding ZIPLIST"
+              "title": "Outline of Redis 内存碎片问题"
             }
           },
           {
@@ -206,42 +237,42 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
-    "permanent-notes/redis/Redis Object Encoding LISTPACK.md",
-    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
-    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
+    "permanent-notes/redis/Redis 内存满了怎么办？.md",
+    "permanent-notes/redis-bak/Redis内存满了怎么办？.md",
+    "permanent-notes/redis/Redis 配置.md",
+    "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
     "permanent-notes/redis/Redis.md",
-    "literature-notes/2025-03-04T134757+0800-Java NIO浅析.md",
-    "literature-notes/2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客.md",
+    "permanent-notes/redis/Redis 内存碎片问题.md",
+    "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
+    "mindmaps/Redis 内存淘汰策略.xmind",
+    "mindmaps/Redis 持久化机制.xmind",
+    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
+    "permanent-notes/redis-bak/Redis单机升级集群方案.md",
+    "permanent-notes/redis-bak/Redis有哪些数据类型可以使用？.md",
+    "permanent-notes/redis-bak/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md",
+    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+    "permanent-notes/redis/Redis 持久化机制.md",
+    "fleet-notes/redis/Redis-rdb.md",
+    "permanent-notes/redis/Redis Object Encoding RAW.md",
+    "permanent-notes/nginx/Nginx 性能优化配置.md",
+    "literature-notes/2025-03-04T171923+0800-用最简单的方式带你走进写时复制技术.md",
+    "permanent-notes/operating-system/写时复制 COW 机制.md",
+    "permanent-notes/operating-system",
+    "permanent-notes/redis-bak/swap导致的性能下降.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "permanent-notes/redis/Redis 对象.md",
+    "permanent-notes/redis-bak/Redis.md",
+    "permanent-notes/redis/Redis Object Encoding EMBSTR.md",
+    "permanent-notes/redis/Redis Object Encoding INT.md",
     "permanent-notes/redis/Redis 数据对象之 List.md",
     "permanent-notes/redis/Redis 数据对象之 String.md",
-    "permanent-notes/system-design/System Design Index.md",
-    "permanent-notes/nginx/Nginx.md",
-    "permanent-notes/nginx/Nginx 性能优化配置.md",
-    "fleet-notes/rta/Redis记录.md",
-    "permanent-notes/system-design/负载均衡.md",
-    "literature-notes/手把手教你写好技术文章【8K字长文】.md",
-    "permanent-notes/system-design/HTTP 连接池.md",
-    "permanent-notes/rta/RTA Nginx 配置.md",
-    "permanent-notes/linux/ulimit 命令.md",
-    "literature-notes/【高并发、高性能、高可用】系统设计经验.md",
     "permanent-notes/linux",
     "permanent-notes/nginx",
-    "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md",
-    "permanent-notes/rta/RTA Redis 数据存储容量优化.md",
-    "permanent-notes/redis-bak/Redis内存满了怎么办？.md",
-    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
-    "permanent-notes/rta/RTA 架构设计.md",
-    "permanent-notes/rta/RTA.md",
     "mindmaps/Redis 数据对象和编码.xmind",
     "mindmaps/系统设计.xmind",
     "fleet-notes/spring-boot",
     "permanent-notes/spring-boot",
     "permanent-notes/system-design",
-    "fleet-notes/ai",
-    "fleet-notes/resume-diving",
-    "permanent-notes/solution",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

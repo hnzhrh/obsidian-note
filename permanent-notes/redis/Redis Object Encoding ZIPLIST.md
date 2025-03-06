@@ -2,7 +2,7 @@
 title: Redis Object Encoding ZIPLIST
 tags:
   - permanent-note
-  - middleware/redis/data-object
+  - middleware/redis/data-object-encoding
 date: 2025-03-04
 time: 13:22
 aliases:
@@ -26,15 +26,12 @@ aliases:
 * `<prevlen> <encoding>` , 对于小整数，可以不使用 `<entry-data>` 部分
 
 其中 `<prevlen>` 部分可能是 1 Byte 也可能是 5 Bytes，取决于前一个 `entry` 的大小，当前一个 `entry` 大小大于等于 254 时，使用 `0xFE + 4 Bytes len` 来标记。
+
 ![image.png](https://images.hnzhrh.com/note/20241214155939.png)
 
 # 3 连锁更新问题
 
 `<prevlen>` 的存在可能会引起连锁更新问题，假设多个 `entry` 大小都在 253，如果第一个变更了内容，`prelen` 从 1 Byte 膨胀到了 5 Bytes，之后的多个连续 `entry` 恰好都需要膨胀，则会出现连锁更新问题。
-
-Redis 3.2 版本引入了 [Redis Object Encoding QUICKLIST](Redis%20Object%20Encoding%20QUICKLIST.md) 编码方式降低连锁更新的影响。
-Redis 5.0 版本引入了 [Redis Object Encoding LISTPACK](Redis%20Object%20Encoding%20LISTPACK.md) 编码方式解决了连锁更新。
-Redis 7.0 版本彻底废除了 ZIPLIST 编码方式。
 
 # 4 各种类型的编码具体参考注释 
 
