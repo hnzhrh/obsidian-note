@@ -8,6 +8,7 @@ date:
 time:
   {{time}}
 aliases:
+done: false
 ---
 
 

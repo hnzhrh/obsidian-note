@@ -4,56 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c5f673f7e6d6e463",
+        "id": "01fc80932de2df2a",
         "type": "tabs",
         "children": [
           {
-            "id": "53dc8ad7a86aa836",
+            "id": "c117d5a50379965c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "permanent-notes/redis/Redis 配置.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Redis 配置"
-            }
-          },
-          {
-            "id": "04389e672754176a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis 内存碎片问题"
-            }
-          },
-          {
-            "id": "49224a49be476d8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "操作系统透明大页（THP）对 Redis 有什么影响？"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:middleware/redis/data-object",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +109,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis 内存碎片问题"
+              "title": "Backlinks"
             }
           },
           {
@@ -155,12 +118,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Redis 内存碎片问题"
+              "title": "Outgoing links"
             }
           },
           {
@@ -182,13 +144,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/redis/Redis 内存碎片问题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis 内存碎片问题"
+              "title": "Outline"
             }
           },
           {
@@ -237,42 +198,42 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/redis/Redis 内存满了怎么办？.md",
-    "permanent-notes/redis-bak/Redis内存满了怎么办？.md",
-    "permanent-notes/redis/Redis 配置.md",
-    "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
+    "Excalidraw/Drawing 2025-03-08 22.07.30.excalidraw.md",
+    "permanent-notes/redis/Redis 主从复制.md",
+    "Excalidraw/redis-ziplist-entry.excalidraw.md",
+    "permanent-notes/ai/AI 提示词.md",
+    "permanent-notes/ai",
     "permanent-notes/redis/Redis.md",
-    "permanent-notes/redis/Redis 内存碎片问题.md",
+    "obsidian-config/template/permanent-note-template.md",
+    "permanent-notes/redis/Redis 内存满了怎么办？.md",
+    "obsidian-config/template/fleet-note-template.md",
+    "obsidian-config/template/literature-note-template.md",
+    "permanent-notes/redis/Redis 配置.md",
+    "obsidian-config/template/daily-note-template.md",
+    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
+    "permanent-notes/redis/Redis Object Encoding HT.md",
+    "permanent-notes/redis/Redis Big Keys 问题.md",
     "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
+    "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+    "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
+    "permanent-notes/redis/Redis 数据对象之 String.md",
+    "permanent-notes/redis/Redis 数据对象之 List.md",
+    "fleet-notes/redis/Redis-Set.md",
+    "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
+    "fleet-notes/redis/Redis Cluster 对 Lua 脚本和事务的影响.md",
+    "fleet-notes/redis/Lettuce连接池.md",
+    "literature-notes/2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）.md",
+    "permanent-notes/distributed-system-design",
     "mindmaps/Redis 内存淘汰策略.xmind",
     "mindmaps/Redis 持久化机制.xmind",
-    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
-    "permanent-notes/redis-bak/Redis单机升级集群方案.md",
-    "permanent-notes/redis-bak/Redis有哪些数据类型可以使用？.md",
-    "permanent-notes/redis-bak/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md",
-    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
-    "permanent-notes/redis/Redis 持久化机制.md",
-    "fleet-notes/redis/Redis-rdb.md",
-    "permanent-notes/redis/Redis Object Encoding RAW.md",
-    "permanent-notes/nginx/Nginx 性能优化配置.md",
-    "literature-notes/2025-03-04T171923+0800-用最简单的方式带你走进写时复制技术.md",
-    "permanent-notes/operating-system/写时复制 COW 机制.md",
     "permanent-notes/operating-system",
-    "permanent-notes/redis-bak/swap导致的性能下降.md",
-    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
-    "permanent-notes/redis/Redis 对象.md",
-    "permanent-notes/redis-bak/Redis.md",
-    "permanent-notes/redis/Redis Object Encoding EMBSTR.md",
-    "permanent-notes/redis/Redis Object Encoding INT.md",
-    "permanent-notes/redis/Redis 数据对象之 List.md",
-    "permanent-notes/redis/Redis 数据对象之 String.md",
     "permanent-notes/linux",
     "permanent-notes/nginx",
     "mindmaps/Redis 数据对象和编码.xmind",
     "mindmaps/系统设计.xmind",
     "fleet-notes/spring-boot",
-    "permanent-notes/spring-boot",
-    "permanent-notes/system-design",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

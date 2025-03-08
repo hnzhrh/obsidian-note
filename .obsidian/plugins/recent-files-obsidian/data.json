@@ -1,56 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "Redis 内存碎片问题",
-      "path": "permanent-notes/redis/Redis 内存碎片问题.md"
+      "basename": "Redis 主从复制",
+      "path": "permanent-notes/redis/Redis 主从复制.md"
     },
     {
-      "basename": "Redis 内存满了怎么办？",
-      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
+      "basename": "redis-ziplist-entry.excalidraw",
+      "path": "Excalidraw/redis-ziplist-entry.excalidraw.md"
     },
     {
-      "basename": "Redis内存满了怎么办？",
-      "path": "permanent-notes/redis-bak/Redis内存满了怎么办？.md"
-    },
-    {
-      "basename": "Redis 配置",
-      "path": "permanent-notes/redis/Redis 配置.md"
-    },
-    {
-      "basename": "操作系统透明大页（THP）对 Redis 有什么影响？",
-      "path": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md"
+      "basename": "AI 提示词",
+      "path": "permanent-notes/ai/AI 提示词.md"
     },
     {
       "basename": "Redis",
       "path": "permanent-notes/redis/Redis.md"
     },
     {
-      "basename": "使用info命令查看Redis 实例状态",
-      "path": "permanent-notes/redis/使用info命令查看Redis 实例状态.md"
+      "basename": "permanent-note-template",
+      "path": "obsidian-config/template/permanent-note-template.md"
+    },
+    {
+      "basename": "Redis 内存满了怎么办？",
+      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
+    },
+    {
+      "basename": "fleet-note-template",
+      "path": "obsidian-config/template/fleet-note-template.md"
+    },
+    {
+      "basename": "literature-note-template",
+      "path": "obsidian-config/template/literature-note-template.md"
+    },
+    {
+      "basename": "Redis 配置",
+      "path": "permanent-notes/redis/Redis 配置.md"
+    },
+    {
+      "basename": "daily-note-template",
+      "path": "obsidian-config/template/daily-note-template.md"
     },
     {
       "basename": "Redis 如何保证系统高可靠？",
       "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
     },
     {
-      "basename": "Redis单机升级集群方案",
-      "path": "permanent-notes/redis-bak/Redis单机升级集群方案.md"
+      "basename": "Redis Object Encoding HT",
+      "path": "permanent-notes/redis/Redis Object Encoding HT.md"
     },
     {
-      "basename": "Redis有哪些数据类型可以使用？",
-      "path": "permanent-notes/redis-bak/Redis有哪些数据类型可以使用？.md"
+      "basename": "Redis Big Keys 问题",
+      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
     },
     {
-      "basename": "Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？",
-      "path": "permanent-notes/redis-bak/Redis有哪些数据结构？为了性能考虑Redis做了哪些优化？.md"
+      "basename": "使用info命令查看Redis 实例状态",
+      "path": "permanent-notes/redis/使用info命令查看Redis 实例状态.md"
+    },
+    {
+      "basename": "Redis Object Encoding LINKEDLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md"
+    },
+    {
+      "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
+      "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
     },
     {
       "basename": "Redis Object Encoding ZIPLIST",
       "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
     },
     {
+      "basename": "Redis Object Encoding QUICKLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
+    },
+    {
+      "basename": "Redis 数据对象之 String",
+      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
+    },
+    {
+      "basename": "Redis 数据对象之 List",
+      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
+    },
+    {
+      "basename": "Redis-Set",
+      "path": "fleet-notes/redis/Redis-Set.md"
+    },
+    {
+      "basename": "操作系统透明大页（THP）对 Redis 有什么影响？",
+      "path": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md"
+    },
+    {
+      "basename": "Redis Cluster 对 Lua 脚本和事务的影响",
+      "path": "fleet-notes/redis/Redis Cluster 对 Lua 脚本和事务的影响.md"
+    },
+    {
+      "basename": "Lettuce连接池",
+      "path": "fleet-notes/redis/Lettuce连接池.md"
+    },
+    {
+      "basename": "2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）",
+      "path": "literature-notes/2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）.md"
+    },
+    {
+      "basename": "2025-03-06T172029+0800-云原生时代，分布式系统设计必备知识图谱（内含22个知识点）",
+      "path": "literature-notes/2025-03-06T172029+0800-云原生时代，分布式系统设计必备知识图谱（内含22个知识点）.md"
+    },
+    {
+      "basename": "System Design Index",
+      "path": "permanent-notes/system-design/System Design Index.md"
+    },
+    {
+      "basename": "swap导致的性能下降",
+      "path": "permanent-notes/redis-bak/swap导致的性能下降.md"
+    },
+    {
+      "basename": "Redis单机升级集群方案",
+      "path": "permanent-notes/redis-bak/Redis单机升级集群方案.md"
+    },
+    {
       "basename": "Redis 持久化机制",
       "path": "permanent-notes/redis/Redis 持久化机制.md"
+    },
+    {
+      "basename": "vmstat 命令",
+      "path": "permanent-notes/linux/vmstat 命令.md"
+    },
+    {
+      "basename": "RTA 是如何做到高并发、高性能的？",
+      "path": "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md"
+    },
+    {
+      "basename": "RTA",
+      "path": "permanent-notes/rta/RTA.md"
+    },
+    {
+      "basename": "Redis 性能优化之绑定 CPU",
+      "path": "permanent-notes/redis/Redis 性能优化之绑定 CPU.md"
+    },
+    {
+      "basename": "获取 Redis 进程号",
+      "path": "permanent-notes/redis/获取 Redis 进程号.md"
+    },
+    {
+      "basename": "Docker 容器绑定 CPU",
+      "path": "permanent-notes/docker/Docker 容器绑定 CPU.md"
+    },
+    {
+      "basename": "查看 CPU 信息",
+      "path": "permanent-notes/linux/查看 CPU 信息.md"
+    },
+    {
+      "basename": "ulimit 命令",
+      "path": "permanent-notes/linux/ulimit 命令.md"
+    },
+    {
+      "basename": "Redis 内存碎片问题",
+      "path": "permanent-notes/redis/Redis 内存碎片问题.md"
     },
     {
       "basename": "Redis Object Encoding RAW",
@@ -65,20 +169,8 @@
       "path": "literature-notes/2025-03-04T171923+0800-用最简单的方式带你走进写时复制技术.md"
     },
     {
-      "basename": "swap导致的性能下降",
-      "path": "permanent-notes/redis-bak/swap导致的性能下降.md"
-    },
-    {
-      "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
-      "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
-    },
-    {
       "basename": "Redis 对象",
       "path": "permanent-notes/redis/Redis 对象.md"
-    },
-    {
-      "basename": "Redis",
-      "path": "permanent-notes/redis-bak/Redis.md"
     },
     {
       "basename": "Redis Object Encoding EMBSTR",
@@ -87,22 +179,6 @@
     {
       "basename": "Redis Object Encoding INT",
       "path": "permanent-notes/redis/Redis Object Encoding INT.md"
-    },
-    {
-      "basename": "Redis 数据对象之 List",
-      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
-    },
-    {
-      "basename": "Redis 数据对象之 String",
-      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
-    },
-    {
-      "basename": "Redis Object Encoding LINKEDLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md"
-    },
-    {
-      "basename": "Redis Object Encoding QUICKLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
     },
     {
       "basename": "Redis Object Encoding LISTPACK",
@@ -119,70 +195,6 @@
     {
       "basename": "redis-embstr.excelidraw",
       "path": "Excalidraw/redis-embstr.excelidraw.md"
-    },
-    {
-      "basename": "2025-03-04T134757+0800-Java NIO浅析",
-      "path": "literature-notes/2025-03-04T134757+0800-Java NIO浅析.md"
-    },
-    {
-      "basename": "2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客",
-      "path": "literature-notes/2025-03-04T124559+0800-Linux下5种IO模型以及阻塞非阻塞同步异步区别_请简要描述linux网络通讯编程中,异步模式,同步模式,阻塞式,非阻塞式之间的区别以-CSDN博客.md"
-    },
-    {
-      "basename": "System Design Index",
-      "path": "permanent-notes/system-design/System Design Index.md"
-    },
-    {
-      "basename": "Nginx",
-      "path": "permanent-notes/nginx/Nginx.md"
-    },
-    {
-      "basename": "负载均衡",
-      "path": "permanent-notes/system-design/负载均衡.md"
-    },
-    {
-      "basename": "手把手教你写好技术文章【8K字长文】",
-      "path": "literature-notes/手把手教你写好技术文章【8K字长文】.md"
-    },
-    {
-      "basename": "HTTP 连接池",
-      "path": "permanent-notes/system-design/HTTP 连接池.md"
-    },
-    {
-      "basename": "RTA Nginx 配置",
-      "path": "permanent-notes/rta/RTA Nginx 配置.md"
-    },
-    {
-      "basename": "ulimit 命令",
-      "path": "permanent-notes/linux/ulimit 命令.md"
-    },
-    {
-      "basename": "【高并发、高性能、高可用】系统设计经验",
-      "path": "literature-notes/【高并发、高性能、高可用】系统设计经验.md"
-    },
-    {
-      "basename": "RTA 是如何做到高并发、高性能的？",
-      "path": "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md"
-    },
-    {
-      "basename": "RTA Redis 数据存储容量优化",
-      "path": "permanent-notes/rta/RTA Redis 数据存储容量优化.md"
-    },
-    {
-      "basename": "RTA 架构设计",
-      "path": "permanent-notes/rta/RTA 架构设计.md"
-    },
-    {
-      "basename": "RTA",
-      "path": "permanent-notes/rta/RTA.md"
-    },
-    {
-      "basename": "RTA DDD Design",
-      "path": "permanent-notes/rta/RTA DDD Design.md"
-    },
-    {
-      "basename": "云音乐RTA投放与承接系统建设实践",
-      "path": "literature-notes/云音乐RTA投放与承接系统建设实践.md"
     }
   ],
   "omittedPaths": [],

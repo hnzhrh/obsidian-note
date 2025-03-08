@@ -4,10 +4,11 @@ title:
 tags:
   - fleet-note
 date:
-  {{date}}
+  {{daate}}
 time:
   {{time}}
 aliases:
+is_archie: false
 ---
 
 

@@ -88,3 +88,5 @@ aliases:
 	* [凤凰架构：构建可靠的大型分布式系统 \| 凤凰架构](https://icyfenix.cn/)
 	* [高并发系统设计40问\_高并发架构\_架构-极客时间](https://time.geekbang.org/column/intro/100035801)
 	* [高并发系统实战课\_高并发\_分布式\_性能\_系统改造\_老系统\_后端架构\_大数据\_微博\_服务端\_链路跟踪\_秒杀系统\_缓存\_一致性\_Raft\_RocksDB\_GPT-极客时间](https://time.geekbang.org/column/intro/100309001)
+* 工具
+	* [vmstat 命令](vmstat%20命令.md)

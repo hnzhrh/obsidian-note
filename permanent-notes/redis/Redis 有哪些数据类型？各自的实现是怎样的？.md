@@ -49,7 +49,7 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
   
 ## 3.2 [[Redis Object Encoding INT]]  
   
-## 3.3 Redis Object Encoding HT  
+## 3.3 [[Redis Object Encoding HT]]  
   
 ## 3.4 Redis Object Encoding ZIPMAP  
   
@@ -74,5 +74,5 @@ Redis Database 整体而言是一个巨大的哈希表，都是以 key-value 键
 # 4 Redis 数据对象和其编码实现的关系
 ![Redis 数据对象和编码.png](https://images.hnzhrh.com/note/Redis%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%BC%96%E7%A0%81.png)
 # 5 References
-
+* [Understand Redis data types \| Docs](https://redis.io/docs/latest/develop/data-types/)
 
