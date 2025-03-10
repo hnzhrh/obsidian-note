@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "01fc80932de2df2a",
+        "id": "35a73d42deadd1b6",
         "type": "tabs",
         "children": [
           {
-            "id": "c117d5a50379965c",
+            "id": "5037b89183119162",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -100,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "permanent-notes/redis/Redis 主从复制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +110,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Redis 主从复制"
             }
           },
           {
@@ -118,11 +119,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "permanent-notes/redis/Redis 主从复制.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Redis 主从复制"
             }
           },
           {
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "followCursor": false,
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -198,21 +200,26 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
+    "permanent-notes/redis/Redis 主从同步.md",
+    "permanent-notes/redis/Redis.md",
+    "permanent-notes/redis/Redis 主从复制草稿.md",
+    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
+    "literature-notes/2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux.md",
+    "literature-notes/2025-03-10T093833+0800-Redis主从复制.md",
+    "Excalidraw/redis-listpack.excelidraw.md",
+    "obsidian-config/template/uml-sequence.md",
+    "obsidian-config/template/permanent-note-template.md",
+    "permanent-notes/redis/Redis Big Keys 问题.md",
     "Excalidraw/Drawing 2025-03-08 22.07.30.excalidraw.md",
-    "permanent-notes/redis/Redis 主从复制.md",
     "Excalidraw/redis-ziplist-entry.excalidraw.md",
     "permanent-notes/ai/AI 提示词.md",
     "permanent-notes/ai",
-    "permanent-notes/redis/Redis.md",
-    "obsidian-config/template/permanent-note-template.md",
     "permanent-notes/redis/Redis 内存满了怎么办？.md",
     "obsidian-config/template/fleet-note-template.md",
     "obsidian-config/template/literature-note-template.md",
     "permanent-notes/redis/Redis 配置.md",
     "obsidian-config/template/daily-note-template.md",
-    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
     "permanent-notes/redis/Redis Object Encoding HT.md",
-    "permanent-notes/redis/Redis Big Keys 问题.md",
     "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
     "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md",
     "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
@@ -220,11 +227,6 @@
     "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
     "permanent-notes/redis/Redis 数据对象之 String.md",
     "permanent-notes/redis/Redis 数据对象之 List.md",
-    "fleet-notes/redis/Redis-Set.md",
-    "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md",
-    "fleet-notes/redis/Redis Cluster 对 Lua 脚本和事务的影响.md",
-    "fleet-notes/redis/Lettuce连接池.md",
-    "literature-notes/2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）.md",
     "permanent-notes/distributed-system-design",
     "mindmaps/Redis 内存淘汰策略.xmind",
     "mindmaps/Redis 持久化机制.xmind",

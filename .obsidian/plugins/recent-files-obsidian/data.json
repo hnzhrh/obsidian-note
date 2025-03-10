@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Redis 主从复制",
-      "path": "permanent-notes/redis/Redis 主从复制.md"
+      "basename": "Redis 主从同步",
+      "path": "permanent-notes/redis/Redis 主从同步.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "permanent-notes/redis/Redis.md"
+    },
+    {
+      "basename": "Redis 如何保证系统高可靠？",
+      "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
+    },
+    {
+      "basename": "2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux",
+      "path": "literature-notes/2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux.md"
+    },
+    {
+      "basename": "2025-03-10T093833+0800-Redis主从复制",
+      "path": "literature-notes/2025-03-10T093833+0800-Redis主从复制.md"
+    },
+    {
+      "basename": "redis-listpack.excelidraw",
+      "path": "Excalidraw/redis-listpack.excelidraw.md"
+    },
+    {
+      "basename": "uml-sequence",
+      "path": "obsidian-config/template/uml-sequence.md"
+    },
+    {
+      "basename": "permanent-note-template",
+      "path": "obsidian-config/template/permanent-note-template.md"
+    },
+    {
+      "basename": "Redis Big Keys 问题",
+      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
     },
     {
       "basename": "redis-ziplist-entry.excalidraw",
@@ -11,14 +43,6 @@
     {
       "basename": "AI 提示词",
       "path": "permanent-notes/ai/AI 提示词.md"
-    },
-    {
-      "basename": "Redis",
-      "path": "permanent-notes/redis/Redis.md"
-    },
-    {
-      "basename": "permanent-note-template",
-      "path": "obsidian-config/template/permanent-note-template.md"
     },
     {
       "basename": "Redis 内存满了怎么办？",
@@ -41,16 +65,8 @@
       "path": "obsidian-config/template/daily-note-template.md"
     },
     {
-      "basename": "Redis 如何保证系统高可靠？",
-      "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
-    },
-    {
       "basename": "Redis Object Encoding HT",
       "path": "permanent-notes/redis/Redis Object Encoding HT.md"
-    },
-    {
-      "basename": "Redis Big Keys 问题",
-      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
     },
     {
       "basename": "使用info命令查看Redis 实例状态",
@@ -179,22 +195,6 @@
     {
       "basename": "Redis Object Encoding INT",
       "path": "permanent-notes/redis/Redis Object Encoding INT.md"
-    },
-    {
-      "basename": "Redis Object Encoding LISTPACK",
-      "path": "permanent-notes/redis/Redis Object Encoding LISTPACK.md"
-    },
-    {
-      "basename": "redis-listpack.excelidraw",
-      "path": "Excalidraw/redis-listpack.excelidraw.md"
-    },
-    {
-      "basename": "Redis-listpack编码",
-      "path": "fleet-notes/redis/Redis-listpack编码.md"
-    },
-    {
-      "basename": "redis-embstr.excelidraw",
-      "path": "Excalidraw/redis-embstr.excelidraw.md"
     }
   ],
   "omittedPaths": [],

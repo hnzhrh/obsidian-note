@@ -1,12 +1,10 @@
-```plantuml
-@startuml
-autoactivate on
-participant BobB as Bob
+```mermaid
+sequenceDiagram
 
-Bob -> Alice:同步消息
-return yes
-Bob ->> Alice:异步消息
-Alice --> Bob: 返回消息
-@enduml
+
+Bob ->> Alice: 同步消息
+Bob -) Alice: 异步消息
+Alice -->> Bob: 返回消息
+
 ```
 
