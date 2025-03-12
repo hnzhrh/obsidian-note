@@ -1,16 +1,132 @@
 {
   "recentFiles": [
     {
+      "basename": "Redis 主从同步流程和版本演变",
+      "path": "permanent-notes/redis/Redis 主从同步流程和版本演变.md"
+    },
+    {
       "basename": "Redis 主从同步",
       "path": "permanent-notes/redis/Redis 主从同步.md"
+    },
+    {
+      "basename": "Redis 主从复制配置",
+      "path": "permanent-notes/redis/Redis 主从复制配置.md"
+    },
+    {
+      "basename": "Redis 如何保证系统高可靠？",
+      "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
+    },
+    {
+      "basename": "Redis 内存满了怎么办？",
+      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
     },
     {
       "basename": "Redis",
       "path": "permanent-notes/redis/Redis.md"
     },
     {
-      "basename": "Redis 如何保证系统高可靠？",
-      "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
+      "basename": "Redis 过期数据处理机制",
+      "path": "permanent-notes/redis/Redis 过期数据处理机制.md"
+    },
+    {
+      "basename": "Redis 有哪些缓冲区？各自有什么用？",
+      "path": "permanent-notes/redis/Redis 有哪些缓冲区？各自有什么用？.md"
+    },
+    {
+      "basename": "Redis 的 run id 和 replication id",
+      "path": "permanent-notes/redis/Redis 的 run id 和 replication id.md"
+    },
+    {
+      "basename": "Redis 主从同步全量同步策略有哪些？各自有什么优劣势？",
+      "path": "permanent-notes/redis/Redis 主从同步全量同步策略有哪些？各自有什么优劣势？.md"
+    },
+    {
+      "basename": "RTA 用户流程图",
+      "path": "permanent-notes/rta/RTA 用户流程图.md"
+    },
+    {
+      "basename": "Redis 主从数据不一致该怎么办？",
+      "path": "permanent-notes/redis/Redis 主从数据不一致该怎么办？.md"
+    },
+    {
+      "basename": "Redis 如何避免主从复制风暴？",
+      "path": "permanent-notes/redis/Redis 如何避免主从复制风暴？.md"
+    },
+    {
+      "basename": "2025-03-11T103416+0800-Redis主从复制原理及其演变  闫金钢的Blog",
+      "path": "literature-notes/2025-03-11T103416+0800-Redis主从复制原理及其演变  闫金钢的Blog.md"
+    },
+    {
+      "basename": "2025-03-11T102125+0800-9.1 什么是零拷贝？",
+      "path": "literature-notes/2025-03-11T102125+0800-9.1 什么是零拷贝？.md"
+    },
+    {
+      "basename": "Redis Master 和 Replica 如何处理过期数据？",
+      "path": "permanent-notes/redis/Redis Master 和 Replica 如何处理过期数据？.md"
+    },
+    {
+      "basename": "Redis Big Keys 问题",
+      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
+    },
+    {
+      "basename": "Redis 延迟删除机制",
+      "path": "permanent-notes/redis/Redis 延迟删除机制.md"
+    },
+    {
+      "basename": "Redis 数据对象之 String",
+      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
+    },
+    {
+      "basename": "Redis 数据对象之 List",
+      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
+    },
+    {
+      "basename": "Redis 持久化机制",
+      "path": "permanent-notes/redis/Redis 持久化机制.md"
+    },
+    {
+      "basename": "Redis 性能优化之绑定 CPU",
+      "path": "permanent-notes/redis/Redis 性能优化之绑定 CPU.md"
+    },
+    {
+      "basename": "Redis 对象",
+      "path": "permanent-notes/redis/Redis 对象.md"
+    },
+    {
+      "basename": "Redis 内存碎片问题",
+      "path": "permanent-notes/redis/Redis 内存碎片问题.md"
+    },
+    {
+      "basename": "Redis Object Encoding ZIPLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding LISTPACK",
+      "path": "permanent-notes/redis/Redis Object Encoding LISTPACK.md"
+    },
+    {
+      "basename": "Redis Object Encoding LINKEDLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding INT",
+      "path": "permanent-notes/redis/Redis Object Encoding INT.md"
+    },
+    {
+      "basename": "Redis Object Encoding QUICKLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding RAW",
+      "path": "permanent-notes/redis/Redis Object Encoding RAW.md"
+    },
+    {
+      "basename": "Redis Object Encoding EMBSTR",
+      "path": "permanent-notes/redis/Redis Object Encoding EMBSTR.md"
+    },
+    {
+      "basename": "操作系统透明大页（THP）对 Redis 有什么影响？",
+      "path": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md"
     },
     {
       "basename": "2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux",
@@ -33,20 +149,12 @@
       "path": "obsidian-config/template/permanent-note-template.md"
     },
     {
-      "basename": "Redis Big Keys 问题",
-      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
-    },
-    {
       "basename": "redis-ziplist-entry.excalidraw",
       "path": "Excalidraw/redis-ziplist-entry.excalidraw.md"
     },
     {
       "basename": "AI 提示词",
       "path": "permanent-notes/ai/AI 提示词.md"
-    },
-    {
-      "basename": "Redis 内存满了怎么办？",
-      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
     },
     {
       "basename": "fleet-note-template",
@@ -73,36 +181,12 @@
       "path": "permanent-notes/redis/使用info命令查看Redis 实例状态.md"
     },
     {
-      "basename": "Redis Object Encoding LINKEDLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md"
-    },
-    {
       "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
       "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
     },
     {
-      "basename": "Redis Object Encoding ZIPLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
-    },
-    {
-      "basename": "Redis Object Encoding QUICKLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
-    },
-    {
-      "basename": "Redis 数据对象之 String",
-      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
-    },
-    {
-      "basename": "Redis 数据对象之 List",
-      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
-    },
-    {
       "basename": "Redis-Set",
       "path": "fleet-notes/redis/Redis-Set.md"
-    },
-    {
-      "basename": "操作系统透明大页（THP）对 Redis 有什么影响？",
-      "path": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md"
     },
     {
       "basename": "Redis Cluster 对 Lua 脚本和事务的影响",
@@ -115,86 +199,6 @@
     {
       "basename": "2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）",
       "path": "literature-notes/2025-03-06T172127+0800-一文读懂分布式架构知识体系（内含超全核心知识大图）.md"
-    },
-    {
-      "basename": "2025-03-06T172029+0800-云原生时代，分布式系统设计必备知识图谱（内含22个知识点）",
-      "path": "literature-notes/2025-03-06T172029+0800-云原生时代，分布式系统设计必备知识图谱（内含22个知识点）.md"
-    },
-    {
-      "basename": "System Design Index",
-      "path": "permanent-notes/system-design/System Design Index.md"
-    },
-    {
-      "basename": "swap导致的性能下降",
-      "path": "permanent-notes/redis-bak/swap导致的性能下降.md"
-    },
-    {
-      "basename": "Redis单机升级集群方案",
-      "path": "permanent-notes/redis-bak/Redis单机升级集群方案.md"
-    },
-    {
-      "basename": "Redis 持久化机制",
-      "path": "permanent-notes/redis/Redis 持久化机制.md"
-    },
-    {
-      "basename": "vmstat 命令",
-      "path": "permanent-notes/linux/vmstat 命令.md"
-    },
-    {
-      "basename": "RTA 是如何做到高并发、高性能的？",
-      "path": "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md"
-    },
-    {
-      "basename": "RTA",
-      "path": "permanent-notes/rta/RTA.md"
-    },
-    {
-      "basename": "Redis 性能优化之绑定 CPU",
-      "path": "permanent-notes/redis/Redis 性能优化之绑定 CPU.md"
-    },
-    {
-      "basename": "获取 Redis 进程号",
-      "path": "permanent-notes/redis/获取 Redis 进程号.md"
-    },
-    {
-      "basename": "Docker 容器绑定 CPU",
-      "path": "permanent-notes/docker/Docker 容器绑定 CPU.md"
-    },
-    {
-      "basename": "查看 CPU 信息",
-      "path": "permanent-notes/linux/查看 CPU 信息.md"
-    },
-    {
-      "basename": "ulimit 命令",
-      "path": "permanent-notes/linux/ulimit 命令.md"
-    },
-    {
-      "basename": "Redis 内存碎片问题",
-      "path": "permanent-notes/redis/Redis 内存碎片问题.md"
-    },
-    {
-      "basename": "Redis Object Encoding RAW",
-      "path": "permanent-notes/redis/Redis Object Encoding RAW.md"
-    },
-    {
-      "basename": "Nginx 性能优化配置",
-      "path": "permanent-notes/nginx/Nginx 性能优化配置.md"
-    },
-    {
-      "basename": "2025-03-04T171923+0800-用最简单的方式带你走进写时复制技术",
-      "path": "literature-notes/2025-03-04T171923+0800-用最简单的方式带你走进写时复制技术.md"
-    },
-    {
-      "basename": "Redis 对象",
-      "path": "permanent-notes/redis/Redis 对象.md"
-    },
-    {
-      "basename": "Redis Object Encoding EMBSTR",
-      "path": "permanent-notes/redis/Redis Object Encoding EMBSTR.md"
-    },
-    {
-      "basename": "Redis Object Encoding INT",
-      "path": "permanent-notes/redis/Redis Object Encoding INT.md"
     }
   ],
   "omittedPaths": [],

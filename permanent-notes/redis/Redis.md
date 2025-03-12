@@ -18,12 +18,14 @@ aliases:
 ## 2.1 [[Redis 有哪些数据类型？各自的实现是怎样的？]]
 ## 2.2 [[Redis 性能优化之绑定 CPU]]
 ## 2.3 [Redis 持久化机制](Redis%20持久化机制.md)
-## 2.4 [[Redis 内存满了怎么办？]]
-## 2.5 [[Redis 内存碎片问题]]
-## 2.6 [[操作系统透明大页（THP）对 Redis 有什么影响？]]
-## 2.7 [Redis 主从同步](Redis%20主从同步.md)
-## 2.8 Redis Cluster
-### 2.8.1 Redis Cluster 客户端查找 Key 的路由过程
+## 2.4 [Redis 延迟删除机制](Redis%20延迟删除机制.md)
+## 2.5 [[Redis 过期数据处理机制]]
+## 2.6 [[Redis 内存满了怎么办？]]
+## 2.7 [[Redis 内存碎片问题]]
+## 2.8 [[操作系统透明大页（THP）对 Redis 有什么影响？]]
+## 2.9 [Redis 主从同步](Redis%20主从同步.md)
+## 2.10 Redis Cluster
+### 2.10.1 Redis Cluster 客户端查找 Key 的路由过程
 # 3 运维和问题排查
 ## 3.1 方法
 ### 3.1.1 [使用info命令查看Redis 实例状态](使用info命令查看Redis%20实例状态.md)

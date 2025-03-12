@@ -144,6 +144,7 @@ unsigned long LFUDecrAndReturn(robj *o) {
 * [How we diagnosed and resolved Redis latency spikes with BPF and other tools](https://about.gitlab.com/blog/2022/11/28/how-we-diagnosed-and-resolved-redis-latency-spikes/)
 * [redis的内存管理机制——过期键删除与内存淘汰本文内存管理的内容包括： 过期键的懒性删除和过期删除 内存溢出控制策略。 - 掘金](https://juejin.cn/post/7026901224171520013)
 * [20 \| 删除数据后，为什么内存占用率还是很高？-Redis核心技术与实战-极客时间](https://time.geekbang.org/column/article/289140)
+* [Redis 数据过期及数据淘汰机制深度剖析](https://time.geekbang.org/qconplus/detail/100110468)
 * 内存淘汰核心代码：
 	* [redis/src/evict.c at f364dcca2d8288dae95fffd3eba6f8b7ac6c01ee · redis/redis · GitHub](https://github.com/redis/redis/blob/f364dcca2d8288dae95fffd3eba6f8b7ac6c01ee/src/evict.c#L520)
 	* [redis/src/evict.c at f364dcca2d8288dae95fffd3eba6f8b7ac6c01ee · redis/redis · GitHub](https://github.com/redis/redis/blob/f364dcca2d8288dae95fffd3eba6f8b7ac6c01ee/src/evict.c#L103)
