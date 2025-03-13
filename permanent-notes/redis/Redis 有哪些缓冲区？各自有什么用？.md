@@ -10,104 +10,69 @@ done: false
 ---
 Redis 有以下几种缓冲区：
 
+* 客户端输出缓冲区
+* 客户端输入缓冲区
+* 主从同步-复制积压缓冲区
 
+# 客户端输出缓冲区
 
+Redis 配置文件中，明确了三种客户端输出缓冲区：
+* normal，比如 redis-cli 的 MONITOR 等命令的执行
+* replica，复制缓冲区，也就是常说的 `replicatino buffer`
+* pubsub，订阅缓冲区，需要给消费者推送消息的缓冲区
 
-# Deepseek
+配置：
 
-在 Redis 主从复制中，**复制缓冲区（Replication Buffer）** 是一个关键组件，它的作用、工作流程以及与 RDB 传输的配合如下：
+```properties
+# The syntax of every client-output-buffer-limit directive is the following:
+#
+# client-output-buffer-limit <class> <hard limit> <soft limit> <soft seconds>
+#
+# A client is immediately disconnected once the hard limit is reached, or if
+# the soft limit is reached and remains reached for the specified number of
+# seconds (continuously).
+# So for instance if the hard limit is 32 megabytes and the soft limit is
+# 16 megabytes / 10 seconds, the client will get disconnected immediately
+# if the size of the output buffers reach 32 megabytes, but will also get
+# disconnected if the client reaches 16 megabytes and continuously overcomes
+# the limit for 10 seconds.
+client-output-buffer-limit normal 0 0 0
+client-output-buffer-limit replica 256mb 64mb 60
+client-output-buffer-limit pubsub 32mb 8mb 60
+```
+## 客户端输出缓冲区溢出
 
----
+* normal，获取数据时 Value 过大导致客户端输出缓冲区溢出
+* 执行 `MONITOR` 命令持续写入缓冲区，长时间大流量导致最终 OOM
+* 主从同步生成 RDB 时，增量命令写入 replica buffer，可能导致溢出
 
-### **1. 复制缓冲区（Replication Buffer）是什么？**
-复制缓冲区是 **主节点内存中的一个临时队列**，用于存储主节点在生成 RDB 文件期间（全量同步）或增量同步期间接收到的 **写命令**。  
-- **本质**：一个固定大小的环形缓冲区（默认 `client-output-buffer-limit replica 256MB 64MB 60`）。  
-- **生命周期**：全量同步开始后创建，全量同步完成后持续用于增量同步。
+# 客户端输入缓冲区
 
----
+输入缓冲区就是用来缓存客户端发过来的命令的，客户端输入缓冲区可以通过执行命令 `client list` 进行查看:
 
-### **2. 复制缓冲区的作用**
-#### **(1) 保证全量同步期间的数据一致性**
-- **场景**：主节点生成 RDB 文件时（耗时操作），新的客户端写命令会继续被处理。  
-- **作用**：这些新写入的命令会被暂存到复制缓冲区，待 RDB 文件传输完成后，主节点将缓冲区中的命令发送给从节点，确保从节点加载完 RDB 后，能通过增量数据同步到最新状态。
+```shell
+id=8 addr=127.0.0.1:41572 laddr=127.0.0.1:6379 fd=11 name= age=9 idle=0 flags=N db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=26 qbuf-free=20448 argv-mem=10 multi-mem=0 rbs=1024 rbp=5 obl=0 oll=0 omem=0 tot-mem=22298 events=r cmd=client|list user=default redir=-1 resp=2
+```
 
-#### **(2) 支持增量同步**
-- **场景**：主从节点完成全量同步后，主节点会将所有后续的写命令实时发送给从节点。  
-- **作用**：复制缓冲区持续存储最近的写命令，若从节点短暂断开后重连，可以通过缓冲区快速恢复同步（前提是偏移量 `offset` 仍在缓冲区内）。
+* `cmd`，客户端最新执行的命令
+* `qbuf`，已使用空闲输入缓冲区大小
+* `qbuf-free`，空闲输入缓冲区大小
 
----
+详情：[使用 client list 命令查看客户端](使用%20client%20list%20命令查看客户端.md)
+## 客户端输入缓冲区溢出
+Redis 主从同步传输 RDB 结束后，Master 发送命令给 Replica 的输入缓冲区，此时 Replica 可能还在处理 RDB，如果并发写很大可能会导致 Replica 输入缓冲区溢出，关闭连接。
 
-### **3. RDB 生成与复制缓冲区的配合流程**
-#### **(1) 主节点生成 RDB 文件时**
-- **主节点行为**：  
-  1. 主节点调用 `fork()` 创建子进程生成 RDB 快照。  
-  2. **生成 RDB 期间**，主节点仍会处理客户端的新写命令。  
-  3. 这些新写命令会被写入 **复制缓冲区**，而不会直接发送给从节点。  
+客户端输入缓冲区大小无法更改～～～，所以避免输入缓冲区溢出只能从命令发送方和自身处理命令效率着手。
 
-- **RDB 传输策略**：  
-  - RDB 文件生成完成后，主节点通过 TCP 流式传输给从节点（**此时不发送复制缓冲区的命令**）。  
-  - **传输顺序**：先发送 RDB 文件，再发送复制缓冲区中的命令。
+# 复制积压缓冲区
 
-#### **(2) 从节点加载 RDB 文件时**
-- **从节点行为**：  
-  1. 从节点接收完 RDB 文件后，会清空自身旧数据，将 RDB 加载到内存（**阻塞操作**）。  
-  2. **加载期间**，从节点无法处理任何其他命令（包括主节点后续发送的增量命令）。  
+复制积压缓冲区，`replica backlog buffer`，环形缓冲区，用于主从部分同步，
+详情：[7 `repl-backlog-size 1mb`](Redis%20主从复制配置.md#7%20`repl-backlog-size%201mb`)
 
-- **主节点行为**：  
-  - 主节点在发送完 RDB 文件后，**立即开始发送复制缓冲区中的命令**（即使从节点仍在加载 RDB）。  
-  - 这些增量命令会被从节点的 **内核接收缓冲区（TCP Receive Buffer）** 暂存，直到从节点完成 RDB 加载后处理。
+# 共享缓冲区
 
----
-
-### **4. 从节点加载 RDB 期间如何处理增量命令？**
-#### **(1) 增量命令的暂存**
-- 主节点发送的增量命令会堆积在从节点的 **TCP 接收缓冲区**（操作系统内核维护）。  
-- **缓冲区大小限制**：受操作系统 TCP 缓冲区配置限制（可调整，但需避免内存耗尽）。
-
-#### **(2) 从节点加载 RDB 完成后的处理**
-1. 从节点完成 RDB 加载后，开始处理 **TCP 接收缓冲区** 中的增量命令。  
-2. 这些命令按顺序执行，确保从节点最终与主节点数据一致。  
-
-#### **(3) 潜在风险**
-- **缓冲区溢出**：如果从节点加载 RDB 时间过长，内核 TCP 接收缓冲区可能被填满，导致主节点停止发送数据（通过 TCP 流量控制）。  
-- **解决方案**：  
-  - 优化 RDB 生成速度（如减少数据集大小）。  
-  - 适当增大 TCP 缓冲区（需权衡内存占用）。
-
----
-
-### **5. 复制缓冲区的溢出处理**
-- **默认配置**：  
-  ```plaintext
-  client-output-buffer-limit replica 256MB 64MB 60
-  ```
-  - 含义：若缓冲区超过 `256MB`，或持续 `60 秒` 超过 `64MB`，主节点会断开从节点的连接。  
-
-- **溢出后果**：  
-  - 从节点需重新发起全量同步（`PSYNC` 失败，退化为 `SYNC`）。  
-  - 频繁溢出会导致主从同步不稳定。
-
----
-
-### **6. 总结：复制缓冲区与 RDB 传输的关系**
-| 阶段                | 主节点行为                                                                 | 从节点行为                                 |
-|---------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **生成 RDB 文件**   | 新写命令存入复制缓冲区，RDB 生成完成后传输给从节点。                               | 接收 RDB 文件，开始加载。                 |
-| **传输 RDB 文件**   | RDB 文件传输期间，复制缓冲区继续积累新命令。                                       | 接收 RDB 文件，暂存增量命令到内核缓冲区。  |
-| **加载 RDB 文件**   | 主节点开始发送复制缓冲区中的命令。                                               | 加载 RDB 期间，增量命令暂存在内核缓冲区。  |
-| **完成 RDB 加载**   | 持续发送后续增量命令。                                                       | 执行内核缓冲区中的命令，进入增量同步状态。 |
-
----
-
-### **7. 配置建议**
-1. **监控缓冲区大小**：通过 `INFO replication` 查看 `client_repl_buf` 和偏移量。  
-2. **调整缓冲区限制**：根据数据写入速率和网络状况，合理设置 `client-output-buffer-limit replica`。  
-3. **优化 RDB 生成**：减少 RDB 生成时间（如禁用 `save` 规则，使用 `repl-diskless-sync` 无盘复制）。  
-
----
-
-通过复制缓冲区，Redis 确保了全量同步期间的数据一致性，同时支持高效的增量同步。理解其机制有助于优化主从复制的稳定性和性能。
-
+Redis 7.0 进行了优化，针对输出缓冲区和复制积压缓冲区，`replica buffer` 和 `replica backlog buf`，多个 Replica 服务器实例的 `replica buffer` 共享一个，且主从复制的 `replica backlog buf` 也共享一个，减少了内存占用。
 # Reference
 *  [Redis缓冲区不会还有人不知道吧？-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2212515)
 * [后端 - 面试官：Redis中的缓冲区了解吗 - 七淅在学Java - SegmentFault 思否](https://segmentfault.com/a/1190000041572572)
+* [21 \| 缓冲区：一个可能引发“惨案”的地方-Redis核心技术与实战-极客时间](https://time.geekbang.org/column/article/291277)
