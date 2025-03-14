@@ -5,6 +5,170 @@
       "path": "permanent-notes/redis/Redis.md"
     },
     {
+      "basename": "Redis-内存命令",
+      "path": "fleet-notes/redis/Redis-内存命令.md"
+    },
+    {
+      "basename": "Redis-哨兵",
+      "path": "fleet-notes/redis/Redis-哨兵.md"
+    },
+    {
+      "basename": "Redis部署",
+      "path": "fleet-notes/redis/Redis部署.md"
+    },
+    {
+      "basename": "Redis index",
+      "path": "fleet-notes/redis/Redis index.md"
+    },
+    {
+      "basename": "Redis Object Encoding INTSET",
+      "path": "permanent-notes/redis/Redis Object Encoding INTSET.md"
+    },
+    {
+      "basename": "Redis Object Encoding HT",
+      "path": "permanent-notes/redis/Redis Object Encoding HT.md"
+    },
+    {
+      "basename": "Redis 数据对象之 Hash",
+      "path": "permanent-notes/redis/Redis 数据对象之 Hash.md"
+    },
+    {
+      "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
+      "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
+    },
+    {
+      "basename": "Redis Object Encoding QUICKLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
+    },
+    {
+      "basename": "Redis 数据对象之 Set",
+      "path": "permanent-notes/redis/Redis 数据对象之 Set.md"
+    },
+    {
+      "basename": "Redis 数据对象之 Zset",
+      "path": "permanent-notes/redis/Redis 数据对象之 Zset.md"
+    },
+    {
+      "basename": "Redis共享对象",
+      "path": "fleet-notes/redis/Redis共享对象.md"
+    },
+    {
+      "basename": "Redis-listpack编码",
+      "path": "fleet-notes/redis/Redis-listpack编码.md"
+    },
+    {
+      "basename": "Redis-IO模型",
+      "path": "fleet-notes/redis/Redis-IO模型.md"
+    },
+    {
+      "basename": "Lettuce连接池",
+      "path": "fleet-notes/redis/Lettuce连接池.md"
+    },
+    {
+      "basename": "Redis 支持同步复制吗？",
+      "path": "fleet-notes/redis/Redis 支持同步复制吗？.md"
+    },
+    {
+      "basename": "Redis-dict",
+      "path": "fleet-notes/redis/Redis-dict.md"
+    },
+    {
+      "basename": "Redis Object Encoding SKIPLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding SKIPLIST.md"
+    },
+    {
+      "basename": "Redis Object Encoding ZIPLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
+    },
+    {
+      "basename": "Redis 数据对象之 String",
+      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
+    },
+    {
+      "basename": "Redis Object Encoding RAW",
+      "path": "permanent-notes/redis/Redis Object Encoding RAW.md"
+    },
+    {
+      "basename": "permanent-note-template",
+      "path": "obsidian-config/template/permanent-note-template.md"
+    },
+    {
+      "basename": "Redis 数据对象之 List",
+      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
+    },
+    {
+      "basename": "AI 提示词",
+      "path": "permanent-notes/ai/AI 提示词.md"
+    },
+    {
+      "basename": "MCP",
+      "path": "fleet-notes/ai/MCP.md"
+    },
+    {
+      "basename": "fleet-note-template",
+      "path": "obsidian-config/template/fleet-note-template.md"
+    },
+    {
+      "basename": "literature-note-template",
+      "path": "obsidian-config/template/literature-note-template.md"
+    },
+    {
+      "basename": "daily-note-template",
+      "path": "obsidian-config/template/daily-note-template.md"
+    },
+    {
+      "basename": "Dify 和 LangChain",
+      "path": "fleet-notes/ai/Dify 和 LangChain.md"
+    },
+    {
+      "basename": "LLM API 对接",
+      "path": "permanent-notes/ai/LLM API 对接.md"
+    },
+    {
+      "basename": "Redis Object Encoding EMBSTR",
+      "path": "permanent-notes/redis/Redis Object Encoding EMBSTR.md"
+    },
+    {
+      "basename": "MySQL",
+      "path": "permanent-notes/mysql/MySQL.md"
+    },
+    {
+      "basename": "MySQL 的锁机制",
+      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
+    },
+    {
+      "basename": "MySQL 的日志",
+      "path": "permanent-notes/mysql/MySQL 的日志.md"
+    },
+    {
+      "basename": "MySQL 事务",
+      "path": "permanent-notes/mysql/MySQL 事务.md"
+    },
+    {
+      "basename": "MySQL 索引",
+      "path": "permanent-notes/mysql/MySQL 索引.md"
+    },
+    {
+      "basename": "MySQL-索引",
+      "path": "fleet-notes/mysql/MySQL-索引.md"
+    },
+    {
+      "basename": "Redis Big Keys 问题",
+      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
+    },
+    {
+      "basename": "Redis 主从同步",
+      "path": "permanent-notes/redis/Redis 主从同步.md"
+    },
+    {
+      "basename": "RTA 架构设计",
+      "path": "permanent-notes/rta/RTA 架构设计.md"
+    },
+    {
+      "basename": "Redis 哨兵机制",
+      "path": "permanent-notes/redis/Redis 哨兵机制.md"
+    },
+    {
       "basename": "Redis 的 run id 和 replication id",
       "path": "permanent-notes/redis/Redis 的 run id 和 replication id.md"
     },
@@ -19,186 +183,6 @@
     {
       "basename": "异构数据导入 Redis",
       "path": "permanent-notes/redis/异构数据导入 Redis.md"
-    },
-    {
-      "basename": "Redis 性能优化之绑定 CPU",
-      "path": "permanent-notes/redis/Redis 性能优化之绑定 CPU.md"
-    },
-    {
-      "basename": "使用info命令查看Redis 实例状态",
-      "path": "permanent-notes/redis/使用info命令查看Redis 实例状态.md"
-    },
-    {
-      "basename": "获取 Redis 进程号",
-      "path": "permanent-notes/redis/获取 Redis 进程号.md"
-    },
-    {
-      "basename": "Redis 突然变慢了怎么办？",
-      "path": "permanent-notes/redis/Redis 突然变慢了怎么办？.md"
-    },
-    {
-      "basename": "Redis 主从同步",
-      "path": "permanent-notes/redis/Redis 主从同步.md"
-    },
-    {
-      "basename": "Redis 主从同步流程和版本演变",
-      "path": "permanent-notes/redis/Redis 主从同步流程和版本演变.md"
-    },
-    {
-      "basename": "Redis 主从同步拓扑结构有哪些？",
-      "path": "permanent-notes/redis/Redis 主从同步拓扑结构有哪些？.md"
-    },
-    {
-      "basename": "Redis 有哪些缓冲区？各自有什么用？",
-      "path": "permanent-notes/redis/Redis 有哪些缓冲区？各自有什么用？.md"
-    },
-    {
-      "basename": "Redis 主从复制配置",
-      "path": "permanent-notes/redis/Redis 主从复制配置.md"
-    },
-    {
-      "basename": "Redis 延迟删除机制",
-      "path": "permanent-notes/redis/Redis 延迟删除机制.md"
-    },
-    {
-      "basename": "Redis Big Keys 问题",
-      "path": "permanent-notes/redis/Redis Big Keys 问题.md"
-    },
-    {
-      "basename": "使用 client list 命令查看客户端",
-      "path": "permanent-notes/redis/使用 client list 命令查看客户端.md"
-    },
-    {
-      "basename": "2025-03-12T150340+0800-颠覆认知——Redis会遇到的15个「坑」，你踩过几个？-腾讯云开发者社区-腾讯云",
-      "path": "literature-notes/2025-03-12T150340+0800-颠覆认知——Redis会遇到的15个「坑」，你踩过几个？-腾讯云开发者社区-腾讯云.md"
-    },
-    {
-      "basename": "Redis 如何避免主从复制风暴？",
-      "path": "permanent-notes/redis/Redis 如何避免主从复制风暴？.md"
-    },
-    {
-      "basename": "Redis 如何保证系统高可靠？",
-      "path": "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md"
-    },
-    {
-      "basename": "Redis 内存满了怎么办？",
-      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
-    },
-    {
-      "basename": "Redis 过期数据处理机制",
-      "path": "permanent-notes/redis/Redis 过期数据处理机制.md"
-    },
-    {
-      "basename": "Redis 主从同步全量同步策略有哪些？各自有什么优劣势？",
-      "path": "permanent-notes/redis/Redis 主从同步全量同步策略有哪些？各自有什么优劣势？.md"
-    },
-    {
-      "basename": "RTA 用户流程图",
-      "path": "permanent-notes/rta/RTA 用户流程图.md"
-    },
-    {
-      "basename": "Redis 主从数据不一致该怎么办？",
-      "path": "permanent-notes/redis/Redis 主从数据不一致该怎么办？.md"
-    },
-    {
-      "basename": "2025-03-11T103416+0800-Redis主从复制原理及其演变  闫金钢的Blog",
-      "path": "literature-notes/2025-03-11T103416+0800-Redis主从复制原理及其演变  闫金钢的Blog.md"
-    },
-    {
-      "basename": "2025-03-11T102125+0800-9.1 什么是零拷贝？",
-      "path": "literature-notes/2025-03-11T102125+0800-9.1 什么是零拷贝？.md"
-    },
-    {
-      "basename": "Redis Master 和 Replica 如何处理过期数据？",
-      "path": "permanent-notes/redis/Redis Master 和 Replica 如何处理过期数据？.md"
-    },
-    {
-      "basename": "Redis 数据对象之 String",
-      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
-    },
-    {
-      "basename": "Redis 数据对象之 List",
-      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
-    },
-    {
-      "basename": "Redis 持久化机制",
-      "path": "permanent-notes/redis/Redis 持久化机制.md"
-    },
-    {
-      "basename": "Redis 对象",
-      "path": "permanent-notes/redis/Redis 对象.md"
-    },
-    {
-      "basename": "Redis 内存碎片问题",
-      "path": "permanent-notes/redis/Redis 内存碎片问题.md"
-    },
-    {
-      "basename": "Redis Object Encoding ZIPLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
-    },
-    {
-      "basename": "Redis Object Encoding LISTPACK",
-      "path": "permanent-notes/redis/Redis Object Encoding LISTPACK.md"
-    },
-    {
-      "basename": "Redis Object Encoding LINKEDLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding LINKEDLIST.md"
-    },
-    {
-      "basename": "Redis Object Encoding INT",
-      "path": "permanent-notes/redis/Redis Object Encoding INT.md"
-    },
-    {
-      "basename": "Redis Object Encoding QUICKLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding QUICKLIST.md"
-    },
-    {
-      "basename": "Redis Object Encoding RAW",
-      "path": "permanent-notes/redis/Redis Object Encoding RAW.md"
-    },
-    {
-      "basename": "Redis Object Encoding EMBSTR",
-      "path": "permanent-notes/redis/Redis Object Encoding EMBSTR.md"
-    },
-    {
-      "basename": "操作系统透明大页（THP）对 Redis 有什么影响？",
-      "path": "permanent-notes/redis/操作系统透明大页（THP）对 Redis 有什么影响？.md"
-    },
-    {
-      "basename": "2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux",
-      "path": "literature-notes/2025-03-10T184039+0800-Redis进阶篇04 — 复制技术（一）MySQL – Rocky Linux.md"
-    },
-    {
-      "basename": "2025-03-10T093833+0800-Redis主从复制",
-      "path": "literature-notes/2025-03-10T093833+0800-Redis主从复制.md"
-    },
-    {
-      "basename": "redis-listpack.excelidraw",
-      "path": "Excalidraw/redis-listpack.excelidraw.md"
-    },
-    {
-      "basename": "uml-sequence",
-      "path": "obsidian-config/template/uml-sequence.md"
-    },
-    {
-      "basename": "permanent-note-template",
-      "path": "obsidian-config/template/permanent-note-template.md"
-    },
-    {
-      "basename": "redis-ziplist-entry.excalidraw",
-      "path": "Excalidraw/redis-ziplist-entry.excalidraw.md"
-    },
-    {
-      "basename": "AI 提示词",
-      "path": "permanent-notes/ai/AI 提示词.md"
-    },
-    {
-      "basename": "fleet-note-template",
-      "path": "obsidian-config/template/fleet-note-template.md"
-    },
-    {
-      "basename": "literature-note-template",
-      "path": "obsidian-config/template/literature-note-template.md"
     }
   ],
   "omittedPaths": [],

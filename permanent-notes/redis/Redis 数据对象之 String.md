@@ -102,8 +102,16 @@ void trimStringObjectIfNeeded(robj *o, int trim_small_values) {
 ```
 
 ![image.png](https://images.hnzhrh.com/note/20241212170515.png)
-
-# 4 References
+# 4 字符串能有多大？
+Redis 最大字符串能有多大？Redis 6.0 版本之前，写死在代码里面的，512 MB，6.0 版本之后可以根据配置进行修改，最小为 1 MB。
+```properties
+# In the Redis protocol, bulk requests, that are, elements representing single
+# strings, are normally limited to 512 mb. However you can change this limit
+# here, but must be 1mb or greater
+#
+# proto-max-bulk-len 512mb
+```
+# 5 References
 * [How is the memory usage for the key-value calculated? · redis/redis · Discussion #13677 · GitHub](https://github.com/redis/redis/discussions/13677)
 * [Analyzing Redis Source Code: Simple Dynamic Strings (SDS) – An Efficient and Flexible String Implementation \| Johnson Lin](https://www.linjiangxiong.com/2024/09/10/analyzing-redis-source-code-sds/index.html)
 * [🚀深入理解redis的简单动态字符串（SDS）🚀Redis是一款流行的高性能键值存储数据库，而简单动态字符串SDS是 - 掘金](https://juejin.cn/post/7304183129896173568)

@@ -2,7 +2,6 @@
 title: Redis-dict
 tags:
   - fleet-note
-  - middleware/redis/data-structure
 date: 2024-11-26
 time: 19:01
 aliases:

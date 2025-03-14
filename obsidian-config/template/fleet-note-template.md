@@ -4,7 +4,7 @@ title:
 tags:
   - fleet-note
 date:
-  {{daate}}
+  {{date}}
 time:
   {{time}}
 aliases:

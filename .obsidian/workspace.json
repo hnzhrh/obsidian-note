@@ -4,21 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7b2800076a7a38d2",
+        "id": "4ffaf973b8f660d6",
         "type": "tabs",
         "children": [
           {
-            "id": "d0c5cf5982289111",
-            "type": "leaf",
-            "state": {
-              "type": "card-board-view",
-              "state": {},
-              "icon": "card-board",
-              "title": "CardBoard"
-            }
-          },
-          {
-            "id": "82d6a312d83287aa",
+            "id": "f079be6a2f2be624",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,8 +22,7 @@
               "title": "Redis"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -65,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "过期数据",
+                "query": "tag:#middleware/redis/data-structure  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/redis/异构数据导入 Redis.md",
+                "file": "permanent-notes/redis/Redis.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -126,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 异构数据导入 Redis"
+              "title": "Backlinks for Redis"
             }
           },
           {
@@ -135,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/redis/异构数据导入 Redis.md",
+                "file": "permanent-notes/redis/Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 异构数据导入 Redis"
+              "title": "Outgoing links from Redis"
             }
           },
           {
@@ -150,7 +139,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "alphabetical",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -217,32 +208,32 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/redis/Redis 的 run id 和 replication id.md",
-    "daily-log/2025-03-13.md",
-    "daily-log/2025-01-14.md",
-    "permanent-notes/redis/异构数据导入 Redis.md",
+    "fleet-notes/redis/Redis-内存命令.md",
+    "fleet-notes/redis/Redis-哨兵.md",
+    "fleet-notes/redis/Redis部署.md",
+    "fleet-notes/redis/Redis运维命令.md",
     "permanent-notes/redis/Redis.md",
-    "permanent-notes/redis/Redis 性能优化之绑定 CPU.md",
-    "permanent-notes/redis/使用info命令查看Redis 实例状态.md",
-    "permanent-notes/redis/获取 Redis 进程号.md",
-    "permanent-notes/redis/Redis 突然变慢了怎么办？.md",
-    "permanent-notes/redis/Redis 主从同步.md",
-    "permanent-notes/redis/Redis 主从同步流程和版本演变.md",
-    "permanent-notes/redis/Redis 主从同步拓扑结构有哪些？.md",
-    "permanent-notes/redis/Redis 有哪些缓冲区？各自有什么用？.md",
-    "permanent-notes/redis/Redis 主从复制配置.md",
-    "permanent-notes/redis/Redis 延迟删除机制.md",
-    "permanent-notes/redis/Redis Big Keys 问题.md",
-    "permanent-notes/redis/使用 client list 命令查看客户端.md",
-    "literature-notes/2025-03-12T150340+0800-颠覆认知——Redis会遇到的15个「坑」，你踩过几个？-腾讯云开发者社区-腾讯云.md",
-    "permanent-notes/redis/Redis 如何避免主从复制风暴？.md",
-    "permanent-notes/redis-bak/Redis 如何保证系统高可靠？.md",
-    "permanent-notes/redis/Redis 内存满了怎么办？.md",
-    "permanent-notes/redis/Redis 过期数据处理机制.md",
-    "permanent-notes/redis/Redis 主从同步全量同步策略有哪些？各自有什么优劣势？.md",
-    "permanent-notes/rta/RTA 用户流程图.md",
-    "permanent-notes/redis/Redis 主从数据不一致该怎么办？.md",
-    "literature-notes/2025-03-11T103416+0800-Redis主从复制原理及其演变  闫金钢的Blog.md",
+    "fleet-notes/redis/Redis index.md",
+    "permanent-notes/redis/Redis Object Encoding INTSET.md",
+    "permanent-notes/redis/Redis Object Encoding HT.md",
+    "fleet-notes/redis/Redis-Set.md",
+    "fleet-notes/redis/Redis-List.md",
+    "fleet-notes/redis/Redis-hash编码方式.md",
+    "permanent-notes/redis/Redis 数据对象之 Hash.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
+    "permanent-notes/redis/Redis 数据对象之 Set.md",
+    "permanent-notes/redis/Redis 数据对象之 Zset.md",
+    "fleet-notes/redis/Redis共享对象.md",
+    "fleet-notes/redis/Redis-listpack编码.md",
+    "fleet-notes/redis/Redis-IO模型.md",
+    "fleet-notes/redis/Lettuce连接池.md",
+    "fleet-notes/redis/Redis 支持同步复制吗？.md",
+    "fleet-notes/redis/Redis-dict.md",
+    "permanent-notes/redis/Redis Object Encoding SKIPLIST.md",
+    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+    "permanent-notes/redis/Redis 数据对象之 String.md",
+    "permanent-notes/redis/Redis Object Encoding RAW.md",
     "permanent-notes/ai",
     "permanent-notes/distributed-system-design",
     "mindmaps/Redis 内存淘汰策略.xmind",

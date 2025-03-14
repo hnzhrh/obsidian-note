@@ -1,27 +1,13 @@
 ---
-title: Redis-Set
+title: Redis Object Encoding INTSET
 tags:
-  - fleet-note
-  - middleware/redis/data-object
-date: 2024-12-15
-time: 15:16
-aliases:
+  - permanent-note
+  - middleware/redis/data-object-encoding
+date: 2025-03-14
+time: 17:26
+aliases: 
+done: false
 ---
-
-```plantuml
-
-@startmindmap
-!theme cerulean
-* Set
-	* INTSET
-	* LISTPACK
-	* HT
-
-@endmindmap
-```
-
-# `INTSET` 编码
-
 如果 `Set` 中全部都是整数，则 Redis 会使用 `INTSET` 编码方式，`INTSET` 数据结构是有序的整数数组，查找使用二分查找。
 
 `INTSET` 如果新插入的数据编码高于当前编码，则会进行升级，升级会重新分配内存，并遍历所有元素完成编码转换。
@@ -41,12 +27,5 @@ typedef struct intset {
 #define INTSET_ENC_INT32 (sizeof(int32_t))
 #define INTSET_ENC_INT64 (sizeof(int64_t))
 ```
-
-
-# [`LISTPACK` 编码](Redis-List.md#`LISTPACK`编码)
-
-
-
-
 
 # Reference
