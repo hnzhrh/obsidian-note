@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "MySQL 事务",
-      "path": "permanent-notes/mysql/MySQL 事务.md"
-    },
-    {
       "basename": "MySQL",
       "path": "permanent-notes/mysql/MySQL.md"
+    },
+    {
+      "basename": "MySQL 事务",
+      "path": "permanent-notes/mysql/MySQL 事务.md"
     },
     {
       "basename": "MySQL MVCC 机制",

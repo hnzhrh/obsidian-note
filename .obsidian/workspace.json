@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/mysql/MySQL 事务.md",
+                "file": "permanent-notes/mysql/MySQL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MySQL 事务"
+              "title": "MySQL"
             }
           },
           {
@@ -168,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/mysql/MySQL 事务.md",
+                "file": "permanent-notes/mysql/MySQL.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MySQL 事务"
+              "title": "Outline of MySQL"
             }
           },
           {
@@ -221,10 +221,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "98ff07e50484786c",
   "lastOpenFiles": [
-    "permanent-notes/mysql/MySQL.md",
     "permanent-notes/mysql/MySQL 事务.md",
+    "permanent-notes/mysql/MySQL.md",
     "permanent-notes/mysql/MySQL MVCC 机制.md",
     "Excalidraw/mysql-record.excalidraw.md",
     "permanent-notes/mysql/MySQL JOIN 用法.md",
