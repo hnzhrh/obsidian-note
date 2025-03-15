@@ -10,18 +10,25 @@ done: false
 ---
 
 # 1 应用维度
+## 1.1 [[MySQL JOIN 用法]]
+## 1.2 [[MySQL Explain 用法]]
 
 # 2 系统维度
-## 2.1 [[MySQL 索引]]
-## 2.2 [[MySQL 事务]]
-## 2.3 [[MySQL 的锁机制]]
-## 2.4 [[MySQL 的日志]]
+## 2.1 [[MySQL 架构]]
+## 2.2 [[MySQL 索引]]
+## 2.3 [[MySQL 事务]]
+## 2.4 [[MySQL 的锁机制]]
+## 2.5 [[MySQL 的日志]]
+## MySQL 优化
 # 3 运维
 
 # 4 问题排查
 
 # 5 Q&A
 
+## 5.1 [[count(*) 和 count(1) 有什么区别？哪个性能最好？]]
+## 5.2 EXISTS 和 IN 的区别是什么？
+## 5.3 [[VARCHAR 和 CHAR 的区别]]
 # 6 Reference
 * [图解MySQL介绍 \| 小林coding](https://xiaolincoding.com/mysql/)
 * [MySQL实战45讲-极客时间](https://time.geekbang.org/column/intro/100020801)

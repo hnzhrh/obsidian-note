@@ -4,22 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "4ffaf973b8f660d6",
+        "id": "88d58e37946134dc",
         "type": "tabs",
         "children": [
           {
-            "id": "f079be6a2f2be624",
+            "id": "98ff07e50484786c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/redis/Redis.md",
+                "file": "permanent-notes/mysql/MySQL 事务.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Redis"
+              "title": "MySQL 事务"
+            }
+          },
+          {
+            "id": "ea83664b845bd99b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent-notes/mysql/MySQL MVCC 机制.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "MySQL MVCC 机制"
             }
           }
         ]
@@ -54,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#middleware/redis/data-structure  ",
+                "query": "当前读",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/redis/Redis.md",
+                "file": "permanent-notes/mysql/MySQL 事务.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +130,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis"
+              "title": "Backlinks for MySQL 事务"
             }
           },
           {
@@ -124,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/redis/Redis.md",
+                "file": "permanent-notes/mysql/MySQL 事务.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Redis"
+              "title": "Outgoing links from MySQL 事务"
             }
           },
           {
@@ -153,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/redis/Redis.md",
+                "file": "permanent-notes/mysql/MySQL 事务.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis"
+              "title": "Outline of MySQL 事务"
             }
           },
           {
@@ -208,42 +223,42 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
+    "permanent-notes/mysql/MySQL.md",
+    "permanent-notes/mysql/MySQL 事务.md",
+    "permanent-notes/mysql/MySQL MVCC 机制.md",
+    "Excalidraw/mysql-record.excalidraw.md",
+    "permanent-notes/mysql/MySQL JOIN 用法.md",
+    "permanent-notes/solution/如何设计一个发号器？.md",
+    "permanent-notes/solution/solution index.md",
+    "permanent-notes/mysql/MySQL 的锁机制.md",
+    "permanent-notes/mysql/MySQL 架构.md",
+    "permanent-notes/interview/HSBC 笔试题目.md",
+    "mindmaps/Redis 数据对象和编码.xmind",
+    "permanent-notes/interview",
+    "mindmaps/Redis 持久化机制.xmind",
+    "mindmaps/Redis 内存淘汰策略.xmind",
+    "permanent-notes/Resume.md",
+    "mindmaps/MySQL.xmind",
+    "permanent-notes/mysql/MySQL 索引.md",
+    "permanent-notes/mysql/VARCHAR 和 CHAR 的区别.md",
+    "permanent-notes/mysql/MySQL Explain 用法.md",
+    "permanent-notes/mysql/count(*) 和 count(1) 有什么区别？哪个性能最好？.md",
+    "permanent-notes/redis/Redis Object Encoding SKIPLIST.md",
+    "permanent-notes/redis/Redis.md",
     "fleet-notes/redis/Redis-内存命令.md",
     "fleet-notes/redis/Redis-哨兵.md",
     "fleet-notes/redis/Redis部署.md",
     "fleet-notes/redis/Redis运维命令.md",
-    "permanent-notes/redis/Redis.md",
     "fleet-notes/redis/Redis index.md",
     "permanent-notes/redis/Redis Object Encoding INTSET.md",
     "permanent-notes/redis/Redis Object Encoding HT.md",
     "fleet-notes/redis/Redis-Set.md",
     "fleet-notes/redis/Redis-List.md",
-    "fleet-notes/redis/Redis-hash编码方式.md",
-    "permanent-notes/redis/Redis 数据对象之 Hash.md",
-    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
-    "permanent-notes/redis/Redis Object Encoding QUICKLIST.md",
-    "permanent-notes/redis/Redis 数据对象之 Set.md",
-    "permanent-notes/redis/Redis 数据对象之 Zset.md",
-    "fleet-notes/redis/Redis共享对象.md",
-    "fleet-notes/redis/Redis-listpack编码.md",
-    "fleet-notes/redis/Redis-IO模型.md",
-    "fleet-notes/redis/Lettuce连接池.md",
-    "fleet-notes/redis/Redis 支持同步复制吗？.md",
-    "fleet-notes/redis/Redis-dict.md",
-    "permanent-notes/redis/Redis Object Encoding SKIPLIST.md",
-    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
-    "permanent-notes/redis/Redis 数据对象之 String.md",
-    "permanent-notes/redis/Redis Object Encoding RAW.md",
     "permanent-notes/ai",
     "permanent-notes/distributed-system-design",
-    "mindmaps/Redis 内存淘汰策略.xmind",
-    "mindmaps/Redis 持久化机制.xmind",
     "permanent-notes/operating-system",
     "permanent-notes/linux",
     "permanent-notes/nginx",
-    "mindmaps/Redis 数据对象和编码.xmind",
-    "mindmaps/系统设计.xmind",
-    "fleet-notes/spring-boot",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",
