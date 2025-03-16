@@ -9,120 +9,66 @@ aliases:
 done: false
 ---
 
-# 大纲
+# 1 `undo log` 回滚日志
 
-## 1. 日志系统概述
-### 1.1 日志在数据库系统中的作用
-### 1.2 MySQL 日志体系架构
-### 1.3 日志类型分类标准
+实现了事务的原子性，用于事务回滚和 [MySQL MVCC 机制](MySQL%20MVCC%20机制.md)。
 
-## 2. 错误日志 (Error Log)
-### 2.1 核心功能与记录内容
-#### 2.1.1 启动/关闭事件
-#### 2.1.2 运行错误跟踪
-#### 2.1.3 存储引擎异常
-### 2.2 配置参数详解
-#### 2.2.1 log_error
-#### 2.2.2 log_error_verbosity
-#### 2.2.3 log_error_suppression_list
-### 2.3 日志轮转与维护策略
-### 2.4 故障诊断案例分析
+`undo log` 是在事务执行前记录回滚信息的机制，用于 MySQL 出现异常情况退出、回滚等状态时的原子性保证。
+* 插入，记录主键 ID，如果回滚则直接删除这条数据
+* 删除，记录记录内容，回滚时重新插入
+* 更新
+	* 主键列更新，记录反向更新语句
+	* 非主键列更新，先删除再插入
 
-## 3. 通用查询日志 (General Query Log)
-### 3.1 工作机理与应用场景
-### 3.2 参数配置
-#### 3.2.1 general_log
-#### 3.2.2 general_log_file
-#### 3.2.3 log_output
-### 3.3 性能影响与优化建议
-### 3.4 日志分析工具实践
+# 2 `redo log` 重做日志
 
-## 4. 慢查询日志 (Slow Query Log)
-### 4.1 阈值设定策略
-#### 4.1.1 long_query_time
-#### 4.1.2 log_queries_not_using_indexes
-#### 4.1.3 log_slow_admin_statements
-### 4.2 日志格式解析
-#### 4.2.1 Query_time 分析
-#### 4.2.2 Lock_time 解读
-#### 4.2.3 Rows_examined 优化
-### 4.3 性能分析工具
-#### 4.3.1 mysqldumpslow
-#### 4.3.2 pt-query-digest
+[InnoDB 的 Buffer Pool](InnoDB%20的%20Buffer%20Pool.md) 基于内存，如果修改了数据，脏页还没有刷到磁盘就宕机了那数据就没有了，因此 MySQL 提供了 `redo log` 来保证**持久性**。
 
-## 5. 二进制日志 (Binary Log)
-### 5.1 复制与恢复核心机制
-### 5.2 日志格式对比
-#### 5.2.1 STATEMENT
-#### 5.2.2 ROW
-#### 5.2.3 MIXED
-### 5.3 高级配置参数
-#### 5.3.1 binlog_format
-#### 5.3.2 sync_binlog
-#### 5.3.3 expire_logs_days
-### 5.4 日志管理操作
-#### 5.4.1 PURGE BINARY LOGS
-#### 5.4.2 mysqlbinlog 工具
-### 5.5 GTID 实现原理
+把数据在内存修改了之后写入 `redo log` 就认为成功，InnoDB 在合适的时候把 [InnoDB 的 Buffer Pool](InnoDB%20的%20Buffer%20Pool.md) 脏页刷入磁盘，这就是 WAL （Writing-Ahead Logging）技术。当系统宕机后，MySQL 通过 `redo log` 可以恢复没有刷入磁盘的脏页数据。
 
-## 6. 中继日志 (Relay Log)
-### 6.1 主从复制中的角色
-### 6.2 与 Binary Log 的差异
-### 6.3 日志应用流程
-#### 6.3.1 SQL 线程工作机制
-#### 6.3.2 复制延迟分析
+## 2.1 为什么写 `redo log` 不直接写数据到磁盘？
 
-## 7. 重做日志 (Redo Log)
-### 7.1 InnoDB 持久性保证
-### 7.2 日志结构解析
-#### 7.2.1 LSN (Log Sequence Number)
-#### 7.2.2 Checkpoint 机制
-### 7.3 配置优化
-#### 7.3.1 innodb_log_file_size
-#### 7.3.2 innodb_log_files_in_group
-#### 7.3.3 innodb_flush_log_at_trx_commit
+`redo log` 写入使用了追加操作，顺序写，写入数据需要先找到数据位置在写入，是随机写。顺序写性能大于随机写。
 
-## 8. 撤销日志 (Undo Log)
-### 8.1 事务回滚与 MVCC 实现
-### 8.2 日志存储管理
-#### 8.2.1 undo tablespace
-#### 8.2.2 版本链管理
-### 8.3 参数调优
-#### 8.3.1 innodb_undo_directory
-#### 8.3.2 innodb_undo_tablespaces
+## 2.2 `redo log buffer`
 
-## 9. 日志系统监控与优化
-### 9.1 性能指标监控
-#### 9.1.1 日志写入吞吐量
-#### 9.1.2 磁盘 I/O 分析
-### 9.2 安全审计实践
-### 9.3 云环境下的日志管理
+`redo log buffer` 是 `redo log` 的缓存，也是用来平衡内存-磁盘速度的缓冲区，防止每次都进行 IO 交互。
 
-## 10. 事务日志协同工作流程
-### 10.1 事务提交完整过程
-### 10.2 崩溃恢复机制
-#### 10.2.1 Redo 前滚过程
-#### 10.2.2 Undo 回滚过程
+`redo log buffer` 可以通过配置 `innodb_log_buffer_size` 指定。
 
-## 11. 日志系统最佳实践
-### 11.1 生产环境配置建议
-### 11.2 日志备份策略
-### 11.3 多日志系统协同分析
+`redo log buffer` 何时刷盘？
+* MySQL 正常关闭
+* `redo log buffer` 容量达到一半
+* InnoDB 后台线程每隔 1 s 刷盘
+* 每次事务提交时都将缓存在 redo log buffer 里的 redo log 直接持久化到磁盘，由配置 `innodb_flush_log_at_trx_commit` 决定，默认为 1
+	* `innodb_flush_log_at_trx_commit = 0`：事务提交时，只写入 `buffer` 不会刷盘
+	* `innodb_flush_log_at_trx_commit = 1`：事务提交时刷盘
+	* `innodb_flush_log_at_trx_commit = 2` ：事务提交时，写入文件但不刷盘（何时刷盘由操作系统调度）
+## 2.3 `redo log` 文件
 
-## 附录：日志类型速查表
-| 日志类型       | 存储引擎   | 主要功能                  | 关键参数                 |
-|----------------|------------|---------------------------|--------------------------|
-| Error Log      | Server     | 错误追踪                  | log_error                |
-| General Query  | Server     | 查询审计                  | general_log              |
-| Slow Query     | Server     | 性能优化                  | long_query_time          |
-| Binary Log     | Server     | 复制/恢复                 | binlog_format            |
-| Redo Log       | InnoDB     | 事务持久性                | innodb_log_file_size     |
-| Undo Log       | InnoDB     | MVCC/回滚                 | innodb_undo_tablespaces  |
-| Relay Log      | Server     | 从库复制                  | relay_log                |
+MySQL 数据目录下（`SHOW VARIABLES LIKE 'datadir'`）下默认有两个名为 `ib_logfile0` 和 `ib_logfile1` 的文件，`log buffer` 中的日志默认情况下就是刷新到这两个磁盘文件中。
+- `innodb_log_group_home_dir`：该参数指定了 `redo` 日志文件所在的目录，默认值就是当前的数据目录。
+- `innodb_log_file_size`：该参数指定了每个 `redo` 日志文件的大小，在 `MySQL 5.7.21` 这个版本中的默认值为 `48MB`，
+- `innodb_log_files_in_group`：该参数指定 `redo` 日志文件的个数，默认值为2，最大值为100。
+`redo log` 是循环写，0 文件满了写 1,1 满了写 0。旧的 `redo log` 是可以清除的。如果并发高，导致文件被写满了，MySQL 就不会再执行更新操作了，需要对旧 `redo log` 擦除后才正常工作。
 
-## 参考资料
-- MySQL 8.0 Official Documentation
-- InnoDB Internals Manual
-- Percona Performance Blog
+# 3 `bin log` 归档日志
 
-# Reference
+`bin log` 是 MySQL server 层面的日志，记录了更新操作，事务提交后写入文件。
+
+|      | `bin log`            | `redo log`    |
+| ---- | -------------------- | ------------- |
+| 用途   | Server 层生成，用于备份、主从同步 | 存储引擎生成，用于故障恢复 |
+| 写入方式 | 追加写                  | 循环写，          |
+| 文件格式 | 三种方式                 | 物理日志，某个数据页的修改 |
+
+`bin log` 有三种格式：
+* `STATEMENT`：记录 SQL，如果有函数操作，在从库执行可能导致数据不一致
+* `RAW`：记录修改后的数据，修改数据过多可能很大，不如一条 SQL 节省空间
+* `MIXED`：MySQL 分析 SQL，自动切换是使用 `STATEMENT` 还是 `RAW`。
+
+
+# 4 References
+* [MySQL 日志：undo log、redo log、binlog 有什么用？ \| 小林coding](https://xiaolincoding.com/mysql/log/how_update.html)
+* [MySQL 是怎样运行的 undo log](https://juejin.cn/book/6844733769996304392/section/6844733770067607566)
+* [MySQL 是怎样运行的 redo log](https://juejin.cn/book/6844733769996304392/section/6844733770063626253)

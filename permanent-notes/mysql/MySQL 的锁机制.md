@@ -9,6 +9,20 @@ aliases:
 done: false
 ---
 
+# 间隙锁
+
+
+| 时序  | 事务 A                                                          | 事务 B                                               | 备注  |
+| --- | ------------------------------------------------------------- | -------------------------------------------------- | --- |
+| 1   |                                                               | `SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;` |     |
+| 2   | `START TRANSACTION;`                                          | `START TRANSACTION;`                               |     |
+|     |                                                               | `SELECT * FROM account where id > 4 for update ;`  | 加锁  |
+|     | `INSERT INTO account(id,balance, name) VALUES(5,1000,'new');` |                                                    |     |
+|     | Hold，等待锁                                                      |                                                    |     |
+|     |                                                               | `COMMIT`                                           |     |
+|     | 插入数据成功                                                        |                                                    |     |
+|     | `COMMIT`                                                      |                                                    |     |
+
 
 
 # 大纲

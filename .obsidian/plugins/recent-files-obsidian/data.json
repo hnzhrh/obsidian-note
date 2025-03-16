@@ -1,12 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL 的日志",
+      "path": "permanent-notes/mysql/MySQL 的日志.md"
+    },
+    {
       "basename": "MySQL",
       "path": "permanent-notes/mysql/MySQL.md"
     },
     {
+      "basename": "System Design Index",
+      "path": "permanent-notes/system-design/System Design Index.md"
+    },
+    {
+      "basename": "HTTP 连接池",
+      "path": "permanent-notes/system-design/HTTP 连接池.md"
+    },
+    {
+      "basename": "Redis 持久化机制",
+      "path": "permanent-notes/redis/Redis 持久化机制.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "permanent-notes/redis/Redis.md"
+    },
+    {
+      "basename": "InnoDB 的 Buffer Pool",
+      "path": "permanent-notes/mysql/InnoDB 的 Buffer Pool.md"
+    },
+    {
+      "basename": "fleet-note-template",
+      "path": "obsidian-config/template/fleet-note-template.md"
+    },
+    {
+      "basename": "literature-note-template",
+      "path": "obsidian-config/template/literature-note-template.md"
+    },
+    {
       "basename": "MySQL 事务",
       "path": "permanent-notes/mysql/MySQL 事务.md"
+    },
+    {
+      "basename": "2025-03-15T230437+0800-阿里TTL+Log4j2+MDC实现轻量级日志链路追踪",
+      "path": "literature-notes/2025-03-15T230437+0800-阿里TTL+Log4j2+MDC实现轻量级日志链路追踪.md"
+    },
+    {
+      "basename": "线程池如何保活核心线程和非核心线程？",
+      "path": "fleet-notes/java/线程池如何保活核心线程和非核心线程？.md"
+    },
+    {
+      "basename": "Java",
+      "path": "fleet-notes/java/Java.md"
+    },
+    {
+      "basename": "逃逸分析",
+      "path": "fleet-notes/java/逃逸分析.md"
+    },
+    {
+      "basename": "什么是JIT优化技术？",
+      "path": "fleet-notes/java/什么是JIT优化技术？.md"
+    },
+    {
+      "basename": "Spring Boot 能同时处理多少请求？",
+      "path": "fleet-notes/java/Spring Boot 能同时处理多少请求？.md"
+    },
+    {
+      "basename": "MySQL 的锁机制",
+      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
     },
     {
       "basename": "MySQL MVCC 机制",
@@ -27,10 +87,6 @@
     {
       "basename": "solution index",
       "path": "permanent-notes/solution/solution index.md"
-    },
-    {
-      "basename": "MySQL 的锁机制",
-      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
     },
     {
       "basename": "MySQL 架构",
@@ -79,10 +135,6 @@
     {
       "basename": "Redis Object Encoding SKIPLIST",
       "path": "permanent-notes/redis/Redis Object Encoding SKIPLIST.md"
-    },
-    {
-      "basename": "Redis",
-      "path": "permanent-notes/redis/Redis.md"
     },
     {
       "basename": "Redis-内存命令",
@@ -147,58 +199,6 @@
     {
       "basename": "Redis 支持同步复制吗？",
       "path": "fleet-notes/redis/Redis 支持同步复制吗？.md"
-    },
-    {
-      "basename": "Redis-dict",
-      "path": "fleet-notes/redis/Redis-dict.md"
-    },
-    {
-      "basename": "Redis Object Encoding ZIPLIST",
-      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
-    },
-    {
-      "basename": "Redis 数据对象之 String",
-      "path": "permanent-notes/redis/Redis 数据对象之 String.md"
-    },
-    {
-      "basename": "Redis Object Encoding RAW",
-      "path": "permanent-notes/redis/Redis Object Encoding RAW.md"
-    },
-    {
-      "basename": "permanent-note-template",
-      "path": "obsidian-config/template/permanent-note-template.md"
-    },
-    {
-      "basename": "Redis 数据对象之 List",
-      "path": "permanent-notes/redis/Redis 数据对象之 List.md"
-    },
-    {
-      "basename": "AI 提示词",
-      "path": "permanent-notes/ai/AI 提示词.md"
-    },
-    {
-      "basename": "MCP",
-      "path": "fleet-notes/ai/MCP.md"
-    },
-    {
-      "basename": "fleet-note-template",
-      "path": "obsidian-config/template/fleet-note-template.md"
-    },
-    {
-      "basename": "literature-note-template",
-      "path": "obsidian-config/template/literature-note-template.md"
-    },
-    {
-      "basename": "daily-note-template",
-      "path": "obsidian-config/template/daily-note-template.md"
-    },
-    {
-      "basename": "Dify 和 LangChain",
-      "path": "fleet-notes/ai/Dify 和 LangChain.md"
-    },
-    {
-      "basename": "LLM API 对接",
-      "path": "permanent-notes/ai/LLM API 对接.md"
     }
   ],
   "omittedPaths": [],
