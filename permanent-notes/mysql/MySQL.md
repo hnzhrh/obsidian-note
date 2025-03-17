@@ -20,7 +20,7 @@ done: false
 ## 2.4 [[MySQL 的锁机制]]
 ## 2.5 [[MySQL 的日志]]
 ## 2.6 MySQL 优化
-## [[InnoDB 的 Buffer Pool]]
+## 2.7 [[InnoDB 的 Buffer Pool]]
 # 3 运维
 
 # 4 问题排查
