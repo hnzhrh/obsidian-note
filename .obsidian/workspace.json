@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/mysql/InnoDB 的 Buffer Pool.md",
+                "file": "permanent-notes/mysql/MySQL 索引.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "InnoDB 的 Buffer Pool"
+              "title": "MySQL 索引"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/mysql/InnoDB 的 Buffer Pool.md",
+                "file": "permanent-notes/mysql/MySQL 索引.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of InnoDB 的 Buffer Pool"
+              "title": "Outline of MySQL 索引"
             }
           },
           {
@@ -206,8 +206,9 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "e4e65814e78a6284",
   "lastOpenFiles": [
+    "permanent-notes/mysql/InnoDB 的 Buffer Pool.md",
     "permanent-notes/mysql/MySQL 的锁机制.md",
     "permanent-notes/mysql/MySQL 事务.md",
     "permanent-notes/mysql/MySQL.md",
@@ -221,7 +222,6 @@
     "permanent-notes/system-design/HTTP 连接池.md",
     "permanent-notes/redis/Redis 持久化机制.md",
     "permanent-notes/redis/Redis.md",
-    "permanent-notes/mysql/InnoDB 的 Buffer Pool.md",
     "obsidian-config/template/fleet-note-template.md",
     "obsidian-config/template/literature-note-template.md",
     "literature-notes/2025-03-15T230437+0800-阿里TTL+Log4j2+MDC实现轻量级日志链路追踪.md",

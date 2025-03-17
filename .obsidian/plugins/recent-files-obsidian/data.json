@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL 索引",
+      "path": "permanent-notes/mysql/MySQL 索引.md"
+    },
+    {
       "basename": "InnoDB 的 Buffer Pool",
       "path": "permanent-notes/mysql/InnoDB 的 Buffer Pool.md"
     },
@@ -127,10 +131,6 @@
     {
       "basename": "MySQL",
       "path": "mindmaps/MySQL.xmind"
-    },
-    {
-      "basename": "MySQL 索引",
-      "path": "permanent-notes/mysql/MySQL 索引.md"
     },
     {
       "basename": "VARCHAR 和 CHAR 的区别",
