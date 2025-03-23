@@ -96,8 +96,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,7 +217,7 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "322c7ae04d1d734a",
   "lastOpenFiles": [
     "permanent-notes/production/从 IDEA 到产品.md",
     "permanent-notes/api/api list.md",
