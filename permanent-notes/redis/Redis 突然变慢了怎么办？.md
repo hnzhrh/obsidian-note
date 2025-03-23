@@ -19,3 +19,4 @@ done: false
 6 Redis Cluster 方案 而且同时正好迁移的是 bigkey 的话，就会造成主线程的阻塞，因为 Redis Cluster 使用了同步迁移 
 
 # Reference
+* [mp.weixin.qq.com/s?\_\_biz=MzIyOTYxNDI5OA==&mid=2247484679&idx=1&sn=3273e2c9083e8307c87d13a441a267d7&chksm=e8beb2b2dfc93ba4c28c95fdcb62eefc529d6a4ca2b4971ad0493319adbf8348b318224bd3d9&scene=178&cur\_album\_id=1699766580538032128#rd](https://mp.weixin.qq.com/s?__biz=MzIyOTYxNDI5OA==&mid=2247484679&idx=1&sn=3273e2c9083e8307c87d13a441a267d7&chksm=e8beb2b2dfc93ba4c28c95fdcb62eefc529d6a4ca2b4971ad0493319adbf8348b318224bd3d9&scene=178&cur_album_id=1699766580538032128#rd)

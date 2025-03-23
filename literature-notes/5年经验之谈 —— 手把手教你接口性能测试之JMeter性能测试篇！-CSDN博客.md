@@ -1,0 +1,349 @@
+---
+title: "5年经验之谈 —— 手把手教你接口性能测试之JMeter性能测试篇！-CSDN博客"
+tags:
+  - "clippings literature-note"
+date: 2025-03-17
+time: 2025-03-17T20:03:34+08:00
+source: "https://blog.csdn.net/m0_58026506/article/details/133998595"
+is_archie: "false"
+---
+![](https://i-blog.csdnimg.cn/blog_migrate/00080a6d7a189fe5197e4796fc3141c8.png)
+
+本文是我们**《**手把手教你接口性能测试**》**系列文章中的完结篇，介绍如何使用[JMeter](https://so.csdn.net/so/search?q=JMeter&spm=1001.2101.3001.7020)工具进行接口测试和并发测试。
+
+---
+
+## 一、Jmeter 简介
+
+Jmeter是由Apache公司开发的一个纯Java开源项目，即可以用于做接口测试也可以用于做性能测试，具备高移植性和扩展性，可以实现跨平台运行，可以实现分布式负载。
+
+采用多线程，允许通过多个线程并发取样或通过独立的线程对不同的功能同时取样。
+
+#### **使用 Jmeter 一般用于以下两种类型的性能测试（基本能覆盖绝大多数的性能测试需求）**
+
+负载测试：通过测试系统在资源超负荷情况下的表现，以发现设计上的错误或验证系统的负载能力。
+
+压力测试：测试系统能承受的最大负载能力。目的在于发挖掘出目标服务系统可以处理的最大负载。
+
+#### **Jmeter 进行性能测试的基本过程**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/917b745d33e15f0ec5ad1de6adccf584.png)
+
+##### **新增线程组**
+
+创建测试线程组，并设置线程数量及线程初始化启动方式。
+
+##### **新增 JMeter 元组**
+
+创建各种默认元组及测试元组，填入目标测试静态资源请求和动态资源请求参数及数据。
+
+##### **新增监听器**
+
+创建各种形式的结果搜集元组，以便在运行过程及运行结束后搜集监控指标数据。
+
+##### **运行&查看结果**
+
+调试运行，分析指标数据，挖掘性能瓶颈、评估系统性能状态。
+
+## 二、Jmeter进行接口测试
+
+在聊jmeter如何进行性能测试之前，我们先简单介绍一下jmeter如何进行接口测试的
+
+### 1、获取接口文档
+
+使用Jmeter进行接口测试之前，需要拿到api接口文档，对接口信息进行分析，用于接口脚本的设计准备。
+
+通常我们可以跟项目对应开发同学获取开发接口设计文档（类如Java后端项目使用Swagger进行接口文档维护）
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/eb31843837c08f3e77f13fff81c4ebd2.png)
+
+除此之外，我们Web页面可以在开发者选项中获取相应的接口调用信息，移动端可通过Fiddler工具抓包得到相应的接口请求入参和返回信息。
+
+有了接口文档后，我们还需要熟悉接口业务，接口地址，鉴权方式，出参，入参，错误码等...
+
+#### **下面我们以12306网站为例，分别获取Get类型接口和Post接口进行演示**
+
+##### **a、在12306的车次查询页面获取Get类型接口**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/7a0acabd712ae8a8a5c897a0a9da36ba.png)
+
+例如上面的接口，我们可以得到的信息如下：
+
+1. **请求 URL:** https://kyfw.12306.cn/otn/leftTicket/queryZ?leftTicketDTO.train\_date=2023-01-24&leftTicketDTO.from\_station=SHH&leftTicketDTO.to\_station=BJP&purpose\_codes=ADULT
+2. **请求方法:** **GET**
+3. **请求头**
+
+1. 1. **...**
+2. **Connection:** keep-alive
+3. **Cookie:** \_uab\_collina=\*\*\*\*\*\*; JSESSIONID=\*\*\*\*\*\*; guidesStatus=off; highContrastMode=defaltMode; cursorStatus=off; \_jc\_save\_fromStation=%u4E0A%u6D77%2CSHH; \_jc\_save\_wfdc\_flag=dc; RAIL\_EXPIRATION=1673539455343; RAIL\_DEVICEID=\*\*\*\*\*\*; BIGipServerpassport=\*\*\*\*\*\*; \_jc\_save\_toStation=%u5317%u4EAC%2CBJP; \_jc\_save\_toDate=2023-01-10; BIGipServerindex=1104740618.43286.0000; route=6f50b51faa11b987e576cdb301e545c4; BIGipServero\*\*\*\*\*\*4545.0000; current\_captcha\_type=C; \_jc\_save\_zwdch\_fromStation=%u4E0A%u6D77%2CSHH; \_jc\_save\_zwdch\_cxlx=1; fo=fcwi8s6jfgcquajch3UNhkI-pbzTa1PopuXw-4vLSsFwS\*\*\*\*\*\*JLLAo4MZvmDbZL-yoEDOuNWhUau7y5bnrdhvGOKaoer\_Dg3VT8\*\*\*\*\*\*0pIcw6-5Bjgg; \_jc\_save\_fromDate=2023-01-24
+4. **Host:** kyfw.12306.cn
+5. ...
+
+##### **b、在12306首页中获取Post类型接口**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/c24ffefc821beda688931fe2d0d2a33b.png)
+
+例如上面的接口，我们可以得到的信息如下：
+
+1. **请求 URL:** https://kyfw.12306.cn/otn/logsdk/getInfo
+2. **请求方法:** **POST**
+3. **请求头**
+
+1. 1. **...**
+2. **Connection:** keep-alive
+3. **Content-Type:** text/plain;charset=UTF-8
+4. **Host:** kyfw.12306.cn
+5. ...
+
+**POST接口请求参数可在****负载****中进行查看（Chrome则在****载荷****中进行查看，不同浏览器查看tab标签名称不一致）**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/0d3136af52d4d7aef0533a0d88bf58e8.png)
+
+### 2、配置接口请求
+
+#### **a、添加线程组**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/9b13767be45c051d70d41ca3bf68baf0.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/29a3387922092b6814b5c1a62f8175f5.png)
+
+#### **b、添加HTTP请求**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/af885177fe606aa3959d72e8657f999e.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/4ea1c06f879d9512c306f57b19537e58.png)
+
+##### **填充Get接口请求信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/9aff0e59fd34e0da52914032228e52d9.png)
+
+##### **填充Post接口请求信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/d29639193b126c997a212e7095bba573.png)
+
+#### **c、添加HTTP信息头管理器**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/2f9f1529888600f706785cc4605911f2.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/1645a5192509e9369e9d9601a0ed3ea1.png)
+
+##### **维护接口请求头信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/f0e35fcdcaff4fb692bbebb83a02703f.png)
+
+#### **d、添加观察结果树**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/6fa8168a6eafc5295a520f1b2c895f52.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/b39359a61e43767fb6b2443fcfa7c97b.png)
+
+```perl
+现在我也找了很多测试的朋友，做了一个分享技术的交流群，共享了很多我们收集的技术文档和视频教程。如果你不想再体验自学时找不到资源，没人解答问题，坚持几天便放弃的感受可以加入我们一起交流。而且还有很多在自动化，性能，安全，测试开发等等方面有一定建树的技术大牛分享他们的经验，还会分享很多直播讲座和技术沙龙可以免费学习！划重点！开源的！！！qq群号：110685036
+```
+
+![](https://i-blog.csdnimg.cn/blog_migrate/319b4d16b5ac9da54b54e8a6f77be6f8.png)
+
+### 3、进行接口测试
+
+#### **a、执行接口请求**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/ef94bda6c35ac335b29b82ae63932964.png)
+
+#### **b、查看接口返回信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/c940123f9f6b0a207397f6308e6b3a18.png)
+
+### 4、进行接口返回信息验证
+
+JMeter以及Postman等[接口测试工具](https://so.csdn.net/so/search?q=%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7&spm=1001.2101.3001.7020)，他们都是基于协议进行工作的，使用这些工具进行发送请求，当请求发送成功的时候（即协议发送成功），在查看结果树中请求样本显示绿色。比如协议状态码是200就是成功，也是仅仅代表协议发送成功，但是业务不一定成功。有可能是协议发送成功了，但是业务没有成功，但是JMeter默认不做判断。
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/d37fff9b90ffed034aacf2746bb2e901.png)
+
+那么想要校验业务成功还是失败，就得需要进行断言，断言根据接口的响应进行断言，一般主要断言业务状态码以及messege等信息。
+
+#### **a、添加响应断言，并设置要校验的字段信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/e5df8c32e83f620f02785e555ad7c7d1.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/10da29188fa04ff08b0e79dfcecac5b4.png)
+
+#### **b、添加JSON断言，并设置要校验的字段信息**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/284bd4f594af80d0c202fc00dffd3207.png)
+
+#### **c、添加断言结果**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/5d3eea1333ea6a5ab73a1637e9e4d722.png)
+
+#### **d、查看验证返回信息**
+
+#####      断言结果中只会展示错误的断言信息
+
+    若请求的接口正常返回值，且返回信息中的字段断言信息符合期望值，则不会展示断言信息
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/bc78d2ef17f0ddef03fdacbc93b92ee0.png)
+
+    若请求的接口返回信息中的字段断言信息有误，断言结果中会输出对应的验证结果信息
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/8a607977ae073be605f88ca223e48632.png)
+
+查看结果树中也可在对应的接口请求下查看错误的断言信息
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/cd1e0a794454a2ff12f0643d8f34bc1b.png)
+
+### 5、Jmeter也支持文件上传/下载接口测试
+
+这部分我们后续单独进行介绍（挖坑）
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/b9cfcf146325c232f032e9a71934169a.png)
+
+### 6、常见的接口依赖、接口公共参数配置、参数化等，在另外的章节中展开介绍（持续挖坑...）
+
+## 三、Jmeter并发测试
+
+上面我们简单介绍了Jmeter如何进行接口测试的，下面我们更进一步，在接口功能测试完善的基础上，开展接口的另外一个层面的性能测试工作。
+
+### 线程组设置
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/a2a268266911af1f942a07e6986f4d97.png)
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/dda11a7b8d18f4978362a4c5b31678cd.png)
+
+#### **线程组概念**
+
+    通俗的讲，一个线程组可以看做一个虚拟用户组，线程组中的每个线程都可以理解为一个虚拟用户。
+
+    多个用户同时去执行相同的一批次任务。每个线程之间都是隔离的，互不影响的。
+
+    一个线程的执行过程中，操作的变量，不会影响其他线程的变量值。
+
+##### **线程数：**
+
+线程数也就是并发数，每个线程将会完全独立的运行测试计划，互不干扰。多个线程用于模仿对服务器的并发访问。
+
+##### **设置ramp-up：**
+
+ramp-up 用于设置启动所有线程所需要的时间。（有人称之为启动时间，有人说是准备时长，看个人喜好）
+
+如果选择了10个线程，并且ramp-up 是100秒，那么JMeter将在100秒内使10个线程启动并运行。
+
+每个线程将在前一个线程启动后10（100/10）秒后启动。
+
+当这个值设置的很小、线程数又设置的很大时，在刚开始执行时会对服务器产生很大的负荷。
+
+##### **设置循环次数：**
+
+该项设置线程组在结束前每个线程循环的次数，如果次数设置为1，那么JMeter在停止前只执行测试计划一次。
+
+##### **假设**
+
+线程数：n
+
+Ramp-Up：T
+
+循环次数：a  
+
+若每个循环运行时间是 t
+
+当时间到 S = (T- T/n)时，最后一个线程启动，若要使所有线程同时运作，则需要在最后一个线程启动的时候第一个线程仍未关闭，为达到这个要求，需满足 a·t > S及a > S/t
+
+每一个线程运行时间既是R = a·t(此处的a是大于S/t的某一值)，则第一个线程在时间点为R 的时候停止，整个测试理论运行时间则是 ：S + R = (1-1/n)·T + a·t
+
+##### **总结：**
+
+    测试中变量是 线程数 n ，每个循环时间 t 是个实践值，循环次数 a 只是为了延长单个线程的运行时间，从而保证当最后一个线程启动时，所有线程都在运行中，达到压测效果。
+
+### 举个大栗子：
+
+### 模拟50个用户，每人在抢票时不停的刷新了100次页面查看余票信息
+
+##### **1、设置线程数为50 ，我们的并发用户量就是50个用户同时登录**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/4a8ef54cc30cd127cb82a29055312dad.png)
+
+##### **2、添加定时器（同步定时器（Synchronizing Timer）-->用来设置集合点，其作用是：阻塞线程，直到指定的线程数量到达后，再一起释放，可以瞬间产生很大的压力**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/02fb19fe55aa81ff30109beaf8dc9c44.png)
+
+##### **3、设置集合点，当用户数量达到20个的时候再同时请求进行登录操作**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/d989838f4dc8a56bf6c3b7de11bf8f30.png)
+
+（1）模拟用户的数量：即指定同时释放的线程数数量，若设置为0，等于设置为线程组中的线程数量；
+
+（2）超时时间：即超时多少毫秒后同时释放指定的线程数；如果设置为0，该定时器将会等待线程数达到了设置的线程数才释放，若没有达到设置的线程数会一直死等。如果大于0，那么如果超过超时时间中设置的最大等待时间后还没达到设置的线程数，Timer将不再等待，释放已到达的线程。
+
+##### **4、添加聚合报告**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/c18b64d89108c7b8790376b73004dfd2.png)
+
+##### **5、执行脚本**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/b4b903930be114ccf996c48160e06fd9.png)
+
+##### **6、查看压测结果**
+
+聚合报告即压测过程结束时对每次请求及对整体请求的一次总结报告
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/38ac85ad8a796d1589d50ed3661b6451.png)
+
+**聚合报告中参数释意**
+
+**Label**：HTTP Request name属性值。
+
+**样本**：测试的过程中一共发出了多少个请求即总线程数，(如果模拟50个用户，每个用户迭代100次，这里就显示5000)，对应图形报表中的样本数目。
+
+**平均值**：单个Request的平均响应时间，计算方法是总运行时间除以发送到服务器的总请求数，对应图形报表中的平均值。
+
+**中位数**：50%用户的响应时间。
+
+**90%百分数**：90%用户的响应时间。
+
+**最小值**：服务器响应的最短时间。
+
+**最大值**：服务器响应的最长时间。
+
+**异常%**：本次测试中出错率，请求的数量/请求的总数。
+
+**吞吐量**：默认情况下表示每秒完成的请求数。
+
+**接受KB/Sec**：每秒从服务器接收到的数据量，即每秒钟请求的字节数，时间单位均为ms。
+
+##### **7、其他结果展示元件**
+
+**a、响应时间图**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/13fcc4120904f97ec625c8ad51246624.png)
+
+**b、图形结果**
+
+![图片](https://i-blog.csdnimg.cn/blog_migrate/88084e92031636bde0d3da144765fc83.png)
+
+### 总结
+
+      在本篇中，我们对JMeter工具作了简单的介绍，且分别从接口测试以及接口并发测试的层面进行了图文介绍。
+
+    对于接口性能测试方面，应当还涉及到相应的服务器性能监控，以及性能监控时需要观测的性能点，
+
+    尤其是在开展性能测试之前需要进行性能测试的需求分析、制定测试计划、编写和调试测试脚本、收集测试结果、分析测试数据整合[性能测试报告](https://so.csdn.net/so/search?q=%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A&spm=1001.2101.3001.7020)，诸多流程中涉及到很多细节，
+
+    都是我们需要去通过不断地学习和实践的。
+
+**最后感谢每一个认真阅读我文章的人，看着粉丝一路的上涨和关注，礼尚往来总是要有的，虽然不是什么很值钱的东西，如果你用得到的话可以直接拿走！**
+
+![](https://i-blog.csdnimg.cn/blog_migrate/d055e7db28b0d79a9ed5fa1d043a584d.png)
+
+### 软件测试面试文档
+
+我们学习必然是为了找到高薪的工作，下面这些面试题是来自阿里、腾讯、字节等一线互联网大厂最新的面试资料，并且有字节大佬给出了权威的解答，刷完这一套面试资料相信大家都能找到满意的工作。  
+ 
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/30504baf1cafd4de5d34410575ddb76c.png#pic_center)
+
+![](https://i-blog.csdnimg.cn/blog_migrate/1dbee94349e8b0954bf50084a208f8ad.png)
+
+![](https://img-blog.csdnimg.cn/7514b50ec0454ab0b13fce7340a5eaaf.png)
+
+软件测试学习交流群（资料共享）
+
+QQ群名片

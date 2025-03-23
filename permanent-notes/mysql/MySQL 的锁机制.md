@@ -94,6 +94,10 @@ INSERT INTO t (data) VALUES ('B1'), ('B2'), ('B3');
 
 **有一个很重要的点，锁是加在索引上的，如果 MySQL 没有走索引，遍历了表，则相当于加了表锁。**
 
+为了安全起见可以配置 `sql_safe_updates` 为 1，MySQL 会对 Update 和 Delete 做限制（满足一个即可）：
+* `WHERE` 必须有一个索引列
+* 使用 `LIMIT` 限制行数
+
 ## 3.1 S 锁和 X 锁
 
 `InnoDB` 实现了两种标准的锁：

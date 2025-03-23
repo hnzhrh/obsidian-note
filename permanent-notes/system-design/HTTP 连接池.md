@@ -109,3 +109,4 @@ server.tomcat.mbeanregistry.enabled = true
 * [网络连接状态](网络连接状态.md)
 * [Tomcat HTTP 配置 AI 回答](Tomcat%20HTTP%20配置%20AI%20回答.md)
 * [Spring Boot HTTP 性能优化配置方案](Spring%20Boot%20HTTP%20性能优化配置方案.md)
+* [nginx优化——包括https、keepalive等](https://lanjingling.github.io/2016/06/11/nginx-https-keepalived-youhua/)

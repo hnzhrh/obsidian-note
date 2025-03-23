@@ -10,9 +10,8 @@ aliases:
 ---
 RTA Nginx 配置使用 [Nginx 性能优化配置](Nginx%20性能优化配置.md)。
 
-# 配置前后端长连接
 
-通过配置前后端长连接避免大量的 `5XX` 错误和过多 `TIME_WAIT` 状态的连接。
 
 # Reference
 * [nginx反向代理时保持长连接-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/1832932)
+* [DeepSeek - Into the Unknown](https://chat.deepseek.com/a/chat/s/f579596e-dcd6-4132-8439-2820e5ba644f)
