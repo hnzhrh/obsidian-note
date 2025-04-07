@@ -1,12 +1,188 @@
 {
   "recentFiles": [
     {
-      "basename": "死锁",
-      "path": "permanent-notes/operating-system/死锁.md"
+      "basename": "微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云",
+      "path": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md"
+    },
+    {
+      "basename": "Resume",
+      "path": "permanent-notes/Resume.md"
+    },
+    {
+      "basename": "RTA-event-storming.excelidraw",
+      "path": "Excalidraw/RTA-event-storming.excelidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-04-06 16.23.04.excalidraw",
+      "path": "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md"
+    },
+    {
+      "basename": "Industrial software community",
+      "path": "permanent-notes/project/industrial-software-community/Industrial software community.md"
+    },
+    {
+      "basename": "RTA DDD Design",
+      "path": "permanent-notes/rta/RTA DDD Design.md"
+    },
+    {
+      "basename": "RTA",
+      "path": "permanent-notes/rta/RTA.md"
+    },
+    {
+      "basename": "Drawing 2025-03-24 10.44.50.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-24 10.44.50.excalidraw.md"
+    },
+    {
+      "basename": "RTA Epic Experiment",
+      "path": "permanent-notes/rta/RTA Epic Experiment.md"
+    },
+    {
+      "basename": "RTA Idea",
+      "path": "permanent-notes/rta/RTA Idea.md"
+    },
+    {
+      "basename": "DDD",
+      "path": "fleet-notes/domain-driven-design/DDD.md"
+    },
+    {
+      "basename": "DDD战略设计",
+      "path": "fleet-notes/domain-driven-design/DDD战略设计.md"
+    },
+    {
+      "basename": "通用前后端工程Prompt",
+      "path": "fleet-notes/ai/通用前后端工程Prompt.md"
+    },
+    {
+      "basename": "JavaScript 基础语法",
+      "path": "fleet-notes/java-script/JavaScript 基础语法.md"
+    },
+    {
+      "basename": "DDD 资源",
+      "path": "fleet-notes/DDD 资源.md"
+    },
+    {
+      "basename": "优雅关闭",
+      "path": "fleet-notes/spring-boot/优雅关闭.md"
+    },
+    {
+      "basename": "2025-04-06",
+      "path": "daily-log/2025-04-06.md"
+    },
+    {
+      "basename": "英文面试",
+      "path": "fleet-notes/英文面试.md"
+    },
+    {
+      "basename": "LeetCode was HARD until I Learned these 15 Patterns",
+      "path": "literature-notes/LeetCode was HARD until I Learned these 15 Patterns.md"
+    },
+    {
+      "basename": "How to Handle Failures in Distributed Systems",
+      "path": "literature-notes/How to Handle Failures in Distributed Systems.md"
+    },
+    {
+      "basename": "MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园",
+      "path": "literature-notes/MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园.md"
     },
     {
       "basename": "从 IDEA 到产品",
       "path": "permanent-notes/production/从 IDEA 到产品.md"
+    },
+    {
+      "basename": "微服务架构学习与思考(01)：什么是微服务？微服务的优势和劣势 - 九卷 - 博客园",
+      "path": "literature-notes/微服务架构学习与思考(01)：什么是微服务？微服务的优势和劣势 - 九卷 - 博客园.md"
+    },
+    {
+      "basename": "MySQL 的锁机制",
+      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
+    },
+    {
+      "basename": "HSBC 一面",
+      "path": "permanent-notes/interview/HSBC 一面.md"
+    },
+    {
+      "basename": "HSBC 笔试题目",
+      "path": "permanent-notes/interview/HSBC 笔试题目.md"
+    },
+    {
+      "basename": "MySQL 的日志",
+      "path": "permanent-notes/mysql/MySQL 的日志.md"
+    },
+    {
+      "basename": "MySQL MVCC 机制",
+      "path": "permanent-notes/mysql/MySQL MVCC 机制.md"
+    },
+    {
+      "basename": "Redis 主从数据不一致该怎么办？",
+      "path": "permanent-notes/redis/Redis 主从数据不一致该怎么办？.md"
+    },
+    {
+      "basename": "Redis 主从同步",
+      "path": "permanent-notes/redis/Redis 主从同步.md"
+    },
+    {
+      "basename": "Redis 如何避免主从复制风暴？",
+      "path": "permanent-notes/redis/Redis 如何避免主从复制风暴？.md"
+    },
+    {
+      "basename": "Redis 主从同步拓扑结构有哪些？",
+      "path": "permanent-notes/redis/Redis 主从同步拓扑结构有哪些？.md"
+    },
+    {
+      "basename": "Redis 主从同步全量同步策略有哪些？各自有什么优劣势？",
+      "path": "permanent-notes/redis/Redis 主从同步全量同步策略有哪些？各自有什么优劣势？.md"
+    },
+    {
+      "basename": "Redis 主从同步流程和版本演变",
+      "path": "permanent-notes/redis/Redis 主从同步流程和版本演变.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "permanent-notes/redis/Redis.md"
+    },
+    {
+      "basename": "System Design Index",
+      "path": "permanent-notes/system-design/System Design Index.md"
+    },
+    {
+      "basename": "数据库和缓存如何保持数据一致性？",
+      "path": "permanent-notes/redis/数据库和缓存如何保持数据一致性？.md"
+    },
+    {
+      "basename": "Redis 分布式锁实现",
+      "path": "fleet-notes/redis/Redis 分布式锁实现.md"
+    },
+    {
+      "basename": "Redis-CPU绑核",
+      "path": "fleet-notes/redis/Redis-CPU绑核.md"
+    },
+    {
+      "basename": "Redis Cluster 对 Lua 脚本和事务的影响",
+      "path": "fleet-notes/redis/Redis Cluster 对 Lua 脚本和事务的影响.md"
+    },
+    {
+      "basename": "Redis-主从复制",
+      "path": "fleet-notes/redis/Redis-主从复制.md"
+    },
+    {
+      "basename": "Redis-listpack编码",
+      "path": "fleet-notes/redis/Redis-listpack编码.md"
+    },
+    {
+      "basename": "Redis 如何实现分布式锁？",
+      "path": "permanent-notes/redis/Redis 如何实现分布式锁？.md"
+    },
+    {
+      "basename": "Redis 哨兵机制",
+      "path": "permanent-notes/redis/Redis 哨兵机制.md"
+    },
+    {
+      "basename": "Redis 的 run id 和 replication id",
+      "path": "permanent-notes/redis/Redis 的 run id 和 replication id.md"
+    },
+    {
+      "basename": "死锁",
+      "path": "permanent-notes/operating-system/死锁.md"
     },
     {
       "basename": "api list",
@@ -21,184 +197,8 @@
       "path": "fleet-notes/Web3.0 了解.md"
     },
     {
-      "basename": "数据库和缓存如何保持数据一致性？",
-      "path": "permanent-notes/redis/数据库和缓存如何保持数据一致性？.md"
-    },
-    {
       "basename": "如何解决缓存穿透、击穿和雪崩问题？",
       "path": "permanent-notes/redis/如何解决缓存穿透、击穿和雪崩问题？.md"
-    },
-    {
-      "basename": "synchronized 锁升级过程",
-      "path": "fleet-notes/java/synchronized 锁升级过程.md"
-    },
-    {
-      "basename": "逃逸分析",
-      "path": "fleet-notes/java/逃逸分析.md"
-    },
-    {
-      "basename": "Java",
-      "path": "fleet-notes/java/Java.md"
-    },
-    {
-      "basename": "线程池如何保活核心线程和非核心线程？",
-      "path": "fleet-notes/java/线程池如何保活核心线程和非核心线程？.md"
-    },
-    {
-      "basename": "架构",
-      "path": "permanent-notes/architecture/架构.md"
-    },
-    {
-      "basename": "软件设计原则",
-      "path": "permanent-notes/architecture/软件设计原则.md"
-    },
-    {
-      "basename": "探寻软件架构的本质，到底什么是架构-腾讯云开发者社区-腾讯云",
-      "path": "literature-notes/探寻软件架构的本质，到底什么是架构-腾讯云开发者社区-腾讯云.md"
-    },
-    {
-      "basename": "MySQL 的锁机制",
-      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
-    },
-    {
-      "basename": "RTA",
-      "path": "permanent-notes/rta/RTA.md"
-    },
-    {
-      "basename": "DDD战术设计",
-      "path": "fleet-notes/domain-driven-design/DDD战术设计.md"
-    },
-    {
-      "basename": "DDD",
-      "path": "fleet-notes/domain-driven-design/DDD.md"
-    },
-    {
-      "basename": "DDD-Mindmap",
-      "path": "fleet-notes/domain-driven-design/DDD-Mindmap.md"
-    },
-    {
-      "basename": "DDD战略设计",
-      "path": "fleet-notes/domain-driven-design/DDD战略设计.md"
-    },
-    {
-      "basename": "DDD",
-      "path": "permanent-notes/architecture/DDD.md"
-    },
-    {
-      "basename": "System-design-terminology",
-      "path": "permanent-notes/System-design-terminology.md"
-    },
-    {
-      "basename": "System Design Index",
-      "path": "permanent-notes/system-design/System Design Index.md"
-    },
-    {
-      "basename": "微服务",
-      "path": "permanent-notes/architecture/微服务.md"
-    },
-    {
-      "basename": "RTA-event-storming.excelidraw",
-      "path": "Excalidraw/RTA-event-storming.excelidraw.md"
-    },
-    {
-      "basename": "RTA DDD Design",
-      "path": "permanent-notes/rta/RTA DDD Design.md"
-    },
-    {
-      "basename": "微服务架构模型",
-      "path": "fleet-notes/微服务架构模型.md"
-    },
-    {
-      "basename": "如何在不停机的情况下迁移数据库？",
-      "path": "permanent-notes/solution/如何在不停机的情况下迁移数据库？.md"
-    },
-    {
-      "basename": "高性能短链设计方案",
-      "path": "permanent-notes/solution/高性能短链设计方案.md"
-    },
-    {
-      "basename": "面试官再问我如何保证 RocketMQ 不丢失消息,这回我笑了！ - 楼下小黑哥 - 博客园",
-      "path": "literature-notes/面试官再问我如何保证 RocketMQ 不丢失消息,这回我笑了！ - 楼下小黑哥 - 博客园.md"
-    },
-    {
-      "basename": "InnoDB 的 Buffer Pool",
-      "path": "permanent-notes/mysql/InnoDB 的 Buffer Pool.md"
-    },
-    {
-      "basename": "Redis",
-      "path": "permanent-notes/redis/Redis.md"
-    },
-    {
-      "basename": "Redis 连接池",
-      "path": "permanent-notes/redis/Redis 连接池.md"
-    },
-    {
-      "basename": "MySQL 事务",
-      "path": "permanent-notes/mysql/MySQL 事务.md"
-    },
-    {
-      "basename": "MySQL 索引",
-      "path": "permanent-notes/mysql/MySQL 索引.md"
-    },
-    {
-      "basename": "MySQL",
-      "path": "permanent-notes/mysql/MySQL.md"
-    },
-    {
-      "basename": "15｜数据迁移：如何在不停机的情况下保证迁移数据的一致性？-后端工程师的高阶面经-极客时间",
-      "path": "literature-notes/15｜数据迁移：如何在不停机的情况下保证迁移数据的一致性？-后端工程师的高阶面经-极客时间.md"
-    },
-    {
-      "basename": "Nginx 性能优化配置",
-      "path": "permanent-notes/nginx/Nginx 性能优化配置.md"
-    },
-    {
-      "basename": "Nginx",
-      "path": "permanent-notes/nginx/Nginx.md"
-    },
-    {
-      "basename": "负载均衡",
-      "path": "permanent-notes/system-design/负载均衡.md"
-    },
-    {
-      "basename": "uml-sequence",
-      "path": "obsidian-config/template/uml-sequence.md"
-    },
-    {
-      "basename": "HTTP 连接池",
-      "path": "permanent-notes/system-design/HTTP 连接池.md"
-    },
-    {
-      "basename": "Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区",
-      "path": "literature-notes/Nginx极简实战—Nginx服务器高性能优化配置，轻松实现10万并发访问量-阿里云开发者社区.md"
-    },
-    {
-      "basename": "RTA Nginx 配置",
-      "path": "permanent-notes/rta/RTA Nginx 配置.md"
-    },
-    {
-      "basename": "RTA 是如何做到高并发、高性能的？",
-      "path": "permanent-notes/rta/RTA 是如何做到高并发、高性能的？.md"
-    },
-    {
-      "basename": "MySQL 的日志",
-      "path": "permanent-notes/mysql/MySQL 的日志.md"
-    },
-    {
-      "basename": "Redis 内存满了怎么办？",
-      "path": "permanent-notes/redis/Redis 内存满了怎么办？.md"
-    },
-    {
-      "basename": "ebay-pipeline-shcedule 资料",
-      "path": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-shcedule 资料.md"
-    },
-    {
-      "basename": "ebay-pipeline-scheduler 设计",
-      "path": "fleet-notes/ebay-pipeline-schedule/ebay-pipeline-scheduler 设计.md"
-    },
-    {
-      "basename": "Redis 突然变慢了怎么办？",
-      "path": "permanent-notes/redis/Redis 突然变慢了怎么办？.md"
     }
   ],
   "omittedPaths": [],

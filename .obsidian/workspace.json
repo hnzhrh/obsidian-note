@@ -4,36 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "d9abb50b9bb5fbc1",
+        "id": "84746471466b321b",
         "type": "tabs",
         "children": [
           {
-            "id": "05dfbf1276516df7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "365bac4ff4e3f4a7",
+            "id": "1c88c14474c4d776",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/operating-system/死锁.md",
+                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "死锁"
+              "title": "微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
+            }
+          },
+          {
+            "id": "e47b2052faaa5935",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/RTA-event-storming.excelidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "RTA-event-storming.excelidraw"
+            }
+          },
+          {
+            "id": "2f9e128321d57028",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent-notes/project/industrial-software-community/Industrial software community.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Industrial software community"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -65,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "死锁",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "permanent-notes/operating-system/死锁.md",
+                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -126,7 +142,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 死锁"
+              "title": "Backlinks for 微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
             }
           },
           {
@@ -164,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "permanent-notes/operating-system/死锁.md",
+                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 死锁"
+              "title": "Outline of 微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
             }
           },
           {
@@ -217,44 +233,44 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "322c7ae04d1d734a",
+  "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/production/从 IDEA 到产品.md",
-    "permanent-notes/api/api list.md",
-    "permanent-notes/production",
-    "permanent-notes/operating-system/死锁.md",
-    "fleet-notes/mq/MQ 消息积压了怎么办？.md",
-    "fleet-notes/Web3.0 了解.md",
-    "fleet-notes/mq",
-    "fleet-notes/Untitled.md",
-    "permanent-notes/redis/数据库和缓存如何保持数据一致性？.md",
-    "permanent-notes/redis/如何解决缓存穿透、击穿和雪崩问题？.md",
-    "fleet-notes/java/synchronized 锁升级过程.md",
-    "permanent-notes/api",
-    "mindmaps/IT Brain.xmind",
-    "fleet-notes/java/逃逸分析.md",
-    "fleet-notes/java/Java.md",
-    "fleet-notes/java/线程池如何保活核心线程和非核心线程？.md",
-    "permanent-notes/architecture/架构.md",
-    "permanent-notes/architecture/软件设计原则.md",
-    "literature-notes/探寻软件架构的本质，到底什么是架构-腾讯云开发者社区-腾讯云.md",
-    "permanent-notes/mysql/MySQL 的锁机制.md",
-    "permanent-notes/rta/RTA.md",
-    "fleet-notes/domain-driven-design/DDD战术设计.md",
-    "fleet-notes/domain-driven-design/DDD.md",
-    "fleet-notes/domain-driven-design/DDD-Mindmap.md",
-    "fleet-notes/domain-driven-design/DDD战略设计.md",
-    "permanent-notes/architecture/DDD.md",
-    "permanent-notes/System-design-terminology.md",
-    "permanent-notes/system-design/System Design Index.md",
-    "permanent-notes/architecture/微服务.md",
-    "mindmaps/架构.xmind",
+    "permanent-notes/Resume.md",
+    "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
+    "mindmaps/DDD.xmind",
     "Excalidraw/RTA-event-storming.excelidraw.md",
-    "mindmaps/面试题目整理.xmind",
-    "mindmaps/面试 SOP.xmind",
-    "permanent-notes/debug-skill",
-    "permanent-notes/java",
-    "fleet-notes/network",
+    "permanent-notes/ddd",
+    "permanent-notes/Me.md",
+    "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md",
+    "permanent-notes/project/industrial-software-community/Industrial software community.md",
+    "permanent-notes/rta/RTA DDD Design.md",
+    "permanent-notes/rta/RTA.md",
+    "Excalidraw/Drawing 2025-03-24 10.44.50.excalidraw.md",
+    "permanent-notes/rta/RTA Epic Experiment.md",
+    "permanent-notes/project/industrial-software-community",
+    "permanent-notes/rta/RTA Idea.md",
+    "permanent-notes/project/Untitled.md",
+    "permanent-notes/project",
+    "fleet-notes/domain-driven-design/DDD.md",
+    "fleet-notes/domain-driven-design/DDD战略设计.md",
+    "fleet-notes/ai/通用前后端工程Prompt.md",
+    "fleet-notes/java-script/JavaScript 基础语法.md",
+    "fleet-notes/industry-software-community",
+    "fleet-notes/DDD 资源.md",
+    "fleet-notes/java-script",
+    "fleet-notes/j.md",
+    "fleet-notes/spring-boot/优雅关闭.md",
+    "daily-log/2025-04-06.md",
+    "fleet-notes/20250406130910.md",
+    "fleet-notes/英文面试.md",
+    "literature-notes/LeetCode was HARD until I Learned these 15 Patterns.md",
+    "literature-notes/How to Handle Failures in Distributed Systems.md",
+    "literature-notes/MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园.md",
+    "permanent-notes/production/从 IDEA 到产品.md",
+    "mindmaps/工业软件社区.xmind",
+    "mindmaps/英文面试 SOP.xmind",
+    "permanent-notes/production",
+    "fleet-notes/mq",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",
