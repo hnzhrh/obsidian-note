@@ -113,3 +113,4 @@ aliases:
 * [User Story Templates To Streamline Workflows](https://www.aha.io/roadmapping/guide/requirements-management/what-is-a-good-feature-or-user-story-template)
 * [4 user story templates + how to write them with examples](https://www.pluralsight.com/resources/blog/software-development/user-story-template)
 * [45 User Story Examples To Inspire Your Agile Team | Parabol](https://www.parabol.co/blog/user-story-examples/#user-stories-with-acceptance-criteria-examples)
+* [11｜如何有效编写用户故事？-徐昊 · AI时代的软件工程-极客时间](https://time.geekbang.org/column/article/763362)

@@ -30,6 +30,8 @@ done: false
 ## 5.1 [[count(*) 和 count(1) 有什么区别？哪个性能最好？]]
 ## 5.2 EXISTS 和 IN 的区别是什么？
 ## 5.3 [[VARCHAR 和 CHAR 的区别]]
+## [[MySQL 的查询语句执行流程]]
+## [[MySQL 为什么一行最大 65535 Byte？]]
 # 6 Reference
 * [图解MySQL介绍 \| 小林coding](https://xiaolincoding.com/mysql/)
 * [MySQL实战45讲-极客时间](https://time.geekbang.org/column/intro/100020801)

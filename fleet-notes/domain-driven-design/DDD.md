@@ -44,7 +44,7 @@ aliases:
 - **领域事件**：表示领域中发生的重要事件，可以用来触发其他业务逻辑或跨限界上下文的通信。
 # 方法论
 
-* [事件风暴](事件风暴.md)
+* [事件风暴](fleet-notes/domain-driven-design/事件风暴.md)
 
 # 核心概念
 
@@ -55,12 +55,3 @@ aliases:
 		* 支撑域
 
 # References
-
-* 【从 MVC 到 DDD 重构，我们有了新想法！—— Java 项目重构经验总结，彻底搞清楚 MVC 和 DDD】 https://www.bilibili.com/video/BV1Dz4y1V7zf/?share_source=copy_web&vd_source=3eb28f54d17403f9d05aaa09bef421a4
-* 【1-熊锐-DDD 的理解及实践探讨】 https://www.bilibili.com/video/BV1pG4y167jF/?share_source=copy_web&vd_source=3eb28f54d17403f9d05aaa09bef421a4
-* [DDD领域建模实战——四色建模法 - Su的技术博客](https://blog.verysu.com/aritcle/ddd/1823)
-* [Domain-Driven Design in ProductLand - Alberto Brandolini - DDD Europe 2022 - YouTube](https://youtu.be/ufdcfe8VmHM?si=DdWgZ656jdZbn3KN)
-* [DDD Explained in 9 MINUTES | What is Domain Driven Design? - YouTube](https://youtu.be/kbGYy49fCz4?si=Xg6OW_jV5yMW6Ec8)
-* [Domain Driven Design: What You Need To Know - YouTube](https://youtu.be/4rhzdZIDX_k?si=ZiQU2D38xei0KiaN)
-* [STOP dogmatic Domain Driven Design - YouTube](https://youtu.be/8XmXhXH_q90?si=YrRqIkQekhJXA0p9)
-* [Fetching Title#348o](https://youtu.be/o-ym035R1eY?si=jvgf_LbXThM-_R9k)

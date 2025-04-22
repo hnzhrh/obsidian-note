@@ -4,52 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "84746471466b321b",
+        "id": "73745973e4ba66f6",
         "type": "tabs",
         "children": [
           {
-            "id": "1c88c14474c4d776",
+            "id": "32eca31ef93918c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
+                "file": "permanent-notes/ddd/事件风暴.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
+              "title": "事件风暴"
             }
           },
           {
-            "id": "e47b2052faaa5935",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/RTA-event-storming.excelidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "RTA-event-storming.excelidraw"
-            }
-          },
-          {
-            "id": "2f9e128321d57028",
+            "id": "aedd307663f3d6ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/project/industrial-software-community/Industrial software community.md",
+                "file": "permanent-notes/ddd/DDD.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Industrial software community"
+              "title": "DDD"
+            }
+          },
+          {
+            "id": "3325aec6dbb8ed39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -81,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ddd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
+                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -142,7 +146,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
+              "title": "Backlinks for Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
             }
           },
           {
@@ -151,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "permanent-notes/mysql/MySQL 事务.md",
+                "file": "permanent-notes/ddd/事件风暴.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from MySQL 事务"
+              "title": "Outgoing links from 事件风暴"
             }
           },
           {
@@ -180,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
+                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云"
+              "title": "Outline of Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
             }
           },
           {
@@ -235,42 +239,42 @@
   },
   "active": "ee9a6b9b366143c2",
   "lastOpenFiles": [
-    "permanent-notes/Resume.md",
-    "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md",
-    "mindmaps/DDD.xmind",
-    "Excalidraw/RTA-event-storming.excelidraw.md",
-    "permanent-notes/ddd",
-    "permanent-notes/Me.md",
-    "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md",
-    "permanent-notes/project/industrial-software-community/Industrial software community.md",
-    "permanent-notes/rta/RTA DDD Design.md",
-    "permanent-notes/rta/RTA.md",
+    "permanent-notes/redis/Redis.md",
+    "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
+    "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
+    "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
+    "fleet-notes/domain-driven-design/规则.md",
+    "permanent-notes/ddd/DDD.md",
+    "permanent-notes/ddd/事件风暴.md",
+    "fleet-notes/domain-driven-design/事件风暴.md",
+    "permanent-notes/sops/dev sop.md",
+    "permanent-notes/sops/Untitled",
+    "permanent-notes/sops/dev-sops",
+    "permanent-notes/sops",
+    "fleet-notes/domain-driven-design/领域事件.md",
     "Excalidraw/Drawing 2025-03-24 10.44.50.excalidraw.md",
-    "permanent-notes/rta/RTA Epic Experiment.md",
-    "permanent-notes/project/industrial-software-community",
-    "permanent-notes/rta/RTA Idea.md",
-    "permanent-notes/project/Untitled.md",
-    "permanent-notes/project",
     "fleet-notes/domain-driven-design/DDD.md",
-    "fleet-notes/domain-driven-design/DDD战略设计.md",
-    "fleet-notes/ai/通用前后端工程Prompt.md",
-    "fleet-notes/java-script/JavaScript 基础语法.md",
-    "fleet-notes/industry-software-community",
+    "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md",
+    "mindmaps/DDD.xmind",
+    "permanent-notes/architecture/DDD.md",
     "fleet-notes/DDD 资源.md",
-    "fleet-notes/java-script",
-    "fleet-notes/j.md",
-    "fleet-notes/spring-boot/优雅关闭.md",
-    "daily-log/2025-04-06.md",
-    "fleet-notes/20250406130910.md",
-    "fleet-notes/英文面试.md",
-    "literature-notes/LeetCode was HARD until I Learned these 15 Patterns.md",
-    "literature-notes/How to Handle Failures in Distributed Systems.md",
-    "literature-notes/MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园.md",
+    "fleet-notes/domain-driven-design/DDD-Mindmap.md",
     "permanent-notes/production/从 IDEA 到产品.md",
-    "mindmaps/工业软件社区.xmind",
-    "mindmaps/英文面试 SOP.xmind",
-    "permanent-notes/production",
-    "fleet-notes/mq",
+    "fleet-notes/user-story.md",
+    "permanent-notes/production/用户故事.md",
+    "permanent-notes/english/Anki 单词卡片.md",
+    "mindmaps/学英语.xmind",
+    "permanent-notes/architecture/微服务.md",
+    "mindmaps/Offer Q.xmind",
+    "mindmaps/Idea to Production.xmind",
+    "permanent-notes/architecture/Raft 算法.md",
+    "permanent-notes/architecture/架构.md",
+    "permanent-notes/architecture/软件设计原则.md",
+    "permanent-notes/system-design/System Design Index.md",
+    "permanent-notes/english",
+    "permanent-notes/project/production-community/产品社区 IDEA.md",
+    "mindmaps/企业出海.xmind",
+    "permanent-notes/project/出海",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

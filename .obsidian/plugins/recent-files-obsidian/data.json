@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云",
-      "path": "literature-notes/微服务中的鉴权该怎么做？-腾讯云开发者社区-腾讯云.md"
-    },
-    {
-      "basename": "Resume",
-      "path": "permanent-notes/Resume.md"
-    },
-    {
-      "basename": "RTA-event-storming.excelidraw",
-      "path": "Excalidraw/RTA-event-storming.excelidraw.md"
-    },
-    {
-      "basename": "Drawing 2025-04-06 16.23.04.excalidraw",
-      "path": "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md"
-    },
-    {
-      "basename": "Industrial software community",
-      "path": "permanent-notes/project/industrial-software-community/Industrial software community.md"
-    },
-    {
-      "basename": "RTA DDD Design",
-      "path": "permanent-notes/rta/RTA DDD Design.md"
-    },
-    {
-      "basename": "RTA",
-      "path": "permanent-notes/rta/RTA.md"
-    },
-    {
-      "basename": "Drawing 2025-03-24 10.44.50.excalidraw",
-      "path": "Excalidraw/Drawing 2025-03-24 10.44.50.excalidraw.md"
-    },
-    {
-      "basename": "RTA Epic Experiment",
-      "path": "permanent-notes/rta/RTA Epic Experiment.md"
-    },
-    {
-      "basename": "RTA Idea",
-      "path": "permanent-notes/rta/RTA Idea.md"
-    },
-    {
-      "basename": "DDD",
-      "path": "fleet-notes/domain-driven-design/DDD.md"
-    },
-    {
-      "basename": "DDD战略设计",
-      "path": "fleet-notes/domain-driven-design/DDD战略设计.md"
-    },
-    {
-      "basename": "通用前后端工程Prompt",
-      "path": "fleet-notes/ai/通用前后端工程Prompt.md"
-    },
-    {
-      "basename": "JavaScript 基础语法",
-      "path": "fleet-notes/java-script/JavaScript 基础语法.md"
-    },
-    {
-      "basename": "DDD 资源",
-      "path": "fleet-notes/DDD 资源.md"
-    },
-    {
-      "basename": "优雅关闭",
-      "path": "fleet-notes/spring-boot/优雅关闭.md"
-    },
-    {
-      "basename": "2025-04-06",
-      "path": "daily-log/2025-04-06.md"
-    },
-    {
-      "basename": "英文面试",
-      "path": "fleet-notes/英文面试.md"
-    },
-    {
-      "basename": "LeetCode was HARD until I Learned these 15 Patterns",
-      "path": "literature-notes/LeetCode was HARD until I Learned these 15 Patterns.md"
-    },
-    {
-      "basename": "How to Handle Failures in Distributed Systems",
-      "path": "literature-notes/How to Handle Failures in Distributed Systems.md"
-    },
-    {
-      "basename": "MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园",
-      "path": "literature-notes/MCP （Model Context Protocol）初体验：企业数据与大模型融合初探 - CareySon - 博客园.md"
-    },
-    {
-      "basename": "从 IDEA 到产品",
-      "path": "permanent-notes/production/从 IDEA 到产品.md"
-    },
-    {
-      "basename": "微服务架构学习与思考(01)：什么是微服务？微服务的优势和劣势 - 九卷 - 博客园",
-      "path": "literature-notes/微服务架构学习与思考(01)：什么是微服务？微服务的优势和劣势 - 九卷 - 博客园.md"
-    },
-    {
-      "basename": "MySQL 的锁机制",
-      "path": "permanent-notes/mysql/MySQL 的锁机制.md"
-    },
-    {
-      "basename": "HSBC 一面",
-      "path": "permanent-notes/interview/HSBC 一面.md"
-    },
-    {
-      "basename": "HSBC 笔试题目",
-      "path": "permanent-notes/interview/HSBC 笔试题目.md"
-    },
-    {
-      "basename": "MySQL 的日志",
-      "path": "permanent-notes/mysql/MySQL 的日志.md"
-    },
-    {
-      "basename": "MySQL MVCC 机制",
-      "path": "permanent-notes/mysql/MySQL MVCC 机制.md"
-    },
-    {
-      "basename": "Redis 主从数据不一致该怎么办？",
-      "path": "permanent-notes/redis/Redis 主从数据不一致该怎么办？.md"
-    },
-    {
-      "basename": "Redis 主从同步",
-      "path": "permanent-notes/redis/Redis 主从同步.md"
-    },
-    {
-      "basename": "Redis 如何避免主从复制风暴？",
-      "path": "permanent-notes/redis/Redis 如何避免主从复制风暴？.md"
-    },
-    {
-      "basename": "Redis 主从同步拓扑结构有哪些？",
-      "path": "permanent-notes/redis/Redis 主从同步拓扑结构有哪些？.md"
-    },
-    {
-      "basename": "Redis 主从同步全量同步策略有哪些？各自有什么优劣势？",
-      "path": "permanent-notes/redis/Redis 主从同步全量同步策略有哪些？各自有什么优劣势？.md"
-    },
-    {
-      "basename": "Redis 主从同步流程和版本演变",
-      "path": "permanent-notes/redis/Redis 主从同步流程和版本演变.md"
+      "basename": "Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金",
+      "path": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md"
     },
     {
       "basename": "Redis",
       "path": "permanent-notes/redis/Redis.md"
     },
     {
+      "basename": "Redis Object Encoding ZIPLIST",
+      "path": "permanent-notes/redis/Redis Object Encoding ZIPLIST.md"
+    },
+    {
+      "basename": "Redis 有哪些数据类型？各自的实现是怎样的？",
+      "path": "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md"
+    },
+    {
+      "basename": "规则",
+      "path": "fleet-notes/domain-driven-design/规则.md"
+    },
+    {
+      "basename": "DDD",
+      "path": "permanent-notes/ddd/DDD.md"
+    },
+    {
+      "basename": "事件风暴",
+      "path": "permanent-notes/ddd/事件风暴.md"
+    },
+    {
+      "basename": "事件风暴",
+      "path": "fleet-notes/domain-driven-design/事件风暴.md"
+    },
+    {
+      "basename": "dev sop",
+      "path": "permanent-notes/sops/dev sop.md"
+    },
+    {
+      "basename": "领域事件",
+      "path": "fleet-notes/domain-driven-design/领域事件.md"
+    },
+    {
+      "basename": "Drawing 2025-03-24 10.44.50.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-24 10.44.50.excalidraw.md"
+    },
+    {
+      "basename": "DDD",
+      "path": "fleet-notes/domain-driven-design/DDD.md"
+    },
+    {
+      "basename": "Drawing 2025-04-06 16.23.04.excalidraw",
+      "path": "Excalidraw/Drawing 2025-04-06 16.23.04.excalidraw.md"
+    },
+    {
+      "basename": "DDD",
+      "path": "mindmaps/DDD.xmind"
+    },
+    {
+      "basename": "DDD 资源",
+      "path": "fleet-notes/DDD 资源.md"
+    },
+    {
+      "basename": "DDD-Mindmap",
+      "path": "fleet-notes/domain-driven-design/DDD-Mindmap.md"
+    },
+    {
+      "basename": "从 IDEA 到产品",
+      "path": "permanent-notes/production/从 IDEA 到产品.md"
+    },
+    {
+      "basename": "user-story",
+      "path": "fleet-notes/user-story.md"
+    },
+    {
+      "basename": "用户故事",
+      "path": "permanent-notes/production/用户故事.md"
+    },
+    {
+      "basename": "Anki 单词卡片",
+      "path": "permanent-notes/english/Anki 单词卡片.md"
+    },
+    {
+      "basename": "微服务",
+      "path": "permanent-notes/architecture/微服务.md"
+    },
+    {
+      "basename": "Raft 算法",
+      "path": "permanent-notes/architecture/Raft 算法.md"
+    },
+    {
+      "basename": "架构",
+      "path": "permanent-notes/architecture/架构.md"
+    },
+    {
+      "basename": "软件设计原则",
+      "path": "permanent-notes/architecture/软件设计原则.md"
+    },
+    {
       "basename": "System Design Index",
       "path": "permanent-notes/system-design/System Design Index.md"
     },
     {
-      "basename": "数据库和缓存如何保持数据一致性？",
-      "path": "permanent-notes/redis/数据库和缓存如何保持数据一致性？.md"
+      "basename": "产品社区 IDEA",
+      "path": "permanent-notes/project/production-community/产品社区 IDEA.md"
     },
     {
-      "basename": "Redis 分布式锁实现",
-      "path": "fleet-notes/redis/Redis 分布式锁实现.md"
+      "basename": "如何拥有英语思维？",
+      "path": "literature-notes/如何拥有英语思维？.md"
     },
     {
-      "basename": "Redis-CPU绑核",
-      "path": "fleet-notes/redis/Redis-CPU绑核.md"
+      "basename": "HTTP 连接池",
+      "path": "permanent-notes/system-design/HTTP 连接池.md"
     },
     {
-      "basename": "Redis Cluster 对 Lua 脚本和事务的影响",
-      "path": "fleet-notes/redis/Redis Cluster 对 Lua 脚本和事务的影响.md"
+      "basename": "Tomcat HTTP 配置 AI 回答",
+      "path": "literature-notes/Tomcat HTTP 配置 AI 回答.md"
     },
     {
-      "basename": "Redis-主从复制",
-      "path": "fleet-notes/redis/Redis-主从复制.md"
+      "basename": "Java 线程池",
+      "path": "permanent-notes/java/Java 线程池.md"
     },
     {
-      "basename": "Redis-listpack编码",
-      "path": "fleet-notes/redis/Redis-listpack编码.md"
+      "basename": "10组好看的网页设计模板，快速提升设计思路！-即时设计",
+      "path": "literature-notes/10组好看的网页设计模板，快速提升设计思路！-即时设计.md"
     },
     {
-      "basename": "Redis 如何实现分布式锁？",
-      "path": "permanent-notes/redis/Redis 如何实现分布式锁？.md"
+      "basename": "RTA-event-storming.excelidraw",
+      "path": "Excalidraw/RTA-event-storming.excelidraw.md"
     },
     {
-      "basename": "Redis 哨兵机制",
-      "path": "permanent-notes/redis/Redis 哨兵机制.md"
+      "basename": "RTA",
+      "path": "permanent-notes/rta/RTA.md"
     },
     {
-      "basename": "Redis 的 run id 和 replication id",
-      "path": "permanent-notes/redis/Redis 的 run id 和 replication id.md"
+      "basename": "RTA 用户流程图",
+      "path": "permanent-notes/rta/RTA 用户流程图.md"
     },
     {
-      "basename": "死锁",
-      "path": "permanent-notes/operating-system/死锁.md"
+      "basename": "RTA DDD Design",
+      "path": "permanent-notes/rta/RTA DDD Design.md"
     },
     {
-      "basename": "api list",
-      "path": "permanent-notes/api/api list.md"
+      "basename": "CRM 系统",
+      "path": "fleet-notes/CRM 系统.md"
     },
     {
-      "basename": "MQ 消息积压了怎么办？",
-      "path": "fleet-notes/mq/MQ 消息积压了怎么办？.md"
+      "basename": "什么是CRM_CRM系统软件介绍_纷享销客CRM",
+      "path": "literature-notes/什么是CRM_CRM系统软件介绍_纷享销客CRM.md"
     },
     {
-      "basename": "Web3.0 了解",
-      "path": "fleet-notes/Web3.0 了解.md"
+      "basename": "出海资源搜集",
+      "path": "permanent-notes/project/出海/出海资源搜集.md"
     },
     {
-      "basename": "如何解决缓存穿透、击穿和雪崩问题？",
-      "path": "permanent-notes/redis/如何解决缓存穿透、击穿和雪崩问题？.md"
+      "basename": "关于 RocketMQ 事务消息的正确打开方式 → 你学废了吗 - 青石路 - 博客园",
+      "path": "literature-notes/关于 RocketMQ 事务消息的正确打开方式 → 你学废了吗 - 青石路 - 博客园.md"
+    },
+    {
+      "basename": "MySQL 事务",
+      "path": "permanent-notes/mysql/MySQL 事务.md"
+    },
+    {
+      "basename": "MySQL MVCC 机制",
+      "path": "permanent-notes/mysql/MySQL MVCC 机制.md"
+    },
+    {
+      "basename": "MySQL 的日志",
+      "path": "permanent-notes/mysql/MySQL 的日志.md"
+    },
+    {
+      "basename": "Linux网络编程--sendfile零拷贝高效率发送文件_linux sendfile-CSDN博客",
+      "path": "literature-notes/Linux网络编程--sendfile零拷贝高效率发送文件_linux sendfile-CSDN博客.md"
+    },
+    {
+      "basename": "MySQL 索引",
+      "path": "permanent-notes/mysql/MySQL 索引.md"
+    },
+    {
+      "basename": "MySQL 为什么一行最大 65535 Byte？",
+      "path": "permanent-notes/mysql/MySQL 为什么一行最大 65535 Byte？.md"
+    },
+    {
+      "basename": "MySQL",
+      "path": "permanent-notes/mysql/MySQL.md"
+    },
+    {
+      "basename": "MySQL 的查询语句执行流程",
+      "path": "permanent-notes/mysql/MySQL 的查询语句执行流程.md"
+    },
+    {
+      "basename": "count(*) 和 count(1) 有什么区别？哪个性能最好？",
+      "path": "permanent-notes/mysql/count(*) 和 count(1) 有什么区别？哪个性能最好？.md"
+    },
+    {
+      "basename": "VARCHAR 和 CHAR 的区别",
+      "path": "permanent-notes/mysql/VARCHAR 和 CHAR 的区别.md"
+    },
+    {
+      "basename": "MySQL Explain 用法",
+      "path": "permanent-notes/mysql/MySQL Explain 用法.md"
     }
   ],
   "omittedPaths": [],
