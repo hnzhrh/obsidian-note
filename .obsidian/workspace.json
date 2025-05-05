@@ -4,56 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "73745973e4ba66f6",
+        "id": "239ede4846d9ca9b",
         "type": "tabs",
         "children": [
           {
-            "id": "32eca31ef93918c6",
+            "id": "eae5e483458a9cc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "permanent-notes/ddd/事件风暴.md",
+                "file": "permanent-notes/web3/Web3 资源汇总.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "事件风暴"
-            }
-          },
-          {
-            "id": "aedd307663f3d6ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "permanent-notes/ddd/DDD.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "DDD"
-            }
-          },
-          {
-            "id": "3325aec6dbb8ed39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
+              "title": "Web3 资源汇总"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,8 +54,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ddd",
-                "matchingCase": false,
+                "query": "git",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -116,7 +85,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -136,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
+                "file": "permanent-notes/linux/IO 模型.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -146,7 +116,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
+              "title": "Backlinks for IO 模型"
             }
           },
           {
@@ -184,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
+                "file": "permanent-notes/linux/IO 模型.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金"
+              "title": "Outline of IO 模型"
             }
           },
           {
@@ -233,19 +203,30 @@
       "quickadd:QuickAdd": false,
       "obsidian-git:Open Git source control": false,
       "media-extended:Open media": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "card-board:CardBoard": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ee9a6b9b366143c2",
+  "active": "c7a0ed68236f45c2",
   "lastOpenFiles": [
-    "permanent-notes/redis/Redis.md",
+    "obsidian-config/template/fleet-note-template.md",
+    "literature-notes/终极 Web3 学习路线图.md",
+    "permanent-notes/ddd/DDD.md",
+    "fleet-notes/data-labeling/Data labeling 资源收集.md",
+    "mindmaps/MCP.xmind",
+    "fleet-notes/ai/玄姐谈 AGI——基于MCP实现AI应用架构设计新范式.md",
+    "fleet-notes/data-labeling",
+    "permanent-notes/web3/Web3 资源汇总.md",
+    "Books List.md",
+    "permanent-notes/ddd/事件风暴.md",
+    "fleet-notes/Web3.0 了解.md",
+    "permanent-notes/linux/IO 模型.md",
+    "permanent-notes/web3",
+    "permanent-notes/linux/Untitled.md",
     "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md",
+    "permanent-notes/redis/Redis.md",
     "permanent-notes/redis/Redis Object Encoding ZIPLIST.md",
     "permanent-notes/redis/Redis 有哪些数据类型？各自的实现是怎样的？.md",
     "fleet-notes/domain-driven-design/规则.md",
-    "permanent-notes/ddd/DDD.md",
-    "permanent-notes/ddd/事件风暴.md",
     "fleet-notes/domain-driven-design/事件风暴.md",
     "permanent-notes/sops/dev sop.md",
     "permanent-notes/sops/Untitled",
@@ -260,21 +241,9 @@
     "fleet-notes/DDD 资源.md",
     "fleet-notes/domain-driven-design/DDD-Mindmap.md",
     "permanent-notes/production/从 IDEA 到产品.md",
-    "fleet-notes/user-story.md",
-    "permanent-notes/production/用户故事.md",
-    "permanent-notes/english/Anki 单词卡片.md",
     "mindmaps/学英语.xmind",
-    "permanent-notes/architecture/微服务.md",
     "mindmaps/Offer Q.xmind",
     "mindmaps/Idea to Production.xmind",
-    "permanent-notes/architecture/Raft 算法.md",
-    "permanent-notes/architecture/架构.md",
-    "permanent-notes/architecture/软件设计原则.md",
-    "permanent-notes/system-design/System Design Index.md",
-    "permanent-notes/english",
-    "permanent-notes/project/production-community/产品社区 IDEA.md",
-    "mindmaps/企业出海.xmind",
-    "permanent-notes/project/出海",
     "fleet-notes/redis/Redis数据类型-2025-02-17-08-56-00.png",
     "projects/RTA/user-story.canvas",
     "obsidian-config/template/event-storming.canvas",

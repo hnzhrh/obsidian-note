@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Web3 资源汇总",
+      "path": "permanent-notes/web3/Web3 资源汇总.md"
+    },
+    {
+      "basename": "fleet-note-template",
+      "path": "obsidian-config/template/fleet-note-template.md"
+    },
+    {
+      "basename": "终极 Web3 学习路线图",
+      "path": "literature-notes/终极 Web3 学习路线图.md"
+    },
+    {
+      "basename": "DDD",
+      "path": "permanent-notes/ddd/DDD.md"
+    },
+    {
+      "basename": "Data labeling 资源收集",
+      "path": "fleet-notes/data-labeling/Data labeling 资源收集.md"
+    },
+    {
+      "basename": "玄姐谈 AGI——基于MCP实现AI应用架构设计新范式",
+      "path": "fleet-notes/ai/玄姐谈 AGI——基于MCP实现AI应用架构设计新范式.md"
+    },
+    {
+      "basename": "Books List",
+      "path": "Books List.md"
+    },
+    {
+      "basename": "事件风暴",
+      "path": "permanent-notes/ddd/事件风暴.md"
+    },
+    {
+      "basename": "Web3.0 了解",
+      "path": "fleet-notes/Web3.0 了解.md"
+    },
+    {
+      "basename": "IO 模型",
+      "path": "permanent-notes/linux/IO 模型.md"
+    },
+    {
       "basename": "Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金",
       "path": "literature-notes/Redis 为啥这么快？详细讲解 Redis 的 IO 多路复用及 Reactor 单线程模型，以及Redis 6 版 - 掘金.md"
     },
@@ -19,14 +59,6 @@
     {
       "basename": "规则",
       "path": "fleet-notes/domain-driven-design/规则.md"
-    },
-    {
-      "basename": "DDD",
-      "path": "permanent-notes/ddd/DDD.md"
-    },
-    {
-      "basename": "事件风暴",
-      "path": "permanent-notes/ddd/事件风暴.md"
     },
     {
       "basename": "事件风暴",
@@ -167,38 +199,6 @@
     {
       "basename": "MySQL 的日志",
       "path": "permanent-notes/mysql/MySQL 的日志.md"
-    },
-    {
-      "basename": "Linux网络编程--sendfile零拷贝高效率发送文件_linux sendfile-CSDN博客",
-      "path": "literature-notes/Linux网络编程--sendfile零拷贝高效率发送文件_linux sendfile-CSDN博客.md"
-    },
-    {
-      "basename": "MySQL 索引",
-      "path": "permanent-notes/mysql/MySQL 索引.md"
-    },
-    {
-      "basename": "MySQL 为什么一行最大 65535 Byte？",
-      "path": "permanent-notes/mysql/MySQL 为什么一行最大 65535 Byte？.md"
-    },
-    {
-      "basename": "MySQL",
-      "path": "permanent-notes/mysql/MySQL.md"
-    },
-    {
-      "basename": "MySQL 的查询语句执行流程",
-      "path": "permanent-notes/mysql/MySQL 的查询语句执行流程.md"
-    },
-    {
-      "basename": "count(*) 和 count(1) 有什么区别？哪个性能最好？",
-      "path": "permanent-notes/mysql/count(*) 和 count(1) 有什么区别？哪个性能最好？.md"
-    },
-    {
-      "basename": "VARCHAR 和 CHAR 的区别",
-      "path": "permanent-notes/mysql/VARCHAR 和 CHAR 的区别.md"
-    },
-    {
-      "basename": "MySQL Explain 用法",
-      "path": "permanent-notes/mysql/MySQL Explain 用法.md"
     }
   ],
   "omittedPaths": [],
